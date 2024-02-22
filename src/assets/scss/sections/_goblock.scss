@@ -32,6 +32,7 @@
   }
 
   button.circle {
+    transition: .5s;
     cursor: pointer;
     gap: 10px;
     width: 100%;
@@ -44,9 +45,22 @@
     background-color: #ffe03a;
     border: none;
     border-radius: 50%;
+
+    &:hover {
+      transition: .5s;
+      background-color: #ee2f29;
+
+      span {
+        color: #ffffff;
+        transition: .5s;
+      }
+
+    }
+
   }
 
   .circle span {
+    transition: .5s;
     font-family: "IBM Plex Sans",sans-serif;
     font-style: normal;
     text-transform: none;
@@ -90,7 +104,6 @@
     //background-image: url($imagePath + 'hero_bg-mobile.png'), var(--gradient_dark);
     background-image: url($imagePath + 'go_bg-1920.png'), var(--gradient_dark);
     padding: 25px 0 60px;
-    background-position: center;
 
     .mobile-address {
       display: block;
@@ -142,5 +155,11 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 767px) {
+  #goblock .flex-center {
+    margin-top: 55px;
   }
 }

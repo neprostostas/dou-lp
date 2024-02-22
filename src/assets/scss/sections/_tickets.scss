@@ -63,6 +63,7 @@
   }
 
   .btn:not(.btn-primary) {
+    transition: .5s;
     @include border(var(--white));
     color: var(--white);
     padding: 15px 30px;
@@ -72,6 +73,7 @@
     }
 
     &:hover {
+      transition: .5s;
       @include border(var(--cta_green));
       color: var(--cta_green);
       padding: 15px 30px;

@@ -1,10 +1,10 @@
 <script>
 import { ref } from 'vue';
-import people1 from '../../public/images/people1.png';
-import people2 from '../../public/images/people2.png';
-import people3 from '../../public/images/people3.png';
-import people4 from '../../public/images/people4.png';
-import people5 from '../../public/images/people5.png';
+import people1 from '@/assets/images/people/people1.png';
+import people2 from '@/assets/images/people/people2.png';
+import people3 from '@/assets/images/people/people3.png';
+import people4 from '@/assets/images/people/people4.png';
+import people5 from '@/assets/images/people/people5.png';
 
 export default {
   setup() {

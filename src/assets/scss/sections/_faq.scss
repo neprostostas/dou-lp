@@ -19,6 +19,8 @@
 
 
     .accordion-header {
+      transition: .5s;
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
       font-size: 30px;
@@ -26,24 +28,34 @@
       margin: 0 0 20px;
       color: var(--azure);
 
+      path {
+        transition: .5s;
+      }
+
       &:hover {
+        transition: .5s;
         color: var(--bright_yellow);
 
+
         path {
+          transition: .5s;
           stroke: var(--bright_yellow);
         }
       }
     }
 
     .icon {
+      transition: .4s;
       transform: rotate(180deg);
       width: 22px;
     }
 
     .accordion-body {
-      display: none;
+      overflow: hidden;
+      max-height: 0;
       margin: 20px 0 0;
       line-height: 1.4;
+      transition: max-height .4s ease-in-out;
     }
 
     &.open {
@@ -52,8 +64,8 @@
       }
 
       .accordion-body {
-        display: block;
-        transition: display 4s ease-in-out;
+        overflow: auto;
+        max-height: 200px;
       }
 
     }

@@ -32,7 +32,7 @@ function handleLightbox(show) {
   <GoBlock />
   <Speakers @handleLightbox="handleLightbox" :show-lightbox="showLightbox"/>
   <Tickets/>
-<!--  <Partners/>-->
+  <Partners/>
   <Faq/>
 <!-- <Address/>-->
   <Footer/>

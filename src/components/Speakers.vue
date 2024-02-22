@@ -22,6 +22,7 @@ function showSpeaker({title, description, about_title, about_text, image, social
   emit('handleLightbox', true);
 
 }
+
 </script>
 
 <template>
@@ -41,8 +42,10 @@ function showSpeaker({title, description, about_title, about_text, image, social
               </div>
               <div class="content-box">
                 <p class="title" v-html="item['title']" />
-                <span class="name" v-html="item['name']" />
-                <span class="position" v-html="item['position']" />
+                <a class="link" :href="item['link']">
+                  <span class="name" v-html="item['name']" />
+                </a>
+<!--                <span class="position" v-html="item['position']" />-->
               </div>
             </div>
           </div>
@@ -51,12 +54,14 @@ function showSpeaker({title, description, about_title, about_text, image, social
         <div v-show="stage['sub']" class="sub">
           <h4>{{ stage['sub']['title'] }}</h4>
           <div class="list">
-            <div v-for="item in stage['main']['list']" class="speaker_item">
+            <div v-for="item in stage['sub']['list']" class="speaker_item">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
               </div>
               <div class="content-box">
-                <span class="name" v-html="item['name']" />
+                <a class="link" :href="item['link']">
+                  <span class="name" v-html="item['name']" />
+                </a>
                 <span class="position" v-html="item['position']" />
               </div>
             </div>

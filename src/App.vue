@@ -9,6 +9,7 @@ import Partners from "@/components/Partners.vue";
 import Faq from "@/components/Faq.vue";
 import Footer from "@/components/Footer.vue";
 import Address from "@/components/Address.vue";
+import GoBlock from "@/components/GoBlock.vue";
 
 const showLightbox = ref(false)
 function handleLightbox(show) {
@@ -28,9 +29,10 @@ function handleLightbox(show) {
   <Header/>
   <Cover/>
   <Info/>
+  <GoBlock />
   <Speakers @handleLightbox="handleLightbox" :show-lightbox="showLightbox"/>
   <Tickets/>
-  <Partners/>
+<!--  <Partners/>-->
   <Faq/>
 <!-- <Address/>-->
   <Footer/>

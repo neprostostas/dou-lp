@@ -1,0 +1,146 @@
+#goblock {
+  color: var(--white);
+  padding: 40px 0 80px;
+  background-image: url($imagePath + 'go_bg-1920.png'), var(--gradient_dark);
+  background-repeat: no-repeat!important;
+  background-position: top;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 85px 0;
+    max-width: 435px;
+    text-align: center;
+
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .info.second .text {
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 100px;
+  }
+
+  button.circle {
+    cursor: pointer;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    max-width: 140px;
+    height: 140px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffe03a;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .circle span {
+    font-family: "IBM Plex Sans",sans-serif;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #320525;
+  }
+
+  .circle span:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .circle span:last-of-type {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+  }
+
+  .people {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .people img {
+    width: 100%;
+    max-width: 40px;
+    border-radius: 48px;
+  }
+
+  @include res('mobile') {
+    //background-image: url($imagePath + 'hero_bg-mobile.png'), var(--gradient_dark);
+    background-image: url($imagePath + 'go_bg-1920.png'), var(--gradient_dark);
+    padding: 25px 0 60px;
+    background-position: center;
+
+    .mobile-address {
+      display: block;
+      width: 100%;
+      font-style: italic;
+    }
+
+    .info.second .text {
+      margin-top: 30px;
+    }
+
+    .address {
+      font-weight: 500;
+    }
+
+    .logo {
+      height: 20px;
+    }
+
+    .info {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      width: 100%;
+      padding: 40px 0;
+    }
+
+    .cover_bug2 {
+      display: none;
+    }
+
+    .btn-row {
+      flex-wrap: wrap;
+
+      a {
+        order: 1;
+        margin: 40px 0 0;
+      }
+
+      .cover_bug3 {
+        order: 2;
+        width: 60%;
+      }
+      .cover_bug1 {
+        order: 3;
+        width: 25%;
+      }
+    }
+
+  }
+}

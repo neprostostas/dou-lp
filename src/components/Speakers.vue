@@ -33,7 +33,8 @@ function showSpeaker({title, description, about_title, about_text, image, social
         <div class="main">
           <h3>{{ stage['main']['title'] }}</h3>
           <div class="list">
-            <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item)">
+            <div v-for="item in stage['main']['list']" class="speaker_item">
+<!--              <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item)">-->
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
 <!--                <Info @click="showSpeaker(item)"/>-->

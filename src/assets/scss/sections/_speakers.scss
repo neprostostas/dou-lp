@@ -1,0 +1,282 @@
+#speakers {
+  padding: 80px 0 120px;
+
+  .container {
+    max-width: 1100px;
+  }
+
+  h2 {
+    @include border(var(--dark_yellow));
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 25px 35px;
+  }
+
+  h3 {
+    font-size: 40px;
+    margin: 0 0 60px;
+  }
+
+  h4 {
+    font-size: 30px;
+    margin: 0 0 32px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .stage {
+
+    &:nth-child(2) {
+      @include border(var(--violet));
+      //padding: 65px 40px;
+    }
+
+    &:nth-child(3) {
+      @include border(var(--yellow));
+      //padding: 65px 40px;
+    }
+
+    &:nth-child(4) {
+      @include border(var(--red));
+      //padding: 65px 40px;
+    }
+
+    &:nth-child(5) {
+      @include border(var(--azure));
+      //padding: 65px 40px;
+    }
+
+    &:nth-child(6) {
+      @include border(var(--cta_green));
+      //padding: 65px 40px;
+    }
+
+    & {
+      padding: 40px 40px 60px;
+    }
+
+    .list {
+      @include flexbox(row, flex-start, stretch);
+      flex-wrap: wrap;
+    }
+    .speaker_item {
+      @include flexbox(row, flex-start, flex-start);
+      cursor: pointer;
+      padding: 20px;
+      border: 1px transparent solid;
+
+      &:hover {
+        border: 1px var(--azure) solid;
+      }
+    }
+
+    .image-box {
+      @include flexbox(column, flex-start, center);
+      gap: 10px;
+
+    }
+
+    img {
+      border: 1px var(--azure) solid;
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .content-box {
+      @include flexbox(column, flex-start, flex-start);
+    }
+
+    .title, .name  {
+      font-weight: 600;
+    }
+
+    .name, .position {
+      font-size: 15px;
+    }
+
+    .position {
+      font-style: italic;
+    }
+
+    .main {
+      margin: 0 0 40px;
+
+      .list {
+        gap: 25px 0;
+      }
+
+      .speaker_item {
+        gap: 15px;
+        width: 33.3%;
+        flex-direction: row-reverse;
+      }
+
+    }
+
+    .sub {
+      .speaker_item {
+        gap: 10px;
+        width: 25%;
+        padding: 20px 10px;
+      }
+
+      img {
+        border: 1px var(--azure) solid;
+        width: 60px;
+        height: 60px;
+      }
+
+      .content-box {
+        justify-content: space-between;
+      }
+
+      .name {
+        margin: 0 0 10px;
+      }
+
+    }
+  }
+
+  @include res('mobile') {
+
+    h2 {
+      font-size: 32px;
+      padding: 20px 20px 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 0 0 20px;
+    }
+
+    .stage {
+      padding: 20px 10px 40px;
+
+      .speaker_item {
+        width: 100% !important;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        padding: 2px;
+      }
+
+      .main {
+        .list {
+          gap: 20px 0;
+        }
+      }
+
+      .sub {
+
+        img {
+          width: 50px;
+          height: 50px;
+          padding: 2px;
+        }
+      }
+      .title {
+        margin: 0 0 15px;
+      }
+    }
+  }
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+.lightbox {
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  overflow: scroll;
+  @include flexbox(row, center, center);
+  padding: 100px 0;
+
+  .lightbox-body {
+    @include border(var(--azure));
+    width: 610px;
+    margin: auto;
+    padding: 40px;
+    z-index: 100;
+    background: var(--gradient_light);
+
+    &:after {
+      content: none;
+    }
+
+    .close {
+      width: 30px;
+
+      &:hover {
+        path {
+          stroke: var(--bright_yellow);
+        }
+      }
+    }
+
+  }
+  .lightbox-content {
+    @include flexbox(row, space-between, flex-start);
+    gap: 20px;
+  }
+}
+.about-speaker {
+  .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  .avatar {
+    border: 1px var(--black) solid;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .content {
+    @include flexbox(row, space-between, flex-start);
+    gap: 15px;
+    margin: 40px 0 40px;
+
+    .content-title {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 15px;
+    }
+  }
+
+  .social {
+    margin: 0 15px 0 0;
+
+    &:hover {
+      path {
+        fill: var(--red);
+      }
+    }
+  }
+  @include res('mobile') {
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+}

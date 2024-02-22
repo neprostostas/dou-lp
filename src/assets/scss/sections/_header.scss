@@ -1,0 +1,119 @@
+header {
+  color: $body-secondary-text-color;
+  background: var(--gradient_dark);
+  position: sticky;
+  top: 0;
+  z-index: 111;
+  border-bottom: 1px solid var(--red);
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+  }
+
+  .burger {
+    display: none;
+    flex: 0;
+  }
+
+  nav {
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+
+    a {
+      &:hover {
+        color: var(--bright_yellow);
+      }
+    }
+  }
+
+  @include res('mobile') {
+    .container {
+      align-items: center;
+    }
+
+    #burger {
+      order: 1;
+    }
+
+    .btn{
+      order: 2;
+    }
+
+    nav {
+      order: 3;
+      width: 100%;
+      text-align: center;
+      visibility: hidden;
+      flex-direction: column;
+      display: flex;
+      height: 0;
+      transition: height .375s;
+      font-size: 25px;
+      gap: 5px;
+      align-items: flex-start;
+
+
+      &.is-open {
+        visibility: visible;
+        height: auto;
+        padding: 40px 0 60px;
+      }
+
+      a {
+        border: 1px var(--violet) solid;
+        padding: 25px 32px;
+        line-height: 1;
+        width: 100%;
+        text-align: start;
+      }
+    }
+
+    .burger {
+      position: relative;
+      display: block;
+      width: 28px;
+      height: 2px;
+      margin: 0 auto;
+      background: var(--white);
+      transition: all .275s;
+    }
+
+    .burger:after,
+    .burger:before {
+      content: '';
+      display: block;
+      height: 100%;
+      background: var(--white);
+      transition: all .275s;
+    }
+
+    .burger:after {
+      transform: translateY(-10px);
+    }
+
+    .burger:before {
+      transform: translateY(8px);
+    }
+
+    .is-open .burger {
+      transform: skew(5deg) translateY(0px) rotate(-45deg);
+    }
+
+    .is-open .burger:before {
+      transform: translateY(0px) skew(-15deg) rotate(75deg);
+    }
+
+    .is-open .burger:after {
+      transform: translateY(-12px) translateX(10px) skew(-20deg);
+      opacity: 0;
+    }
+  }
+}

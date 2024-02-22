@@ -1,0 +1,41 @@
+footer {
+  color: $body-secondary-text-color;
+  background: var(--gradient_dark);
+  padding: 80px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  .logo {
+    height: 24px;
+  }
+
+  .social {
+    height: 22px;
+    width: 22px;
+    margin: 0 10px;
+
+    &:hover {
+      path {
+        fill: var(--red);
+      }
+    }
+
+  }
+
+  @include res('mobile') {
+    padding: 40px 0;
+    text-align: center;
+
+    .container {
+      flex-direction: column;
+      gap: 32px;
+      font-size: 20px;
+      max-width: 80%;
+    }
+  }
+}

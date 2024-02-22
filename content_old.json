@@ -1,0 +1,429 @@
+{
+  "common": {
+    "button": "Придбати квиток",
+    "button_url": "#",
+    "email": "conference@dou.ua"
+  },
+  "header": {
+    "menuItems" : [
+      {
+        "title": "Конференція",
+        "url": "#info"
+      },
+      {
+        "title": "Спікери",
+        "url": "#speakers"
+      },
+      {
+        "title": "Партнери",
+        "url": "#partners"
+      },
+      {
+        "title": "Питання",
+        "url": "#faq"
+      },
+      {
+        "title": "Місце",
+        "url": "#address"
+      }
+    ]
+  },
+  "cover": {
+    "address": "Київ, КВЦ «Парковий»",
+    "date": "18 травня",
+    "title": "Перша велика <br>офлайн-конференція <br><span>DOU Day</span>"
+  },
+  "info": {
+    "members": [
+      {
+        "number": "800+",
+        "title": "учасників"
+      },
+      {
+        "number": "30+",
+        "title": "спікерів"
+      },
+      {
+        "number": "20+",
+        "title": "виступів"
+      }
+    ],
+    "activities1" : [
+      "Інтерактив",
+      "Нетворк",
+      "Концерт"
+    ],
+    "activities2" : [
+      "Розіграш призів",
+      "Частина прибутку з конференції — нa ЗСУ"
+    ],
+    "button_info": "Кількість обмежена"
+  },
+  "speakers": {
+    "title": "Треки та спікери",
+    "stages": [
+      {
+        "main": {
+          "title": "Main Stage",
+
+          "list": [
+
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences1",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces.",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "" }
+              ]
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences2",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            }
+
+          ]
+        },
+
+        "sub": {
+          "title": "Модератори",
+          "list": [
+
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            }
+
+          ]
+        }
+      },
+      {
+        "main": {
+          "title": "Architecture Stage",
+
+          "list": [
+
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            },
+            {
+              "image": "portrait.png",
+              "title": "Empathy in Design: Shaping User Experiences",
+              "name": "Elena Kozlova",
+              "position": "Senior UX Designer",
+              "description": "Elena's speech focuses on the importance of empathy in UX design. She discusses how understanding user needs leads to more effective and satisfying designs. She shares case studies where empathetic design approaches have significantly improved user experience.",
+              "about_title": "About Elena",
+              "about_text": "Elena Kozlova, a Senior UX Designer, has over a decade of experience in creating user-centric designs. With a background in psychology and design, she brings a unique perspective to her work. Elena has worked with top tech companies to improve their digital interfaces."
+            }
+
+          ]
+        },
+
+        "sub": {
+          "title": "Програмний комітет",
+          "list": [
+
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            },
+            {
+              "image": "",
+              "name": "Amina Al-Saad",
+              "position": "Database Administrator"
+            }
+
+          ]
+        }
+      }
+    ]
+  },
+  "tickets": {
+    "title": "Квитки",
+    "subtitle": "Для військовослужбовців діє знижка.",
+    "email_text": "Щоб отримати - пишіть:",
+    "button_text": "Придбати",
+    "dates": [
+      {
+        "title": "до 19.02",
+        "plans": [
+          {
+            "type": "Regular",
+            "price": "4500 ₴",
+            "subtitle": "",
+            "text": "економія <span class='primary-color'>3000 ₴</span>"
+          },
+          {
+            "type": "VIP",
+            "price": "7500 ₴",
+            "subtitle": "усього 200 місць",
+            "text": "економія <span class='primary-color'>3000 ₴</span>"
+          }
+        ]
+      },
+      {
+        "title": "з 19.03",
+        "plans": [
+          {
+            "price": "169 $"
+          },
+          {
+            "price": "269 $"
+          }
+        ]
+      },
+      {
+        "title": "з 10.05 <span>(за тиждень до івенту)</span>",
+        "plans": [
+          {
+            "price": "199 $"
+          },
+          {
+            "price": "299 $"
+          }
+        ]
+      }
+    ],
+    "abilities_title": "Що дає квиток",
+    "abilities": [
+      {
+        "label": "Право входу на конференцію",
+        "plans": [true, true]
+      },
+      {
+        "label": "Доступ до всіх треків, стендів партнерів та інших інтерактивних локацій",
+        "plans": [true, true]
+      },
+      {
+        "label": "Два кава-брейки та ланч за графіком",
+        "plans": [true, true]
+      },
+      {
+        "label": "Вхід на вечірній концерт",
+        "plans": [true, true]
+      },
+      {
+        "label": "Можливість взяти участь в розіграші цінних призів (за попередньою реєстрацією)",
+        "plans": [true, true]
+      },
+      {
+        "label": "Паркінг",
+        "plans": [false, true]
+      },
+      {
+        "label": "Доступ до закритої лаунж-зони спікерів та топгостей",
+        "plans": [false, true]
+      },
+      {
+        "label": "Постійний доступ до безплатних напоїв та снеків у лаунж-зоні",
+        "plans": [false, true]
+      },
+      {
+        "label": "Відеозаписи доповідей спікерів одразу після конференції",
+        "plans": [false, true]
+      },
+      {
+        "label": "Мерч конференції",
+        "plans": [false, true]
+      }
+    ]
+  },
+  "partners": {
+    "main": {
+      "title": "Генеральний партнер",
+      "image": "svg/partner.svg"
+    },
+    "title": "Партнери",
+    "images": [
+      "microsoft.jpeg",
+      "microsoft.jpeg",
+      "microsoft.jpeg",
+      "microsoft.jpeg",
+      "microsoft.jpeg",
+      "microsoft.jpeg"
+    ],
+    "text": "Хочете бути серед партнерів — напишіть на"
+  },
+  "faq": {
+    "title": "FAQ",
+    "list": [
+      {
+        "q": "А що з безпекою?",
+        "a": "На локації чергуватимуть швидка допомога, пожежна машина та передбачена охорона. На випадок повітряної тривоги є укриття на локації, розраховане на всіх учасників конференції."
+      },
+      {
+        "q": "А якщо повітряна тривога буде тривалою?",
+        "a": "На жаль, вплинути на це ми не можемо, однак якщо повітряна тривога буде тривалою і нам не вдасться «наздогнати» програму, ми організуємо онлайн-виступи спікерів в інший день. Усі розіграші проведемо в будь-якому разі, а часу для нетворкінгу та інших активностей має вистачити."
+      },
+      {
+        "q": "Кого я зустріну на конференції?",
+        "a": "DOU Day — місце зустрічі айтівців різних профілів та досвіду — тут будуть як розробники, тестувальники, продакти, девопси, так і C-level. Одне слово, усі, хто дотичний до ІТ-ринку, але ядро — саме технічні спеціалісти Middle+."
+      },
+      {
+        "q": "Хто обирає спікерів і теми конференції?",
+        "a": "Програмний комітет конференції, з представниками якого можна ознайомитися тут. Програмний комітет формує команда DOU."
+      },
+      {
+        "q": "У чому різниця Regular та VIP квитка?",
+        "a": "Regular-квиток дає право входу на конференцію та вечірній концерт, доступ до всіх стейджів і стендів партнерів, активностей та подій. Також буде два кава-брейки та ланч за розкладом, можливість взяти участь у розіграші цінних призів.VIP-квиток, крім всього переліченого, дає доступ до лаунж-зони спікерів і топгостей з безперервною лінією безплатних напоїв та снеків, паркінг. Також — мерч конференції, доступ до відеозаписів усіх виступів."
+      },
+      {
+        "q": "Чи можна придбати квиток у день івенту?",
+        "a": "Так, на сайті <a class='link' href='https://concert.ua/en'>concert.ua</a> — якщо залишаться. Кількість квитків обмежена."
+      }
+    ]
+  },
+  "footer": {
+    "text": "З усіх питань — пишіть на <a class='link' href='mailto:conference@dou.ua'>conference@dou.ua</a>",
+    "socials": [
+      {
+        "image": "svg/linkedin-icon.svg",
+        "url": "#"
+      },
+      {
+        "image": "svg/facebook-icon.svg",
+        "url": "#"
+      },
+      {
+        "image": "svg/twitter-icon.svg",
+        "url": "#"
+      },
+      {
+        "image": "svg/instagram-icon.svg",
+        "url": "#"
+      },
+      {
+        "image": "svg/telegram-icon.svg",
+        "url": "#"
+      }
+    ]
+  },
+  "address": {
+    "title": "Як дістатися",
+    "coordinates": "https://maps.app.goo.gl/Jn3Thfxajowvp8946",
+    "items": [
+      {
+        "image": "address.png",
+        "info": [
+          {
+            "title": "КВЦ «Парковий»",
+            "text": "Перший поверх"
+          }
+        ]
+      },
+      {
+        "image": "map.png",
+        "info": [
+          {
+            "title": "Паркова дорога, 16а, Київ, Україна",
+            "text": "<a href='https://maps.app.goo.gl/Jn3Thfxajowvp8946' target='_blank'>Відкрити в гугл-картах</a>"
+          },
+          {
+            "title": "Що поряд",
+            "text": "<span>Станція метро “Арсенальна”</span><span>Мариїнський палац</span><span>Стадіон “Динамо”</span>"
+          }
+        ]
+      }
+    ]
+  }
+}

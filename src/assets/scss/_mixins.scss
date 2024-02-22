@@ -1,0 +1,56 @@
+
+@mixin flexbox($rowDirection: row, $justifyContent: space-between, $alignItems: center) {
+  display: flex;
+  flex-direction: $rowDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin font-line($sizeValue: 16, $heightValue: 1) {
+  font-size: $sizeValue + px;
+  line-height: $heightValue;
+}
+
+$breakpoints: ("mobile-small": 360px,
+        "mobile": 767px,
+        "tablet": 991px,
+        "tablet-wide": 1200px,
+        "desktop": 1280px,
+        "desktop-wide": 1440px);
+
+@mixin res($width, $type: max) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+  }
+
+  @if $type==min {
+    $width: $width;
+  }
+
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+
+@mixin border($color) {
+  position: relative;
+  //padding: 25px 35px;
+  margin: 15px 10px;
+  border: 1px $color solid;
+  outline: $color solid 1px;
+  outline-offset: -6px;
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 9px;
+    outline: $color solid 1px;
+    outline-offset: 5px;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,77 @@
+#faq {
+  padding: 80px 0 120px;
+  background: var(--gradient_dark);
+
+  .container {
+    max-width: 750px;
+    color: var(--white);
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 50px;
+  }
+
+  .accordion {
+    margin: 0 0 50px;
+
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 20px;
+      color: var(--azure);
+
+      &:hover {
+        color: var(--bright_yellow);
+
+        path {
+          stroke: var(--bright_yellow);
+        }
+      }
+    }
+
+    .icon {
+      transform: rotate(180deg);
+      width: 22px;
+    }
+
+    .accordion-body {
+      display: none;
+      margin: 20px 0 0;
+      line-height: 1.4;
+    }
+
+    &.open {
+      .icon {
+        transform: rotate(0deg);
+      }
+
+      .accordion-body {
+        display: block;
+        transition: display 4s ease-in-out;
+      }
+
+    }
+  }
+
+  @include res('mobile') {
+    padding: 40px 0;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .accordion {
+      .accordion-header {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+}

@@ -34,10 +34,10 @@ export default {
       </div>
 
       <div class="flex-center">
-        <button class="circle">
+        <a class="circle" href="https://concert.ua/uk/event/dou-day">
           <span>тисни</span>
           <span>ТУТ</span>
-        </button>
+        </a>
       </div>
 
       <div class="info second">

@@ -1,6 +1,6 @@
 <script setup>
 import Lightbox from "@/components/Lightbox.vue";
-import {ref} from "vue";
+import {ref, watch, watchEffect} from "vue";
 
 const props = defineProps({
   showLightbox: Boolean,
@@ -10,7 +10,7 @@ const emit = defineEmits(['handleLightbox'])
 // const showLightbox = ref(false)
 const lightboxData = ref({})
 
-function showSpeaker({title, description, about_title, about_text, image, socials}) {
+function showSpeaker({title, description, about_title, about_text, image, socials}, stage) {
   lightboxData.value = {
     title,
     description,
@@ -19,8 +19,18 @@ function showSpeaker({title, description, about_title, about_text, image, social
     image,
     socials
   }
-  emit('handleLightbox', true);
 
+  const isSecretGuest = about_title === 'Секретний спікер' ? true : false
+
+  // don't open modal for "Main Stage" and "SecretGuest"
+  stage['main']['title'] === "Main Stage" || isSecretGuest ? null : emit('handleLightbox', true)
+
+}
+
+function handleClick(link) {
+  if (!link) {
+    event.preventDefault();
+  }
 }
 
 </script>
@@ -34,18 +44,22 @@ function showSpeaker({title, description, about_title, about_text, image, social
         <div class="main">
           <h3>{{ stage['main']['title'] }}</h3>
           <div class="list">
-            <div v-for="item in stage['main']['list']" class="speaker_item">
-<!--              <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item)">-->
+            <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item, stage)">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
 <!--                <Info @click="showSpeaker(item)"/>-->
               </div>
               <div class="content-box">
                 <p class="title" v-html="item['title']" />
-                <a class="link" :href="item['link']">
+
+                <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />
+
+                <a v-else-if="stage['main']['title'] === 'Main Stage'"  class="link" :href="item['link']" v-if="item['name'] !== 'Секретний спікер'">
                   <span class="name" v-html="item['name']" />
                 </a>
-<!--                <span class="position" v-html="item['position']" />-->
+
+                <span v-else class="name" v-html="item['name']" />
+                <span class="position" v-html="item['position']" />
               </div>
             </div>
           </div>
@@ -87,9 +101,10 @@ function showSpeaker({title, description, about_title, about_text, image, social
       </div>
 
       <div>
-        <a v-for="social in lightboxData.socials" :href="social['link']" class="social" target="_blank">
+        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">
           <component :is="social['name']"></component>
         </a>
+
       </div>
 
     </div>

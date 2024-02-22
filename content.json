@@ -1,7 +1,7 @@
 {
   "common": {
     "button": "Придбати квиток",
-    "button_url": "#",
+    "button_url": "https://concert.ua/uk/event/dou-day",
     "email": "conference@dou.ua"
   },
   "header": {
@@ -70,9 +70,9 @@
 
             {
               "image": "speakers/Maksimenko.jpeg",
-              "title": "Co-founder Haiqu",
+              "title": "",
               "name": "Микола Максименко",
-              "position": "Senior UX Designer",
+              "position": "Co-founder Haiqu",
               "link": "https://www.linkedin.com/in/mykola-maksymenko-4448a839/",
 
               "description": "",
@@ -89,9 +89,9 @@
             },
             {
               "image": "speakers/Molchanovskiy.png",
-              "title": "Chief Innovation Officer Ukrainian Catholic University",
+              "title": "",
               "name": "Олексій Молчановський",
-              "position": "lorem",
+              "position": "Chief Innovation Officer Ukrainian Catholic University",
               "link": "https://www.linkedin.com/in/olexiim/",
 
               "description": "",
@@ -108,9 +108,9 @@
             },
             {
               "image": "speakers/Petriv.jpeg",
-              "title": "CTO & Co-founder Reface",
+              "title": "",
               "name": "Олесь Петрів",
-              "position": "lorem",
+              "position": "CTO & Co-founder Reface",
               "link": "https://www.linkedin.com/in/oles-petriv-26987b15/",
 
               "description": "",
@@ -127,9 +127,9 @@
             },
             {
               "image": "speakers/Ishchenko.jpeg",
-              "title": "Founder DOU & Djinni",
+              "title": "",
               "name": "Макс Іщенко",
-              "position": "lorem",
+              "position": "Founder DOU & Djinni",
               "link": "https://www.linkedin.com/in/maksim/",
 
               "description": "",
@@ -146,9 +146,9 @@
             },
             {
               "image": "speakers/Prokofyev.png",
-              "title": "Founder Jooble",
+              "title": "",
               "name": "Роман Прокоф’єв",
-              "position": "lorem",
+              "position": "Founder Jooble",
               "link": "https://www.linkedin.com/in/roman-prokofyev-7995a5b/",
 
               "description": "",
@@ -186,7 +186,7 @@
             {
               "image": "speakers/Brodetskiy.png",
               "name": "Андрій Бродецький",
-              "position": "Private Equity Analyst @ Horizon Capital",
+              "position": "Private Equity Analyst Horizon Capital",
               "link": "https://www.linkedin.com/in/andrii-brodetskyi/"
             }
 
@@ -201,89 +201,89 @@
 
             {
               "image": "speakers/Voitova.jpeg",
-              "title": "Head of Security Engineering, Security software engineer в Cossack Labs",
+              "title": "",
               "name": "Анастасія Войтова",
-              "position": "lorem",
+              "position": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "link": "https://dou.ua/users/Anastasiia-Voitova/",
 
               "description": "",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Анастасія Войтова",
+              "about_text": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/anastasiiavoitova/" }
               ]
             },
             {
               "image": "speakers/Turskyi.jpeg",
-              "title": "Senior Software Engineer в Google",
+              "title": "",
               "name": "Віктор Турський",
-              "position": "lorem",
+              "position": "Senior Software Engineer в Google",
               "link": "https://dou.ua/users/viktor-turskyi/",
 
               "description": "20 років в айті. Співзасновник компанії WebbyLab, де запустив більше 80 проєктів (включаючи проєкти для пʼяти компаній зі списку Fortune 500). Зараз сеніор інженер в Google Cloud. Більше 40 доповідей на різних конференціях. Автор youtube каналу \"Віктор Турський про програмування\" (https://www.youtube.com/@AboutProgramming)",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Віктор Турський",
+              "about_text": "Senior Software Engineer в Google",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/turskyi/" }
               ]
             },
             {
               "image": "speakers/Savchenko.jpeg",
-              "title": "Solutioning Director в Ciklum",
+              "title": "",
               "name": "Олександр Савченко",
-              "position": "lorem",
+              "position": "Solutioning Director в Ciklum",
               "link": "https://www.linkedin.com/in/oleksandr-savchenko-38a28532/",
 
               "description": "Більше 15 років в ІТ, спікер на різних глобальних конференціях, автор і ментор різноманітних інженерних курсів й воркшопів. Пройшов шлях від розробника до архітектора, делівері директора та голови інженерних департаментів. Зараз займає позицію Solutioning Director в Ciklum. Переможець Ukrainian IT Awards у категорії Software Engineering у 2019 році та член журі у 2020 році.",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Олександр Савченко",
+              "about_text": "Solutioning Director в Ciklum",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandr-savchenko-38a28532/" }
               ]
             },
             {
               "image": "speakers/Klioba.jpeg",
-              "title": "Associate Director, Big Data & Analytics в SoftServe, PhD, MVP",
+              "title": "",
               "name": "Тарас Кльоба",
-              "position": "lorem",
+              "position": "Associate Director, Big Data & Analytics в SoftServe, PhD, MVP",
               "link": "https://dou.ua/users/taras-kloba/",
 
               "description": "Має понад 14 років досвіду в галузі IT, банківській справі та інформаційній безпеці.\nУ 2019 році Тарас був визнаний Найкращим архітектором програмного забезпечення України за версією Ukrainian IT Awards. Він є Microsoft MVP, а також має ряд інших профільних сертифікацій від Google, Amazon та SEI. Тарас активно ділиться своїми знаннями на міжнародних та локальних конференціях та заходах.\n\nВін також є засновником спільноти PostgreSQL Ukraine, що об'єднує фахівців та ентузіастів цієї технології в Україні. І лідером команди, яка перемогла у TIDE NATO Hackathon 2023 та Національному оборонному хакатоні 2022, організованому Радою національної безпеки і оборони України.\n\nОкрім своєї професійної діяльності, Тарас активно волонтерить та консультує військових на ІТ-проектах, які сприяють нашій Перемозі.\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Тарас Кльоба",
+              "about_text": "Associate Director, Big Data & Analytics в SoftServe, PhD, MVP",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/kloba/" }
               ]
             },
             {
-              "image": "portrait.png",
-              "title": "Секретний спікер",
+              "image": "speakers/secret_portrait.png",
+              "title": "",
               "name": "Секретний спікер",
-              "position": "lorem",
+              "position": "",
               "link": "",
 
               "description": "",
-              "about_title": "",
+              "about_title": "Секретний спікер",
               "about_text": "",
               "socials": [
                 {"name":  "github", "link": "" },
@@ -344,97 +344,96 @@
 
             {
               "image": "speakers/Melnyk.jpeg",
-              "title": "Front-end/Tech lead в Projector",
+              "title": "",
               "name": "Тетяна Мельник",
-              "position": "",
+              "position": "Front-end/Tech lead в Projector",
               "link": "https://www.linkedin.com/in/tetiana-lyko/",
 
               "description": "Приблизно 15 років досвіду роботи front-end розробницею в різних проєктах: від сімейного бізнесу й аутсорсу до європейських продуктових компаній. Закладала архітектуру CSS у ЛУН, архітектуру — у Ember застосунку для малайзійського стартапу. Підтримувала e-commerce рішення та створювала з нуля внутрішні інструменти в bloomon.com. Зараз працює над технічними рішеннями та побудовою команди розробки в Проджекторі.  Працювала над сайтами як під Internet Explorer 6, так і під сучасні мобільні браузери. Найактивніше використовувала React, але має досвід роботи з майже всіма фреймворками, навіть першим Angular та Ember.",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Тетяна Мельник",
+              "about_text": "Front-end/Tech lead в Projector",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/tetiana-lyko/" }
               ]
             },
             {
               "image": "speakers/Kovalyova.jpeg",
-              "title": "Senior QA Consultant, Certified Unicorns",
+              "title": "",
               "name": "Олександра Ковальова",
-              "position": "",
+              "position": "Senior QA Consultant, Certified Unicorns",
               "link": "https://dou.ua/users/Alexandra%20Vodyanitskaya/",
 
               "description": "",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Олександра Ковальова",
+              "about_text": "Senior QA Consultant, Certified Unicorns",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/alexandra-kovalova-70373543/" }
               ]
             },
             {
               "image": "speakers/Petrushenko.jpeg",
-              "title": "Technical Lead в SQUAD, Founder в CSOSVITA",
+              "title": "",
               "name": "Іван Петрушенко",
-              "position": "",
+              "position": "Technical Lead в SQUAD, Founder в CSOSVITA",
               "link": "https://dou.ua/users/ivan-petrushenko/",
 
               "description": "Засновник школи CSosvita.com та Tech Lead у Squad\nПонад 10 років досвіду у створенні та оптимізації високонавантажених систем. Подобається розповідати про складні технічні концепції простою мовою та розкривати взаємозв'язки між різними аспектами Computer Science.\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Іван Петрушенко",
+              "about_text": "Technical Lead в SQUAD, Founder в CSOSVITA",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/ivanpetrushenko/" }
               ]
             },
             {
               "image": "speakers/Agafonkin.jpeg",
-              "title": "Software Engineer в Mapbox",
+              "title": "",
               "name": "Володимир Агафонкін",
-              "position": "",
+              "position": "Software Engineer в Mapbox",
               "link": "https://dou.ua/users/Mourner/",
 
               "description": "Програміст в компанії Mapbox, розробник новітніх інструментів для інтерактивних мап. Автор Leaflet, стандарту індустрії для мап, та десятків інших опенсорс-проєктів, пов'язаних з мапами, алгоритмами та візуалізацією даних. Музикант, лідер рок-гурту Обійми Дощу (новий альбом скоро), майстер крафтової випічки та батько дівчат-близнючок.\n20 років тому, на другому курсі КПІ, клепати на фрілансі HTML/CSS-шаблони для TemplateMonster було його першою роботою \uD83D\uDE0A\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Володимир Агафонкін",
+              "about_text": "Software Engineer в Mapbox",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/agafonkin/" }
               ]
             },
             {
               "image": "speakers/Khotemsky.jpeg",
-              "title": "Quality Practice Lead в Doxy.me",
               "name": "Олександр Хотемський",
-              "position": "",
+              "position": "Quality Practice Lead в Doxy.me",
               "link": "https://dou.ua/users/aleksandr-khotemskoy/",
 
               "description": "Основні напрямки роботи — це розробка тестів, підходів, архітектури та інструментарію для автоматизації різних рівнів та видів тестування. За більш ніж 13 років досвіду попрацював на багатьох проєктах з використанням JavaScript, TypeScript, Java та Python. Наразі працює на посаді QA Practice Lead в компанії Doxy.me.\n— Займався автоматизацією тестування на JavaScript ще до того як це стало мейнстрімом\n— Навчив більше 200 студентів різноманітним видам тестування\n— Веде канал на YouTube — https://www.youtube.com/@OleksandrKhotemskyi\n— Розвиває спільноту HOT testing (@js_for_testing) та Discord https://discord.gg/96XP7kgg\n— Переможець та суддя Ukrainian Dev Challenge.\n— Доповідач на різноманітних IT-подіях (більше 100 доповідей!)\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Олександр Хотемський",
+              "about_text": "Quality Practice Lead в Doxy.me",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandrkhotemskyi/" }
               ]
             }
 
@@ -497,117 +496,117 @@
           "list": [
 
             {
-              "image": "speakers/",
-              "title": "Chief Product Officer в Hily",
+              "image": "speakers/Pivtorak.jpeg",
+              "title": "",
               "name": "Любомир Півторак",
-              "position": "",
+              "position": "Chief Product Officer в Hily",
               "link": "https://dou.ua/users/liubomyr-pivtorak/",
 
               "description": "",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Любомир Півторак",
+              "about_text": "Chief Product Officer в Hily",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/liubomyr-pivtorak-a5762872/" }
               ]
             },
             {
               "image": "speakers/Mandrika.jpeg",
-              "title": "Product Manager, Head of KOLOssus в KOLO",
+              "title": "",
               "name": "Андрій Мандрика",
-              "position": "",
+              "position": "Product Manager, Head of KOLOssus в KOLO",
               "link": "https://dou.ua/users/andrii-mandrika/",
 
               "description": "Практикуючий Product Manager і консультант з управління продуктами. Більше 12 років досвіду у створенні та масштабуванні різноманітних продуктів. \nEx-Head of Product в Rocket, де менше ніж за рік побудував команду продукту (30 осіб) та продуктові процеси з самого нуля. Також керував продуктами в таких компаніях, як Dreamteam.gg, Parimatch Tech.\nОстанні 3 роки допомагає ІТ-компаніям та окремим продуктовим спеціалістам покращувати знання, навички і процеси управління продуктами через практичні та інтенсивні навчальні програми: Hard Skills for Product Managers, які вже пройшло більше 500 людей та 12 ІТ-компаній.\nЗ квітня 2022 року, на волонтерських засадах, лідує напрям “КОЛОсів підтримки ЗСУ - підписка на перемогу для компаній” в благодійному фонді КОЛО. В рамках програми було зібрано більше 100 млн грн від українських компаній.\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Андрій Мандрика",
+              "about_text": "Product Manager, Head of KOLOssus в KOLO",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/andrii-mandrika-7a5674113/" }
               ]
             },
             {
               "image": "speakers/Dmytrasevych.jpeg",
-              "title": "Management Consultant, Founder в Kaizen Hub",
+              "title": "",
               "name": "Орест Дмитрасевич",
-              "position": "",
+              "position": "Management Consultant, Founder в Kaizen Hub",
               "link": "https://dou.ua/users/orest-dmytrasevych/",
 
               "description": "Засновник платформи розвитку лідерів Kaizen Hub та автор подкасту “Майже Вчасно\".\nДопомагає організаціям та професіоналам досягати бажаних результатів у сфері управління.\n— Більше 9 років досвіду в менеджменті на різних позиціях (Scrum Master, Project Manager, Program Manager, Delivery Manager, Head of PMO). \n— Досвід управління командами від 3 до 80 людей, досвід постановки процесів з нуля та кризового менеджменту. \n— Останні декілька років займається розвитком проєктних менеджерів та PMO офісів і займаюсь тріатлоном \uD83D\uDE42\n",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Орест Дмитрасевич",
+              "about_text": "Management Consultant, Founder в Kaizen Hub",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/odmytrasevych/" }
               ]
             },
             {
               "image": "speakers/Renska.jpeg",
-              "title": "Delivery Director в SQUAD",
+              "title": "",
               "name": "Наталія Ренська",
-              "position": "",
+              "position": "Delivery Director в SQUAD",
               "link": "https://dou.ua/users/natali-renska/",
 
               "description": "Director of Delivery в Squad, архітектор курсу \"Delivery Master\" для менеджерів. \nЕкзистенційний коуч лідерів та систем. Місія — допомагати компаніям не лише визначити стратегічний напрям, а й втілювати сміливі рішення в життя, будувати сталі процеси і формувати стійке бачення майбутнього в умовах хаосу.",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Наталія Ренська",
+              "about_text": "Delivery Director в SQUAD",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/natali-renska/" }
               ]
             },
             {
               "image": "speakers/Astafiev.jpeg",
-              "title": "Head of Product в Sadeem Digital",
+              "title": "",
               "name": "Роман Астафьєв",
-              "position": "",
+              "position": "Head of Product в Sadeem Digital",
               "link": "https://dou.ua/users/roman-astafiev/",
 
               "description": "Head of Product. Має досвід роботи з продуктами на різних етапах розвитку, комплексними екосистемами з веб та мобільними платформами, фізичними продуктами, створення команд та департаментів. Також веде приватну коучинг практику, працюючи переважно з executives, продуктовими лідерами, командами лідерів.",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Роман Астафьєв",
+              "about_text": "Head of Product в Sadeem Digital",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/aromeoua/" }
               ]
             },
             {
               "image": "speakers/Horobtsov.jpeg",
-              "title": "CPO в YouControl",
+              "title": "",
               "name": "Михайло Горобцов",
-              "position": "",
+              "position": "CPO в YouControl",
               "link": "https://www.linkedin.com/in/mikhail-horobtsov/",
 
               "description": "CPO екосистеми комплаенс і срінініг продуктів YouControl (former CPO у TemplateMonster та P2H). Створює з груп людей команди, які можуть і досягають результату. Запускав різноманітні продукти від шаблонів вебсайтів, маркетплейсів і до високонавантажених скрініг платформ на базі великих масивів даних.",
-              "about_title": "",
-              "about_text": "",
+              "about_title": "Михайло Горобцов",
+              "about_text": "CPO в YouControl",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/mikhail-horobtsov/" }
               ]
             }
 

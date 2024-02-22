@@ -47,10 +47,13 @@ function handleClick(link) {
             <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item, stage)">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
-<!--                <Info @click="showSpeaker(item)"/>-->
+                <!--<Info @click="showSpeaker(item)"/>-->
               </div>
               <div class="content-box">
-                <p class="title" v-html="item['title']" />
+
+           <!-- TODO: HARDCODE - uncomment when title will appear -->
+                <p v-if="false" class="title" v-html="item['title']" />
+           <!-- <p class="title" v-html="item['title']" />-->
 
                 <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />
 

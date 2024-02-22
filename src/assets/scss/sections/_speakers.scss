@@ -71,6 +71,7 @@
     }
     .speaker_item {
       @include flexbox(row, flex-start, flex-start);
+      align-items: center;
       cursor: pointer;
       padding: 20px;
       border: 1px transparent solid;
@@ -121,7 +122,7 @@
       .speaker_item {
         gap: 15px;
         width: 33.3%;
-        //flex-direction: row-reverse;
+        flex-direction: row-reverse;
       }
 
     }
@@ -200,6 +201,7 @@
   overflow: hidden;
 }
 .lightbox {
+  z-index: 999;
   background: rgba(0, 0, 0, .5);
   position: fixed;
   height: 100vh;

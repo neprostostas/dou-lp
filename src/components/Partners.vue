@@ -11,7 +11,7 @@
       <h2 v-html="content['partners']['title']"></h2>
       <div class="partners-list">
         <div class="image" v-for="partner in content['partners']['images']" >
-          <a :href="partner.url"> <!-- Bind the href to partner.url -->
+          <a :href="partner.url" target="_blank"> <!-- Bind the href to partner.url -->
             <img :src="imagePath + partner.name" :alt="partner.alt">
           </a>
         </div>

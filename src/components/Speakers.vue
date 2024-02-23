@@ -55,9 +55,9 @@ function handleClick(link) {
                 <p v-if="false" class="title" v-html="item['title']" />
            <!-- <p class="title" v-html="item['title']" />-->
 
-                <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />
+<!--                <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />-->
 
-                <a v-else-if="stage['main']['title'] === 'Main Stage'"  class="link" :href="item['link']" v-if="item['name'] !== 'Секретний спікер'">
+                <a class="link" :href="item['link']" target="_blank" v-if="item['name'] !== 'Секретний спікер'" @click.stop>
                   <span class="name" v-html="item['name']" />
                 </a>
 
@@ -76,7 +76,7 @@ function handleClick(link) {
                 <img :src="imagePath + item['image']" :alt="item['name']">
               </div>
               <div class="content-box">
-                <a class="link" :href="item['link']">
+                <a class="link" :href="item['link']" target="_blank">
                   <span class="name" v-html="item['name']" />
                 </a>
                 <span class="position" v-html="item['position']" />
@@ -92,7 +92,7 @@ function handleClick(link) {
   <Lightbox :show="showLightbox" @close="emit('handleLightbox', false)">
     <div class="about-speaker">
       <div class="title" v-html="lightboxData.title" />
-      <p v-html="lightboxData.description"/>
+      <p class="about-text" v-html="lightboxData.description"/>
       <div class="content">
         <div class="content-box">
           <p class="content-title" v-html="lightboxData.about_title" />
@@ -104,9 +104,9 @@ function handleClick(link) {
       </div>
 
       <div>
-        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">
-          <component :is="social['name']"></component>
-        </a>
+<!--        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">-->
+<!--          <component :is="social['name']"></component>-->
+<!--        </a>-->
 
       </div>
 

@@ -13,7 +13,7 @@ import Check from "@/components/icons/Check.vue";
             <h2 v-html="content['tickets']['title']" />
             <div class="subtitle" v-html="content['tickets']['subtitle']"/>
             <div v-html="content['tickets']['email_text']"/>
-            <a class="link" :href="'mailto:' + content['common']['email']">{{ content['common']['email'] }}</a>
+            <a class="link" :href="'mailto:' + content['common']['email']" target="_blank"  >{{ content['common']['email'] }}</a>
           </div>
           <TicketIcon/>
         </div>
@@ -28,7 +28,7 @@ import Check from "@/components/icons/Check.vue";
                   <span v-if="plan['subtitle']" class="subtitle" v-html="plan['subtitle']"></span>
                 </div>
                 <div v-if="plan['text']">
-                  <a :href="content['common']['button_url']" class="btn">{{ content['tickets']['button_text']}}</a>
+                  <a :href="content['common']['button_url']" target="_blank" class="btn">{{ content['tickets']['button_text']}}</a>
                   <span class="text" v-html="plan['text']" />
                 </div>
               </div>

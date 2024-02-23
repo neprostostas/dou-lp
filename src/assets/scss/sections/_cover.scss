@@ -3,8 +3,10 @@
   padding: 40px 0 80px;
   background-image: url($imagePath + 'hero_bg-1920.png'), var(--gradient_dark);
   background-repeat: no-repeat!important;
-  background-position: center;
-  background-size: cover;
+  //background-position: center;
+  //background-size: cover;
+  background-size: 130%;
+  background-position: bottom 60% right 50%;
 
   .container {
     display: flex;
@@ -23,10 +25,19 @@
       display: block;
       line-height: 1.2;
     }
+
+    span.fw-400 {
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 48px;
+    }
+
   }
 
   .info {
     @include flexbox();
+    display: none;
     width: 100%;
     font-size: 40px;
     font-weight: 700;
@@ -99,4 +110,12 @@
     }
 
   }
+}
+
+@media (max-width: 985px) {
+
+  .info {
+    display: flex!important;
+  }
+
 }

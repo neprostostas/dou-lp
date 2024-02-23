@@ -305,7 +305,7 @@
             {
               "image": "program_comitet/Maistrenko1.jpeg",
               "name": "Олександр Майстренко",
-              "position": "Радник CDTO в Київській міській державній адміністрації",
+              "position": "Радник CDTO в КМДА",
               "link": "https://dou.ua/users/oleksandr-maistrenko/"
             },
             {
@@ -785,11 +785,11 @@
       },
       {
         "q": "Чи можна придбати квиток у день івенту?",
-        "a": "Так, на сайті <a class='link' href='https://concert.ua/en'>concert.ua</a> — якщо залишаться. Кількість квитків обмежена."
+        "a": "Так, на сайті <a class='link' href='https://concert.ua/en' target='_blank'>concert.ua</a> — якщо залишаться. Кількість квитків обмежена."
       },
       {
         "q": "Чи можна оплатити квиток від юрособи?",
-        "a": "Так, за посиланням: <a class='link' href='https://concert.ua/uk/page/opt'>https://concert.ua/uk/page/opt</a>"
+        "a": "Так, за посиланням: <a class='link' href='https://concert.ua/uk/page/opt' target='_blank'>https://concert.ua/uk/page/opt</a>"
       }
     ]
   },
@@ -798,23 +798,23 @@
     "socials": [
       {
         "name": "linkedin",
-        "url": "#"
+        "url": "https://www.linkedin.com/company/developers.org.ua/"
       },
       {
         "name": "facebook",
-        "url": "#"
+        "url": "https://www.facebook.com/doucommunity"
       },
       {
         "name": "twitter",
-        "url": "#"
+        "url": "https://twitter.com/doucommunity"
       },
       {
         "name": "instagram",
-        "url": "#"
+        "url": "https://www.instagram.com/doucommunity/"
       },
       {
         "name": "telegram",
-        "url": "#"
+        "url": "https://t.me/doucommunity"
       }
     ]
   },

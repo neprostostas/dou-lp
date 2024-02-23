@@ -16,6 +16,16 @@ header {
     flex-wrap: wrap;
   }
 
+  .wrap, .wrapper-date {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .wrapper-date div {
+    font-weight: 500;
+  }
+
   .burger {
     display: none;
     flex: 0;
@@ -34,7 +44,7 @@ header {
     }
   }
 
-  @include res('mobile') {
+  @media (max-width: 800px) {
     .container {
       align-items: center;
     }
@@ -116,4 +126,32 @@ header {
       opacity: 0;
     }
   }
+}
+
+.mobile {
+  display: none;
+}
+
+#burger .mobile {
+  display: none;
+}
+
+@media (max-width: 1045px) {
+
+  header .wrap {
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 985px) {
+
+  header .wrap {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
 }

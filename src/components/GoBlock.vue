@@ -34,7 +34,7 @@ export default {
       </div>
 
       <div class="flex-center">
-        <a class="circle" href="https://concert.ua/uk/event/dou-day">
+        <a class="circle" href="https://concert.ua/uk/event/dou-day" target="_blank">
           <span>тисни</span>
           <span>ТУТ</span>
         </a>

@@ -71,7 +71,6 @@
     }
     .speaker_item {
       @include flexbox(row, flex-start, flex-start);
-      align-items: center;
       cursor: pointer;
       padding: 20px;
       border: 1px transparent solid;
@@ -285,4 +284,8 @@
       font-size: 30px;
     }
   }
+}
+
+.about-speaker .about-text {
+  font-size: 18px;
 }

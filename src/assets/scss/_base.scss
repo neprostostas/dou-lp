@@ -106,9 +106,14 @@ h4,
   }
 }
 
+#speakers .link {
+  color: unset!important;
+  text-decoration: unset!important;
+}
+
 .link {
-  //color: var(--azure);
-  //text-decoration: underline;
+  color: var(--azure);
+  text-decoration: underline;
   padding-bottom: 7px;
 
   &:hover {

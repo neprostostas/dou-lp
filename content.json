@@ -25,7 +25,7 @@
     ]
   },
   "cover": {
-    "address": "Київ",
+    "address": "Київ,&nbsp;",
     "date": "18 травня",
     "title": "<span class='fs-80 fs-m-40'>DOU Day</span><span class='fw-400'>перша велика <br> конференція DOU</span><span class='fs-60 fs-m-40'>ТУТ</span>"
   },
@@ -128,7 +128,7 @@
             {
               "image": "speakers/Ishchenko.jpeg",
               "title": "",
-              "name": "Макс Іщенко",
+              "name": "Макс Іщенко &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
               "position": "Founder DOU & Djinni",
               "link": "https://www.linkedin.com/in/maksim/",
 
@@ -206,7 +206,7 @@
               "position": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "link": "https://dou.ua/users/Anastasiia-Voitova/",
 
-              "description": "",
+              "description": "Інженерка із кібербезпеки зі спеціалізацією в області захисту даних, криптографії та прикладної безпеки, CISSP. За 10 років пройшла шлях від розробниці до керівниці напрямку security engineering. Вона ділиться досвідом про архітектуру безпеки програмного забезпечення, безпечну розробку, шифрування, системи нульового знання та нульової довіри. Анастасія брала участь у міжнародних конференціях, співпрацювала у розробці рекомендацій OWASP, проводила спеціалізовані тренінги для розробників в Швейцарії та в офісах Apple в Купертіно. Twitter (X): @vixentael",
               "about_title": "Анастасія Войтова",
               "about_text": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "socials": [
@@ -502,7 +502,7 @@
               "position": "Chief Product Officer в Hily",
               "link": "https://dou.ua/users/liubomyr-pivtorak/",
 
-              "description": "",
+              "description": "Протягом 9 років займався продуктовим менеджментом, пройшовши шлях від посади Junior Ad Ops Manager до CPO (Chief Product Officer) в компанії appflame. Керуює декількома продуктовими командами та напрямками. Разом з командою успішно запустили два продукти для знайомств, які займають топові позиції в App Store / Google Play з понад 50 млн завантажень. Зараз активно працює над розвитком продукту для знайомств Hily на ринку США.",
               "about_title": "Любомир Півторак",
               "about_text": "Chief Product Officer в Hily",
               "socials": [
@@ -756,7 +756,9 @@
       { "name": "universe.png", "url": "https://jobs.dou.ua/companies/universe/", "alt": "universe" },
       { "name": "readdle.png", "url": "https://jobs.dou.ua/companies/readdle-inc/", "alt": "readdle" },
       { "name": "skylum.png", "url": "https://jobs.dou.ua/companies/skylum-software/", "alt": "skylum" },
-      { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" }
+      { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" },
+      { "name": "mojam.png", "url": "https://jobs.dou.ua/companies/mojam/", "alt": "mojam" },
+      { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

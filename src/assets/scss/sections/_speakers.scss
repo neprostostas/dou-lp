@@ -15,7 +15,7 @@
 
   h3 {
     font-size: 40px;
-    margin: 0 0 60px;
+    margin: 0 0 20px;
   }
 
   h4 {
@@ -148,7 +148,7 @@
       .speaker_item {
         gap: 15px;
         width: 33.3%;
-        flex-direction: row-reverse;
+        //flex-direction: row-reverse;
       }
 
     }
@@ -335,8 +335,14 @@
   font-size: 18px;
 }
 
+@media (max-width: 960px) {
+  #speakers .stage .main .speaker_item {
+    width: 50%;
+  }
+}
+
 @media (max-width: 800px) {
   #speakers .stage .main .speaker_item {
-    justify-content: flex-end!important;
+    //justify-content: flex-end!important;
   }
 }

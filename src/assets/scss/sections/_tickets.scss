@@ -148,12 +148,18 @@
     .plan0 {
       &.plan-box {
         padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 
     .plan1 {
       &.plan-box {
         padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 

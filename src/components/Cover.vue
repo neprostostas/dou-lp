@@ -17,7 +17,7 @@ import Button from "@/components/Button.vue";
 <!--      <div class="mobile-address" v-html="content['cover']['address']"></div>-->
 
       <div class="btn-row">
-        <Button/>
+        <Button />
       </div>
     </div>
   </section>

@@ -24,6 +24,7 @@
       display: flex;
       gap: 20px;
       justify-content: space-between;
+      align-items: flex-start;
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 20px;
@@ -46,7 +47,7 @@
     }
 
     .icon {
-      transition: .4s;
+      transition: .2s;
       width: 22px;
     }
 
@@ -59,13 +60,13 @@
     }
 
     &.open {
-      .icon {
-        transform: rotate(180deg);
+      .accordion-body {
+        overflow: hidden;
+        max-height: 200px;
       }
 
-      .accordion-body {
-        overflow: auto;
-        max-height: 200px;
+      .icon {
+        transform: rotate(180deg);
       }
 
     }
@@ -79,6 +80,9 @@
     }
 
     .accordion {
+
+      margin: 0 0 20px;
+
       .accordion-header {
         font-size: 20px;
       }

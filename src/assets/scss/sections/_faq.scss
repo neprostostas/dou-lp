@@ -22,6 +22,7 @@
       transition: .5s;
       cursor: pointer;
       display: flex;
+      gap: 20px;
       justify-content: space-between;
       font-size: 30px;
       font-weight: 700;
@@ -46,7 +47,6 @@
 
     .icon {
       transition: .4s;
-      transform: rotate(180deg);
       width: 22px;
     }
 
@@ -60,7 +60,7 @@
 
     &.open {
       .icon {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
       }
 
       .accordion-body {

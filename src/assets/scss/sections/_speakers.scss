@@ -78,6 +78,12 @@
       &:hover {
         border: 1px var(--azure) solid;
       }
+
+      &.unhover:hover {
+        border: 1px transparent solid;
+        cursor: auto;
+      }
+
     }
 
     .image-box {
@@ -210,9 +216,20 @@
   @include flexbox(row, center, center);
   padding: 100px 0;
 
+  .lightbox-body:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--violet);
+  }
+
   .lightbox-body {
-    @include border(var(--azure));
-    width: 610px;
+    @include border(var(--violet));
+    width: 630px;
     margin: auto;
     padding: 40px;
     z-index: 100;
@@ -223,10 +240,16 @@
     }
 
     .close {
+      cursor: pointer;
       width: 30px;
+
+      path {
+        transition: .3s;
+      }
 
       &:hover {
         path {
+          transition: .3s;
           stroke: var(--bright_yellow);
         }
       }
@@ -254,16 +277,17 @@
     padding: 5px;
   }
 
+  .content-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px;
+  }
+
   .content {
     @include flexbox(row, space-between, flex-start);
     gap: 15px;
     margin: 40px 0 40px;
 
-    .content-title {
-      font-size: 30px;
-      font-weight: 700;
-      margin: 0 0 15px;
-    }
   }
 
   .social {

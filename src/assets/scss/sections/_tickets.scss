@@ -63,6 +63,7 @@
   }
 
   .btn:not(.btn-primary) {
+    margin: 15px 10px 5px!important;
     transition: .5s;
     @include border(var(--white));
     color: var(--white);
@@ -119,7 +120,7 @@
     display: block;
     font-size: 40px;
     font-weight: 700;
-    padding: 15px 0;
+    padding: 30px 0;
 
     span {
       font-size: 16px;
@@ -226,7 +227,11 @@
     }
   }
 
-  @include res('mobile') {
+}
+
+@media (max-width: 860px) {
+
+  #tickets {
     padding: 20px 0 40px;
 
     .main-content {
@@ -252,10 +257,13 @@
       padding: 40px 0;
     }
 
-    .plans-wrapper {
+    .plans-wrapper:first-of-type {
       .plans-info {
         flex-direction: column;
       }
+    }
+
+    .plans-wrapper {
 
       .price {
         font-size: 30px;
@@ -268,4 +276,23 @@
       }
     }
   }
+}
+
+@media (max-width: 767px) {
+
+  #tickets .abilities :is(.header, .abilities-item)  {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  #tickets .abilities .abilities-item span:first-of-type {
+    font-size: 14px;
+  }
+
+  #tickets .abilities :is(.title, .header span) {
+    font-size: 13px;
+  }
+
 }

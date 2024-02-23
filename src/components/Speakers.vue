@@ -44,7 +44,7 @@ function handleClick(link) {
         <div class="main">
           <h3>{{ stage['main']['title'] }}</h3>
           <div class="list">
-            <div v-for="item in stage['main']['list']" class="speaker_item" @click="showSpeaker(item, stage)">
+            <div v-for="item in stage['main']['list']" class="speaker_item" :class="{ unhover: stage['main']['title'] === 'Main Stage' || item['name'] === 'Секретний спікер' }" @click="showSpeaker(item, stage)">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
                 <!--<Info @click="showSpeaker(item)"/>-->
@@ -71,7 +71,7 @@ function handleClick(link) {
         <div v-show="stage['sub']" class="sub">
           <h4>{{ stage['sub']['title'] }}</h4>
           <div class="list">
-            <div v-for="item in stage['sub']['list']" class="speaker_item">
+            <div v-for="item in stage['sub']['list']" class="speaker_item unhover">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
               </div>
@@ -91,12 +91,14 @@ function handleClick(link) {
 
   <Lightbox :show="showLightbox" @close="emit('handleLightbox', false)">
     <div class="about-speaker">
+<!--      <p class="content-title" v-html="lightboxData.about_title" />-->
       <div class="title" v-html="lightboxData.title" />
-      <p class="about-text" v-html="lightboxData.description"/>
+<!--      <p class="about-text" v-html="lightboxData.description"/>-->
       <div class="content">
         <div class="content-box">
           <p class="content-title" v-html="lightboxData.about_title" />
-          <p v-html="lightboxData.about_text" />
+          <p class="about-text" v-html="lightboxData.description"/>
+<!--          <p v-html="lightboxData.about_text" />-->
         </div>
         <div class="image-box">
           <img class="avatar" :src="imagePath + lightboxData.image" :alt="lightboxData.title">

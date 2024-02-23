@@ -34,6 +34,10 @@
     padding-bottom: 10px;
   }
 
+  .sub .content-box a span {
+    font-size: 15px;
+  }
+
   .stage {
 
     &:nth-child(2) {
@@ -71,6 +75,7 @@
     }
     .speaker_item {
       @include flexbox(row, flex-start, flex-start);
+      //justify-content: space-between;
       cursor: pointer;
       padding: 20px;
       border: 1px transparent solid;
@@ -109,7 +114,23 @@
       font-weight: 600;
     }
 
-    .name, .position {
+    .name {
+        color: #333;
+        font-size: 20px;
+        font-style: normal;
+        margin-top: 0;
+        text-align: left;
+        font-family: "IBM Plex Sans",sans-serif;
+        font-weight: 600;
+        line-height: 24px;
+
+      &:hover {
+        color: var(--red);
+      }
+
+    }
+
+    .position {
       font-size: 15px;
     }
 
@@ -312,4 +333,10 @@
 
 .about-speaker .about-text {
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  #speakers .stage .main .speaker_item {
+    justify-content: flex-end!important;
+  }
 }

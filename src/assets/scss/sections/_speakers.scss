@@ -339,6 +339,10 @@
   #speakers .stage .main .speaker_item {
     width: 50%;
   }
+
+  #speakers .stage .sub .speaker_item {
+    width: 33.333%;
+  }
 }
 
 @media (max-width: 800px) {

@@ -1,30 +1,23 @@
 <script>
-import { ref } from 'vue';
-import people1 from '@/assets/images/people/people1.png';
-import people2 from '@/assets/images/people/people2.png';
-import people3 from '@/assets/images/people/people3.png';
-import people4 from '@/assets/images/people/people4.png';
-import people5 from '@/assets/images/people/people5.png';
+import { ref, onMounted } from 'vue';
+import { fetchPeopleData } from '@/services/api/fetchPeople.js';
 
 export default {
   setup() {
-    const images = [people1, people2, people3, people4, people5];
     const peopleImages = ref([]);
-    const totalImages = images.length;
-    const targetCount = 39;
-    for (let i = 0; i < targetCount; i++) {
-      const imageIndex = i % totalImages;
-      peopleImages.value.push({
-        src: images[imageIndex],
-        alt: `Person ${imageIndex + 1}`
-      });
-    }
+
+    onMounted(async () => {
+      peopleImages.value = await fetchPeopleData();
+    });
+
     return {
       peopleImages,
     };
   },
 };
 </script>
+
+
 
 <template>
   <section id="goblock">
@@ -45,7 +38,9 @@ export default {
       </div>
 
       <div class="people">
-        <img v-for="(image, index) in peopleImages" :key="index" :src="image.src" :alt="image.alt" />
+        <a v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
+          <img :src="image?.src" :alt="image?.alt" />
+        </a>
       </div>
 
     </div>

@@ -13,6 +13,7 @@ export default {
     onMounted(async () => {
       await updatePeopleImages();
       isUserGoes.value = window.USER_GOES; // Встановлення початкового стану
+      console.log("onMount: isUserGoes - ", isUserGoes.value);
     });
 
     const updatePeopleImages = async () => {
@@ -25,6 +26,7 @@ export default {
         if (eventSuccess) {
           await updatePeopleImages();
           isUserGoes.value = true; // Update state only on successful API response
+          console.log("after API: isUserGoes - ", isUserGoes.value);
         }
       }
     };

@@ -1,5 +1,5 @@
 <script>
-import { ref, onMounted } from 'vue';
+import {ref, onMounted} from 'vue';
 import {fetchPeopleData, goEvent} from '@/services/api/fetchPeople.js';
 
 export default {
@@ -9,12 +9,21 @@ export default {
   setup() {
     const peopleImages = ref([]);
 
-    onMounted(async () => {
+    const updatePeopleImages = async () => {
       peopleImages.value = await fetchPeopleData();
+    };
+
+    onMounted(async () => {
+      await updatePeopleImages();
     });
+
+    const goEventAndUpdate = async () => {
+      await goEvent(updatePeopleImages);
+    };
 
     return {
       peopleImages,
+      goEventAndUpdate
     };
   },
 };
@@ -29,7 +38,7 @@ export default {
         <div v-html="content['goblock']['title']"></div>
       </div>
 
-      <div class="flex-center" @click="goEvent">
+      <div class="flex-center" @click="goEventAndUpdate">
         <button class="circle">
           <span>тисни</span>
           <span>ТУТ</span>

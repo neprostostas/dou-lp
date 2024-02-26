@@ -18,7 +18,7 @@ export const fetchPeopleData = async () => {
     }
 };
 
-export const goEvent = async () => {
+export const goEvent = async (callback) => {
 
     // - якщо юзер не залогінен (window.USER_ID=="") - позвати функцію loginshow();
     // - якщо залогінен, то відправити оті json вище на /calendar/events-ajax/
@@ -47,6 +47,9 @@ export const goEvent = async () => {
 
             // Логування відповіді сервера
             console.log('Response:', response.data);
+
+            if(callback) callback();
+
         } catch (error) {
             console.error('Error:', error);
         }

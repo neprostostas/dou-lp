@@ -63,14 +63,13 @@ export default {
         </a>
       </div>
 
-
       <div class="info second">
         <div class="text" v-html="content['goblock']['text']"></div>
       </div>
 
       <div class="people">
         <a v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
-          <img :src="image?.src" :alt="image?.alt" />
+          <img :src="image?.src.replace('/25x25', '/200x200')" :alt="image?.alt" />
         </a>
       </div>
 

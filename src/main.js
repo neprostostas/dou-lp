@@ -12,7 +12,14 @@ import {createApp} from 'vue'
 import App from './App.vue'
 
 const app = createApp(App)
-app.config.globalProperties.imagePath = "/images/"
+
+// Перевірка поточного URL і встановлення відповідного imagePath
+if (window.location.hostname === 'dou.ua') {
+    app.config.globalProperties.imagePath = "https://dou.ua/assets/dou-day-2024/images/";
+} else {
+    app.config.globalProperties.imagePath = "/images/";
+}
+
 app.config.globalProperties.content = allContent
 
 app

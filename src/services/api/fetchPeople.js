@@ -28,7 +28,7 @@ export const goEvent = async () => {
     if (window.USER_ID !== '') {
         try {
             // Отримання кукі csrftoken
-            // const csrftoken = document.cookie.split('; ').find(row => row.startsWith('csrftoken=')).split('=')[1];
+            const csrftoken = document.cookie.split('; ').find(row => row.startsWith('csrftoken=')).split('=')[1];
 
             const response = await axios.post(API_URL, {
                 csrfmiddlewaretoken: window.CSRF_TOKEN,
@@ -36,7 +36,7 @@ export const goEvent = async () => {
                 event_id: window.EVENT_ID
             }, {
                 headers: {
-                    // "X-CSRFToken": csrftoken
+                    "X-CSRFToken": csrftoken
                 },
                 withCredentials: true
             });

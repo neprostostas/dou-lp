@@ -23,7 +23,7 @@ export default {
     };
 
     const goEventAndUpdate = async () => {
-      // if (!isUserGoes.value) {
+      if (!isUserGoes.value) {
         const response = await goEvent();
         if (response.success) {
           await updatePeopleImages();
@@ -32,7 +32,7 @@ export default {
           console.log("eventData: ", eventData.value);
           console.log("after API: isUserGoes - ", isUserGoes.value);
         }
-      // }
+      }
     };
 
 

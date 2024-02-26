@@ -68,8 +68,8 @@ export default {
       </div>
 
       <div class="people">
-        <a v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
-          <img :src="image?.src.replace('/25x25', '/200x200')" :alt="image?.alt" />
+        <a class="a-image-me" v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
+          <img class="image-me" :src="image?.src.replace('/25x25', '/200x200')" :alt="image?.alt" />
         </a>
       </div>
 

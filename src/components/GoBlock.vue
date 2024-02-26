@@ -30,7 +30,7 @@ export default {
       </div>
 
       <div class="flex-center" @click="goEvent">
-        <a class="circle" href="https://concert.ua/uk/event/dou-day" target="_blank">
+        <a class="circle" href="javascript:void(0);" target="_blank">
           <span>тисни</span>
           <span>ТУТ</span>
         </a>

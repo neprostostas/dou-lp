@@ -10,6 +10,10 @@ export default {
     const peopleImages = ref([]);
     const isUserGoes = ref(false);
 
+    const user_imgSrc = window.user_imgSrc
+    const user_name = window.user_name
+    const user_url = window.user_url
+
     onMounted(async () => {
       await updatePeopleImages();
       isUserGoes.value = window.USER_GOES; // Встановлення початкового стану
@@ -37,6 +41,9 @@ export default {
       peopleImages,
       goEventAndUpdate,
       isUserGoes,
+      user_imgSrc,
+      user_name,
+      user_url
     };
   },
 };
@@ -54,8 +61,8 @@ export default {
           <span>тисни</span>
           <span>ТУТ</span>
         </button>
-        <a v-else class="a-image-me" :href="window?.user_url" target="_blank">
-          <img class="image-me" :src="window?.user_imgSrc?.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="window?.user_name">
+        <a v-else class="a-image-me" :href="user_url" target="_blank">
+          <img class="image-me" :src="user_imgSrc?.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="user_name">
         </a>
       </div>
 

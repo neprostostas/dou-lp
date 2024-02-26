@@ -9,14 +9,18 @@ export default {
   setup() {
     const peopleImages = ref([]);
     const isUserGoes = ref(false);
-    const user_imgSrc = ref(window.user_imgSrc)
-    const user_name = ref(window.user_name)
-    const user_url = ref(window.user_url)
+    const user_imgSrc = ref("")
+    const user_name = ref("")
+    const user_url = ref("")
 
     onMounted(async () => {
       await updatePeopleImages();
       isUserGoes.value = window.USER_GOES; // Встановлення початкового стану
       console.log("onMount: isUserGoes - ", isUserGoes.value);
+
+      user_imgSrc.value = window.user_imgSrc
+      user_name.value = window.user_name
+      user_url.value = window.user_url
     });
 
     const updatePeopleImages = async () => {

@@ -18,25 +18,17 @@ export const fetchPeopleData = async () => {
     }
 };
 
-export const goEvent = async (callback) => {
-
-    // - якщо юзер не залогінен (window.USER_ID=="") - позвати функцію loginshow();
-    // - якщо залогінен, то відправити оті json вище на /calendar/events-ajax/
-
+export const goEvent = async () => {
     const API_URL = "https://dou.ua/calendar/events-ajax/";
 
     if (window.USER_ID !== '') {
         try {
-            // Отримання кукі csrftoken
             const csrftoken = document.cookie.split('; ').find(row => row.startsWith('csrftoken=')).split('=')[1];
-
-            // Формування даних у форматі x-www-form-urlencoded
             const params = new URLSearchParams();
             params.append('csrfmiddlewaretoken', window.CSRF_TOKEN);
             params.append('user', window.USER_ID);
             params.append('event_id', window.EVENT_ID);
 
-            // Відправлення запиту з axios
             const response = await axios.post(API_URL, params, {
                 headers: {
                     "X-CSRFToken": csrftoken,
@@ -45,16 +37,14 @@ export const goEvent = async (callback) => {
                 withCredentials: true
             });
 
-            // Логування відповіді сервера
             console.log('Response:', response.data);
-
-            if(callback) callback();
-
+            return response.data.type === 'add'; // Return true if event registration is successful
         } catch (error) {
             console.error('Error:', error);
+            return false; // Return false on error
         }
     } else {
         loginshow();
+        return false; // Return false if user is not logged in
     }
-
-}
+};

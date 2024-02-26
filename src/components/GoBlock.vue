@@ -8,28 +8,35 @@ export default {
   },
   setup() {
     const peopleImages = ref([]);
+    const isUserGoes = ref(false); // Реактивна обгортка
+
+    onMounted(async () => {
+      await updatePeopleImages();
+      isUserGoes.value = window.USER_GOES; // Встановлення початкового стану
+    });
 
     const updatePeopleImages = async () => {
       peopleImages.value = await fetchPeopleData();
     };
 
-    onMounted(async () => {
-      await updatePeopleImages();
-    });
-
     const goEventAndUpdate = async () => {
-      await goEvent(updatePeopleImages);
+      if (!isUserGoes.value) {
+        const eventSuccess = await goEvent();
+        if (eventSuccess) {
+          await updatePeopleImages();
+          isUserGoes.value = true; // Update state only on successful API response
+        }
+      }
     };
 
     return {
       peopleImages,
-      goEventAndUpdate
+      goEventAndUpdate,
+      isUserGoes
     };
   },
 };
 </script>
-
-
 
 <template>
   <section id="goblock">

@@ -38,13 +38,25 @@ export const goEvent = async () => {
             });
 
             console.log('Response:', response.data);
-            return response.data.type === 'add'; // Return true if event registration is successful
+
+            if (response.data.type === 'add') {
+                return {
+                    success: true,
+                    eventData: {
+                        imgSrc: response.data.img_src,
+                        name: response.data.name,
+                        url: response.data.url
+                    }
+                };
+            } else {
+                return { success: false };
+            }
         } catch (error) {
             console.error('Error:', error);
-            return false; // Return false on error
+            return { success: false };
         }
     } else {
         loginshow();
-        return false; // Return false if user is not logged in
+        return { success: false };
     }
 };

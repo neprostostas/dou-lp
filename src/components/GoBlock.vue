@@ -9,6 +9,7 @@ export default {
   setup() {
     const peopleImages = ref([]);
     const isUserGoes = ref(false); // Реактивна обгортка
+    const eventData = ref({});
 
     onMounted(async () => {
       await updatePeopleImages();
@@ -18,23 +19,28 @@ export default {
 
     const updatePeopleImages = async () => {
       peopleImages.value = await fetchPeopleData();
+      console.log(peopleImages);
     };
 
     const goEventAndUpdate = async () => {
-      if (!isUserGoes.value) {
-        const eventSuccess = await goEvent();
-        if (eventSuccess) {
+      // if (!isUserGoes.value) {
+        const response = await goEvent();
+        if (response.success) {
           await updatePeopleImages();
-          isUserGoes.value = true; // Update state only on successful API response
+          isUserGoes.value = true;
+          eventData.value = response.eventData; // Store the event data
+          console.log("eventData: ", eventData.value);
           console.log("after API: isUserGoes - ", isUserGoes.value);
         }
-      }
+      // }
     };
+
 
     return {
       peopleImages,
       goEventAndUpdate,
-      isUserGoes
+      isUserGoes,
+      eventData
     };
   },
 };
@@ -48,11 +54,15 @@ export default {
       </div>
 
       <div class="flex-center" @click="goEventAndUpdate">
-        <button class="circle">
+        <button v-if="!isUserGoes.value" class="circle">
           <span>тисни</span>
           <span>ТУТ</span>
         </button>
+        <a v-else :href="eventData?.url" target="_blank">
+          <img :src="eventData?.imgSrc" :alt="eventData?.name">
+        </a>
       </div>
+
 
       <div class="info second">
         <div class="text" v-html="content['goblock']['text']"></div>

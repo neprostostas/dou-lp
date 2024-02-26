@@ -9,9 +9,9 @@ export default {
   setup() {
     const peopleImages = ref([]);
     const isUserGoes = ref(false);
-    const user_imgSrc = ref("")
-    const user_name = ref("")
-    const user_url = ref("")
+    const user_imgSrc = ref(window.user_imgSrc)
+    const user_name = ref(window.user_name)
+    const user_url = ref(window.user_url)
 
     onMounted(async () => {
       await updatePeopleImages();
@@ -33,6 +33,14 @@ export default {
         const response = await goEvent();
         if (response.success) {
           await updatePeopleImages();
+          window.user_imgSrc =  response.eventData.imgSrc
+          window.user_name =  response.eventData.name
+          window.user_url =  response.eventData.url
+
+          user_imgSrc.value = window.user_imgSrc
+          user_name.value = window.user_name
+          user_url.value = window.user_url
+
           isUserGoes.value = true;
           console.log("after API: isUserGoes - ", isUserGoes.value);
         }

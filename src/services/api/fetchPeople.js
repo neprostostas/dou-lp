@@ -40,13 +40,13 @@ export const goEvent = async () => {
             console.log('Response:', response.data);
 
             if (response.data.type === 'add') {
+
+                window.user_imgSrc = response.data.img_src
+                window.user_name = response.data.name
+                window.user_url = response.data.url
+
                 return {
                     success: true,
-                    eventData: {
-                        imgSrc: response.data.img_src,
-                        name: response.data.name,
-                        url: response.data.url
-                    }
                 };
             } else {
                 return { success: false };

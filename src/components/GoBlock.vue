@@ -8,8 +8,7 @@ export default {
   },
   setup() {
     const peopleImages = ref([]);
-    const isUserGoes = ref(false); // Реактивна обгортка
-    const eventData = ref({});
+    const isUserGoes = ref(false);
 
     onMounted(async () => {
       await updatePeopleImages();
@@ -28,8 +27,6 @@ export default {
         if (response.success) {
           await updatePeopleImages();
           isUserGoes.value = true;
-          eventData.value = response.eventData; // Store the event data
-          console.log("eventData: ", eventData.value);
           console.log("after API: isUserGoes - ", isUserGoes.value);
         }
       }
@@ -40,7 +37,6 @@ export default {
       peopleImages,
       goEventAndUpdate,
       isUserGoes,
-      eventData
     };
   },
 };
@@ -58,8 +54,8 @@ export default {
           <span>тисни</span>
           <span>ТУТ</span>
         </button>
-        <a v-else class="a-image-me" :href="eventData?.url" target="_blank">
-          <img class="image-me" :src="eventData?.imgSrc?.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="eventData?.name">
+        <a v-else class="a-image-me" :href="window?.user_url" target="_blank">
+          <img class="image-me" :src="window?.user_imgSrc?.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="window?.user_name">
         </a>
       </div>
 

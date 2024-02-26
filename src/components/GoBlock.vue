@@ -36,6 +36,14 @@ export default {
       if (!isUserGoes.value) {
         const response = await goEvent();
         if (response.success) {
+
+          const userData = JSON.parse(localStorage.getItem('user_data'));
+          if (userData) {
+            user_imgSrc.value = userData.imgSrc;
+            user_name.value = userData.name;
+            user_url.value = userData.url;
+          }
+
           await updatePeopleImages();
           isUserGoes.value = true;
           console.log("after API: isUserGoes - ", isUserGoes.value);

@@ -31,7 +31,7 @@ export const goEvent = async () => {
             const csrftoken = document.cookie.split('; ').find(row => row.startsWith('csrftoken=')).split('=')[1];
 
             const response = await axios.post(API_URL, {
-                csrfmiddlewaretoken: window.CSRF_TOKEN,
+                // csrfmiddlewaretoken: window.CSRF_TOKEN,
                 user: window.USER_ID,
                 event_id: window.EVENT_ID
             }, {

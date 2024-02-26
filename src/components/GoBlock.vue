@@ -1,8 +1,11 @@
 <script>
 import { ref, onMounted } from 'vue';
-import { fetchPeopleData } from '@/services/api/fetchPeople.js';
+import {fetchPeopleData, goEvent} from '@/services/api/fetchPeople.js';
 
 export default {
+  methods: {
+    goEvent
+  },
   setup() {
     const peopleImages = ref([]);
 
@@ -26,7 +29,7 @@ export default {
         <div v-html="content['goblock']['title']"></div>
       </div>
 
-      <div class="flex-center">
+      <div class="flex-center" @click="goEvent">
         <a class="circle" href="https://concert.ua/uk/event/dou-day" target="_blank">
           <span>тисни</span>
           <span>ТУТ</span>

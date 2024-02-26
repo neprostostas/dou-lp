@@ -346,8 +346,28 @@
   }
 }
 
-@media (max-width: 800px) {
-  #speakers .stage .main .speaker_item {
-    //justify-content: flex-end!important;
+
+@media (max-width: 767px) {
+
+  .about-speaker .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .lightbox-content {
+    position: relative;
+  }
+
+  .lightbox-content .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .about-speaker .content {
+    margin: 0;
   }
 }

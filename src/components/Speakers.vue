@@ -1,6 +1,6 @@
 <script setup>
 import Lightbox from "@/components/Lightbox.vue";
-import {ref, watch, watchEffect} from "vue";
+import {ref, computed, watch, watchEffect} from "vue";
 
 const props = defineProps({
   showLightbox: Boolean,
@@ -32,6 +32,11 @@ function handleClick(link) {
     event.preventDefault();
   }
 }
+
+const processedDescription = computed(() => {
+  if (!lightboxData.value.description) return [];
+  return lightboxData.value.description.split('\n').filter(line => line.trim() !== '');
+});
 
 </script>
 
@@ -97,7 +102,10 @@ function handleClick(link) {
       <div class="content">
         <div class="content-box">
           <p class="content-title" v-html="lightboxData.about_title" />
-          <p class="about-text" v-html="lightboxData.description"/>
+
+     <!-- <p class="about-text" v-html="lightboxData.description"/>-->
+          <p class="about-text" v-for="(line, index) in processedDescription" :key="index" v-html="line"></p>
+
 <!--          <p v-html="lightboxData.about_text" />-->
         </div>
         <div class="image-box">

@@ -9,10 +9,9 @@ export default {
   setup() {
     const peopleImages = ref([]);
     const isUserGoes = ref(false);
-
-    const user_imgSrc = window.user_imgSrc
-    const user_name = window.user_name
-    const user_url = window.user_url
+    const user_imgSrc = ref(window.user_imgSrc)
+    const user_name = ref(window.user_name)
+    const user_url = ref(window.user_url)
 
     onMounted(async () => {
       await updatePeopleImages();

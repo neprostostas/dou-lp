@@ -19,7 +19,7 @@ export default {
       if (userData) {
         user_imgSrc.value = userData.imgSrc;
         user_name.value = userData.name;
-      } else {
+      } else { // if anonymous user
         user_url.value = window.USER_GOES_URL
       }
 

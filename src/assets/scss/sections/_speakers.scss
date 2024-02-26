@@ -336,6 +336,10 @@
   white-space: pre-wrap;
 }
 
+.mob-span {
+  display: inline;
+}
+
 @media (max-width: 960px) {
   #speakers .stage .main .speaker_item {
     width: 50%;
@@ -369,5 +373,11 @@
 @media (max-width: 600px) {
   .about-speaker .content {
     margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .mob-span {
+    display: block;
   }
 }

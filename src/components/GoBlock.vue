@@ -54,7 +54,7 @@ export default {
       </div>
 
       <div class="flex-center" @click="goEventAndUpdate">
-        <button v-if="!isUserGoes.value" class="circle">
+        <button v-if="!isUserGoes" class="circle">
           <span>тисни</span>
           <span>ТУТ</span>
         </button>

@@ -58,8 +58,8 @@ export default {
           <span>тисни</span>
           <span>ТУТ</span>
         </button>
-        <a v-else :href="eventData?.url" target="_blank">
-          <img :src="eventData?.imgSrc" :alt="eventData?.name">
+        <a v-else class="a-image-me" :href="eventData?.url" target="_blank">
+          <img class="image-me" :src="eventData?.imgSrc.replace('/25x25', '/200x200')" :alt="eventData?.name">
         </a>
       </div>
 
@@ -68,8 +68,8 @@ export default {
       </div>
 
       <div class="people">
-        <a class="a-image-me" v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
-          <img class="image-me" :src="image?.src.replace('/25x25', '/200x200')" :alt="image?.alt" />
+        <a v-for="(image, index) in peopleImages" :key="index" :href="image?.url" target="_blank">
+          <img :src="image?.src" :alt="image?.alt" />
         </a>
       </div>
 

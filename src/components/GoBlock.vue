@@ -9,18 +9,22 @@ export default {
   setup() {
     const peopleImages = ref([]);
     const isUserGoes = ref(false);
-    const user_imgSrc = ref(window.user_imgSrc)
-    const user_name = ref(window.user_name)
-    const user_url = ref(window.user_url)
+    const user_imgSrc = ref("");
+    const user_name = ref("");
+    const user_url = ref("");
 
     onMounted(async () => {
+
+      const userData = JSON.parse(localStorage.getItem('user_data'));
+      if (userData) {
+        user_imgSrc.value = userData.imgSrc;
+        user_name.value = userData.name;
+        user_url.value = userData.url;
+      }
+
       await updatePeopleImages();
       isUserGoes.value = window.USER_GOES; // Встановлення початкового стану
       console.log("onMount: isUserGoes - ", isUserGoes.value);
-
-      user_imgSrc.value = window.user_imgSrc
-      user_name.value = window.user_name
-      user_url.value = window.user_url
     });
 
     const updatePeopleImages = async () => {
@@ -33,14 +37,6 @@ export default {
         const response = await goEvent();
         if (response.success) {
           await updatePeopleImages();
-          window.user_imgSrc =  response.eventData.imgSrc
-          window.user_name =  response.eventData.name
-          window.user_url =  response.eventData.url
-
-          user_imgSrc.value = window.user_imgSrc
-          user_name.value = window.user_name
-          user_url.value = window.user_url
-
           isUserGoes.value = true;
           console.log("after API: isUserGoes - ", isUserGoes.value);
         }
@@ -73,7 +69,7 @@ export default {
           <span>ТУТ</span>
         </button>
         <a v-else class="a-image-me" :href="user_url" target="_blank">
-          <img class="image-me" :src="user_imgSrc?.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="user_name">
+          <img class="image-me" :src="user_imgSrc.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="user_name">
         </a>
       </div>
 

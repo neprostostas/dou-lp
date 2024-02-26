@@ -40,14 +40,17 @@ export const goEvent = async () => {
             console.log('Response:', response.data);
 
             if (response.data.type === 'add') {
+                const userData = {
+                    imgSrc: response.data.img_src,
+                    name: response.data.name,
+                    url: response.data.url
+                };
+
+                localStorage.setItem('user_data', JSON.stringify(userData));
 
                 return {
                     success: true,
-                    eventData: {
-                        imgSrc: response.data.img_src,
-                        name: response.data.name,
-                        url: response.data.url
-                    }
+                    eventData: userData
                 };
             } else {
                 return { success: false };

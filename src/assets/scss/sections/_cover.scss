@@ -112,10 +112,14 @@
   }
 }
 
-@media (max-width: 985px) {
+@media (max-width: 1045px) {
 
   .info {
     display: flex!important;
+  }
+
+  .comma {
+    display: none;
   }
 
 }

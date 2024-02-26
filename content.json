@@ -11,6 +11,10 @@
         "url": "#info"
       },
       {
+        "title": "Про квитки",
+        "url": "#tickets"
+      },
+      {
         "title": "Спікери",
         "url": "#speakers"
       },
@@ -25,7 +29,7 @@
     ]
   },
   "cover": {
-    "address": "Київ,&nbsp;",
+    "address": "Київ<span class='comma'>,&nbsp;</span>",
     "date": "18 травня",
     "title": "<span class='fs-80 fs-m-40'>DOU Day</span><span class='fw-400'>перша велика <br> конференція DOU</span><span class='fs-60 fs-m-40'>ТУТ</span>"
   },
@@ -465,7 +469,7 @@
             {
               "image": "program_comitet/Mikhno.jpeg",
               "name": "Сергій Міхно",
-              "position": "Monitoring Engineer at Wix",
+              "position": "Monitoring Engineer в Wix",
               "link": "https://dou.ua/users/sergey-mikhno/"
             },
             {

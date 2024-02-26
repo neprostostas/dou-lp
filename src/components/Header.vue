@@ -22,7 +22,7 @@ const isOpen = ref(false);
           <span class="burger"></span>
         </div>
 
-        <Button :href="'#tickets'" :self="true"/>
+        <Button />
 
       </div>
 
@@ -30,7 +30,7 @@ const isOpen = ref(false);
         <span class="burger"></span>
       </div>
 
-      <Button class="mobile" :href="'#tickets'" :self="true"/>
+      <Button class="mobile" />
 
 
     </div>

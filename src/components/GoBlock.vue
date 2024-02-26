@@ -11,7 +11,6 @@ export default {
     const isUserGoes = ref(false);
     const user_imgSrc = ref("");
     const user_name = ref("");
-    const user_url = ref("");
 
     onMounted(async () => {
 
@@ -19,7 +18,6 @@ export default {
       if (userData) {
         user_imgSrc.value = userData.imgSrc;
         user_name.value = userData.name;
-        user_url.value = userData.url;
       }
 
       await updatePeopleImages();
@@ -41,7 +39,6 @@ export default {
           if (userData) {
             user_imgSrc.value = userData.imgSrc;
             user_name.value = userData.name;
-            user_url.value = userData.url;
           }
 
           await updatePeopleImages();
@@ -58,7 +55,6 @@ export default {
       isUserGoes,
       user_imgSrc,
       user_name,
-      user_url
     };
   },
 };
@@ -76,9 +72,9 @@ export default {
           <span>тисни</span>
           <span>ТУТ</span>
         </button>
-        <a v-else class="a-image-me" :href="user_url" target="_blank">
+        <div v-else class="a-image-me">
           <img class="image-me" :src="user_imgSrc.replace('/25x25', '/200x200').replace('/50x50', '/200x200')" :alt="user_name">
-        </a>
+        </div>
       </div>
 
       <div class="info second">

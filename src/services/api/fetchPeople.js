@@ -43,7 +43,6 @@ export const goEvent = async () => {
                 const userData = {
                     imgSrc: response.data.img_src,
                     name: response.data.name,
-                    url: response.data.url
                 };
 
                 localStorage.setItem('user_data', JSON.stringify(userData));

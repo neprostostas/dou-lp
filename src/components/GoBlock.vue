@@ -30,10 +30,10 @@ export default {
       </div>
 
       <div class="flex-center" @click="goEvent">
-        <a class="circle" href="javascript:void(0);" target="_blank">
+        <button class="circle">
           <span>тисни</span>
           <span>ТУТ</span>
-        </a>
+        </button>
       </div>
 
       <div class="info second">

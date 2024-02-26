@@ -30,17 +30,22 @@ export const goEvent = async () => {
             // Отримання кукі csrftoken
             const csrftoken = document.cookie.split('; ').find(row => row.startsWith('csrftoken=')).split('=')[1];
 
-            const response = await axios.post(API_URL, {
-                // csrfmiddlewaretoken: window.CSRF_TOKEN,
-                user: window.USER_ID,
-                event_id: window.EVENT_ID
-            }, {
+            // Формування даних у форматі x-www-form-urlencoded
+            const params = new URLSearchParams();
+            params.append('csrfmiddlewaretoken', window.CSRF_TOKEN);
+            params.append('user', window.USER_ID);
+            params.append('event_id', window.EVENT_ID);
+
+            // Відправлення запиту з axios
+            const response = await axios.post(API_URL, params, {
                 headers: {
-                    "X-CSRFToken": csrftoken
+                    "X-CSRFToken": csrftoken,
+                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
                 },
                 withCredentials: true
             });
 
+            // Логування відповіді сервера
             console.log('Response:', response.data);
         } catch (error) {
             console.error('Error:', error);

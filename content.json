@@ -559,12 +559,12 @@
             {
               "image": "speakers/Renska.jpeg",
               "title": "",
-              "name": "Наталія Ренська",
+              "name": "Наталя Ренська",
               "position": "Delivery Director в SQUAD",
               "link": "https://dou.ua/users/natali-renska/",
 
               "description": "Director of Delivery в Squad, архітектор курсу \"Delivery Master\" для менеджерів. \nЕкзистенційний коуч лідерів та систем. Місія — допомагати компаніям не лише визначити стратегічний напрям, а й втілювати сміливі рішення в життя, будувати сталі процеси і формувати стійке бачення майбутнього в умовах хаосу.",
-              "about_title": "Наталія Ренська",
+              "about_title": "Наталя Ренська",
               "about_text": "Delivery Director в SQUAD",
               "socials": [
                 {"name":  "github", "link": "" },
@@ -578,12 +578,12 @@
             {
               "image": "speakers/Astafiev.jpeg",
               "title": "",
-              "name": "Роман Астафьєв",
+              "name": "Роман Астафʼєв",
               "position": "Head of Product в Sadeem Digital",
               "link": "https://dou.ua/users/roman-astafiev/",
 
               "description": "Head of Product. Має досвід роботи з продуктами на різних етапах розвитку, комплексними екосистемами з веб та мобільними платформами, фізичними продуктами, створення команд та департаментів. Також веде приватну коучинг практику, працюючи переважно з executives, продуктовими лідерами, командами лідерів.",
-              "about_title": "Роман Астафьєв",
+              "about_title": "Роман Астафʼєв",
               "about_text": "Head of Product в Sadeem Digital",
               "socials": [
                 {"name":  "github", "link": "" },
@@ -624,7 +624,7 @@
             {
               "image": "program_comitet/Nestor.jpeg",
               "name": "Міша Нестор",
-              "position": "Chief Product Officer в Київстар, співзасновник в KOLO, засновник в habitus.one",
+              "position": "Chief Product Officer в Kyivstar.Tech, співзасновник в KOLO, засновник в habitus.one",
               "link": "https://dou.ua/users/misha-nestor/"
             },
             {

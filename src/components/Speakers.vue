@@ -128,10 +128,15 @@ const processedDescription = computed(() => {
       </div>
 
       <div>
-        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">
-          <component :is="social['name']"></component>
-        </a>
-
+        <template  v-for="social in lightboxData.socials">
+          <a v-if="social['link']"
+             :href="social['link']"
+             @click="handleClick(social['link'])"
+             class="social"
+             target="_blank">
+            <component v-if="social['link']" :is="social['name']"></component>
+          </a>
+        </template>
       </div>
 
     </div>

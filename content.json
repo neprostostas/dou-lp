@@ -176,6 +176,27 @@
                 {"name":  "youtube", "link": "" },
                 {"name":  "dou", "link": "" }
               ]
+            },
+            {
+              "image": "speakers/Chmut.jpeg",
+              "title": "",
+              "name": "Тарас Чмут",
+              "position": "Голова фонду «Повернись живим»",
+              "link": "https://twitter.com/TarasChmut",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "https://twitter.com/TarasChmut" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
             }
 
           ]
@@ -804,7 +825,10 @@
       { "name": "skylum.png", "url": "https://jobs.dou.ua/companies/skylum-software/", "alt": "skylum" },
       { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" },
       { "name": "mojam.png", "url": "https://jobs.dou.ua/companies/mojam/", "alt": "mojam" },
-      { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" }
+      { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" },
+      { "name": "skelar.png", "url": "https://jobs.dou.ua/companies/skelar/", "alt": "skelar" },
+      { "name": "luxoft.png", "url": "https://jobs.dou.ua/companies/luxoft/", "alt": "luxoft" },
+      { "name": "lexus.png", "url": "https://www.lexus.ua/", "alt": "lexus" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

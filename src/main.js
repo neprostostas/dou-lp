@@ -6,6 +6,8 @@ import instagram from '@/components/icons/instagram.vue'
 import twitter from '@/components/icons/twitter.vue'
 import linkedin from '@/components/icons/linkedin.vue'
 import telegram from '@/components/icons/telegram.vue'
+import youtube from '@/components/icons/youtube.vue'
+import dou from '@/components/icons/dou.vue'
 
 
 import {createApp} from 'vue'
@@ -29,5 +31,7 @@ app
     .component('twitter', twitter)
     .component('linkedin', linkedin)
     .component('telegram', telegram)
+    .component('youtube', youtube)
+    .component('dou', dou)
 
 app.mount('#app')

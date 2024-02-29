@@ -1,11 +1,25 @@
 <script setup>
 import Lightbox from "@/components/Lightbox.vue";
-import {ref, computed, watch, watchEffect} from "vue";
+import {ref, computed, onMounted, onUnmounted} from "vue";
 
 const props = defineProps({
   showLightbox: Boolean,
 })
 const emit = defineEmits(['handleLightbox'])
+
+function onEscKeyPress(event) {
+  if (event.key === 'Escape') {
+    emit('handleLightbox', false)
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', onEscKeyPress);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onEscKeyPress);
+});
 
 // const showLightbox = ref(false)
 const lightboxData = ref({})
@@ -62,11 +76,11 @@ const processedDescription = computed(() => {
 
 <!--                <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />-->
 
-                <a class="link" :href="item['link']" target="_blank" v-if="item['name'] !== 'Секретний спікер'" @click.stop>
+<!--                <a class="link" :href="item['link']" target="_blank" v-if="item['name'] !== 'Секретний спікер'" @click.stop>-->
                   <span class="name" v-html="item['name']" />
-                </a>
+<!--                </a>-->
 
-                <span v-else class="name" v-html="item['name']" />
+<!--                <span v-else class="name" v-html="item['name']" />-->
                 <span class="position" v-html="item['position']" />
               </div>
             </div>
@@ -114,9 +128,9 @@ const processedDescription = computed(() => {
       </div>
 
       <div>
-<!--        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">-->
-<!--          <component :is="social['name']"></component>-->
-<!--        </a>-->
+        <a v-for="social in lightboxData.socials" :href="social['link'] || 'javascript:void(0);'" @click="handleClick(social['link'])" class="social" target="_blank">
+          <component :is="social['name']"></component>
+        </a>
 
       </div>
 

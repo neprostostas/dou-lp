@@ -88,7 +88,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/mykola-maksymenko-4448a839/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             },
             {
@@ -107,7 +109,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/olexiim/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             },
             {
@@ -126,7 +130,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oles-petriv-26987b15/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             },
             {
@@ -145,7 +151,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/maksim/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             },
             {
@@ -164,7 +172,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/roman-prokofyev-7995a5b/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             }
 
@@ -210,16 +220,18 @@
               "position": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "link": "https://dou.ua/users/Anastasiia-Voitova/",
 
-              "description": "Інженерка із кібербезпеки зі спеціалізацією в області захисту даних, криптографії та прикладної безпеки, CISSP. За 10 років пройшла шлях від розробниці до керівниці напрямку security engineering. Вона ділиться досвідом про архітектуру безпеки програмного забезпечення, безпечну розробку, шифрування, системи нульового знання та нульової довіри. Анастасія брала участь у міжнародних конференціях, співпрацювала у розробці рекомендацій OWASP, проводила спеціалізовані тренінги для розробників в Швейцарії та в офісах Apple в Купертіно. Twitter (X): @vixentael",
+              "description": "Інженерка із кібербезпеки зі спеціалізацією в області захисту даних, криптографії та прикладної безпеки, CISSP. За 10 років пройшла шлях від розробниці до керівниці напрямку security engineering. Вона ділиться досвідом про архітектуру безпеки програмного забезпечення, безпечну розробку, шифрування, системи нульового знання та нульової довіри. Анастасія брала участь у міжнародних конференціях, співпрацювала у розробці рекомендацій OWASP, проводила спеціалізовані тренінги для розробників в Швейцарії та в офісах Apple в Купертіно. <a class='link' href='https://twitter.com/vixentael'>Twitter (X)</a>",
               "about_title": "Анастасія Войтова",
               "about_text": "Head of Security Engineering, Security software engineer в Cossack Labs",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
-                {"name":  "twitter", "link": "" },
+                {"name":  "twitter", "link": "https://twitter.com/vixentael" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/anastasiiavoitova/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/anastasiiavoitova/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/Anastasiia-Voitova/" }
               ]
             },
             {
@@ -238,7 +250,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/turskyi/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/turskyi/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/viktor-turskyi/" }
               ]
             },
             {
@@ -257,7 +271,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandr-savchenko-38a28532/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandr-savchenko-38a28532/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             },
             {
@@ -276,7 +292,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/kloba/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/kloba/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/taras-kloba/" }
               ]
             },
             {
@@ -295,7 +313,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "" }
+                {"name":  "linkedin", "link": "" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
               ]
             }
 
@@ -362,7 +382,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/tetiana-lyko/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/tetiana-lyko/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/tanya-melnyk/" }
               ]
             },
             {
@@ -381,7 +403,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/alexandra-kovalova-70373543/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/alexandra-kovalova-70373543/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/Alexandra%20Vodyanitskaya/" }
               ]
             },
             {
@@ -400,7 +424,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/ivanpetrushenko/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/ivanpetrushenko/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/ivan-petrushenko/" }
               ]
             },
             {
@@ -419,7 +445,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/agafonkin/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/agafonkin/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/Mourner/" }
               ]
             },
             {
@@ -437,7 +465,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandrkhotemskyi/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/oleksandrkhotemskyi/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/aleksandr-khotemskoy/" }
               ]
             }
 
@@ -515,7 +545,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/liubomyr-pivtorak-a5762872/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/liubomyr-pivtorak-a5762872/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/liubomyr-pivtorak/" }
               ]
             },
             {
@@ -534,7 +566,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/andrii-mandrika-7a5674113/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/andrii-mandrika-7a5674113/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/andrii-mandrika/" }
               ]
             },
             {
@@ -553,7 +587,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/odmytrasevych/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/odmytrasevych/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/orest-dmytrasevych/" }
               ]
             },
             {
@@ -572,18 +608,20 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/natali-renska/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/natali-renska/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/natali-renska/" }
               ]
             },
             {
               "image": "speakers/Astafiev.jpeg",
               "title": "",
-              "name": "Роман Астафʼєв",
+              "name": "Роман Астаф’єв",
               "position": "Head of Product в Sadeem Digital",
               "link": "https://dou.ua/users/roman-astafiev/",
 
               "description": "Head of Product. Має досвід роботи з продуктами на різних етапах розвитку, комплексними екосистемами з веб та мобільними платформами, фізичними продуктами, створення команд та департаментів. Також веде приватну коучинг практику, працюючи переважно з executives, продуктовими лідерами, командами лідерів.",
-              "about_title": "Роман Астафʼєв",
+              "about_title": "Роман Астаф’єв",
               "about_text": "Head of Product в Sadeem Digital",
               "socials": [
                 {"name":  "github", "link": "" },
@@ -591,7 +629,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/aromeoua/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/aromeoua/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/roman-astafiev/" }
               ]
             },
             {
@@ -610,7 +650,9 @@
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/mikhail-horobtsov/" }
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/mikhail-horobtsov/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "https://dou.ua/users/mikhail-horobtsov" }
               ]
             }
 

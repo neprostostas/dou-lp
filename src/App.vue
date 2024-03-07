@@ -1,4 +1,5 @@
 <script setup>
+import TopBanner from "@/components/TopBanner.vue";
 import Header from "@/components/Header.vue";
 import Cover from "@/components/Cover.vue";
 import Info from "@/components/Info.vue";
@@ -26,6 +27,7 @@ function handleLightbox(show) {
 
 <template>
 <div class="page">
+  <TopBanner />
   <Header/>
   <Cover/>
   <Info/>

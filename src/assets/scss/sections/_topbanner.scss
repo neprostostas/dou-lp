@@ -1,0 +1,33 @@
+.announcement, #top-banner {
+  background-color: var(--bright_yellow);
+}
+
+.announcement p.text {
+  margin: 0;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.announcement span {
+  font-weight: 700;
+}
+
+.announcement a:hover {
+  text-decoration: underline;
+}
+
+.pad-0 {
+  padding: 0;
+}
+
+.announcement .mobile-br {
+  display: none;
+}
+
+@media (max-width: 555px) {
+
+  .mobile-br {
+    display: block!important;
+  }
+
+}

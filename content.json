@@ -4,6 +4,9 @@
     "button_url": "https://concert.ua/uk/event/dou-day",
     "email": "conference@dou.ua"
   },
+  "topbanner": {
+    "announcement": "Кожен другий <span>Regular</span> квиток за пів ціни. <br class=\"mobile-br\"> Лише до 11 березня!&#20; \uD83D\uDC49<a href=\"#tickets\"> Купити</a>"
+  },
   "header": {
     "menuItems" : [
       {

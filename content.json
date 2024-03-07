@@ -301,24 +301,24 @@
               ]
             },
             {
-              "image": "speakers/Klioba.jpeg",
+              "image": "speakers/Ovcharenko.jpg",
               "title": "",
-              "name": "Тарас Кльоба",
-              "position": "Associate Director, Big Data & Analytics в SoftServe, PhD, MVP",
-              "link": "https://dou.ua/users/taras-kloba/",
+              "name": "Дмитро Овчаренко",
+              "position": "GenAI Practice Director в SoftServe",
+              "link": "https://dou.ua/users/dima-ovcharenko/",
 
-              "description": "Має понад 14 років досвіду в галузі IT, банківській справі та інформаційній безпеці.\nУ 2019 році Тарас був визнаний Найкращим архітектором програмного забезпечення України за версією Ukrainian IT Awards. Він є Microsoft MVP, а також має ряд інших профільних сертифікацій від Google, Amazon та SEI. Тарас активно ділиться своїми знаннями на міжнародних та локальних конференціях та заходах.\n\nВін також є засновником спільноти PostgreSQL Ukraine, що об'єднує фахівців та ентузіастів цієї технології в Україні. І лідером команди, яка перемогла у TIDE NATO Hackathon 2023 та Національному оборонному хакатоні 2022, організованому Радою національної безпеки і оборони України.\n\nОкрім своєї професійної діяльності, Тарас активно волонтерить та консультує військових на ІТ-проектах, які сприяють нашій Перемозі.\n",
-              "about_title": "Тарас Кльоба",
-              "about_text": "Associate Director, Big Data & Analytics в SoftServe, PhD, MVP",
+              "description": "GenAI Practice Director у SoftServe із значним досвідом в архітектурі та технологіях, починаючи з 2006 року. Спеціалізація: розробка проектів \"від нуля\", виведення ідеї до реального втілення. Наразі займається підвищенням ефективності команд на різних етапах процесу розробки програмного забезпечення, активно застосовуючи GenAI для оптимізації робочих процесів. \n\nВикладач в бізнес-школах і на спеціалізованих курсах, ділиться знаннями і навичками в галузі технологій та управління проєктами.",
+              "about_title": "Дмитро Овчаренко",
+              "about_text": "GenAI Practice Director в SoftServe",
               "socials": [
                 {"name":  "github", "link": "" },
                 {"name":  "facebook", "link": "" },
                 {"name":  "twitter", "link": "" },
                 {"name":  "instagram", "link": "" },
                 {"name":  "telegram", "link": "" },
-                {"name":  "linkedin", "link": "https://www.linkedin.com/in/kloba/" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/dmytroovcharenko/" },
                 {"name":  "youtube", "link": "" },
-                {"name":  "dou", "link": "https://dou.ua/users/taras-kloba/" }
+                {"name":  "dou", "link": "https://dou.ua/users/dima-ovcharenko/" }
               ]
             },
             {

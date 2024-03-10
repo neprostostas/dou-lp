@@ -59,6 +59,8 @@ import Check from "@/components/icons/Check.vue";
           <Button/>
         </div>
 
+        <p class="info-tip" v-html="content['tickets']['info-tip']"></p>
+
       </div>
     </div>
   </section>

@@ -578,7 +578,7 @@
               "image": "speakers/Mandrika_new.jpeg",
               "title": "",
               "name": "Андрій Мандрика",
-              "position": "Product Manager, Head of KOLOssus в KOLO",
+              "position": "Product Manager, Head of KOLOssus в KOLO, Founder в Hard Skills for PM",
               "link": "https://dou.ua/users/andrii-mandrika/",
 
               "description": "Практикуючий Product Manager і консультант з управління продуктами, засновник і тренер в <a class='link' href='https://hardskillsforpm.com/' target='_blank'>hardskillsforpm.com</a>. Більше 12 років досвіду у створенні та масштабуванні різноманітних продуктів. \nEx-Head of Product в Rocket, де менше ніж за рік побудував команду продукту (30 осіб) та продуктові процеси з самого нуля. Також керував продуктами в таких компаніях, як Dreamteam.gg, Parimatch Tech.\nОстанні 3 роки допомагає ІТ-компаніям та окремим продуктовим спеціалістам покращувати знання, навички і процеси управління продуктами через практичні та інтенсивні навчальні програми: Hard Skills for Product Managers, які вже пройшло більше 500 людей та 12 ІТ-компаній.\nЗ квітня 2022 року, на волонтерських засадах, лідує напрям “КОЛОсів підтримки ЗСУ - підписка на перемогу для компаній” в благодійному фонді КОЛО. В рамках програми було зібрано більше 100 млн грн від українських компаній.\n",
@@ -832,7 +832,8 @@
       { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" },
       { "name": "skelar.png", "url": "https://jobs.dou.ua/companies/skelar/", "alt": "skelar" },
       { "name": "luxoft.png", "url": "https://jobs.dou.ua/companies/luxoft/", "alt": "luxoft" },
-      { "name": "lexus.png", "url": "https://www.lexus.ua/", "alt": "lexus" }
+      { "name": "lexus.png", "url": "https://www.lexus.ua/", "alt": "lexus" },
+      { "name": "wiseit.png", "url": "https://jobs.dou.ua/companies/wise-it/", "alt": "wiseit" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

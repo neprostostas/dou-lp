@@ -10,16 +10,27 @@ import Partners from "@/components/Partners.vue";
 import Faq from "@/components/Faq.vue";
 import Footer from "@/components/Footer.vue";
 import Address from "@/components/Address.vue";
+import Agenda from "@/components/Agenda.vue";
 import GoBlock from "@/components/GoBlock.vue";
 
-const showLightbox = ref(false)
-function handleLightbox(show) {
-  showLightbox.value = show
+const showLightboxSpeakers = ref(false);
+const showLightboxAgenda = ref(false);
 
+function handleLightboxSpeakers(show) {
+  showLightboxSpeakers.value = show;
+  toggleBodyClass(show);
+}
+
+function handleLightboxAgenda(show) {
+  showLightboxAgenda.value = show;
+  toggleBodyClass(show);
+}
+
+function toggleBodyClass(show) {
   if (show) {
-    document.querySelector('body').classList.add('lightbox-open')
+    document.querySelector('body').classList.add('lightbox-open');
   } else {
-    document.querySelector('body').classList.remove('lightbox-open')
+    document.querySelector('body').classList.remove('lightbox-open');
   }
 }
 
@@ -32,7 +43,8 @@ function handleLightbox(show) {
   <Cover/>
   <Info/>
   <GoBlock />
-  <Speakers @handleLightbox="handleLightbox" :show-lightbox="showLightbox"/>
+  <Agenda @handleLightbox="handleLightboxAgenda" :show-lightbox="showLightboxAgenda"/>
+  <Speakers @handleLightbox="handleLightboxSpeakers" :show-lightbox="showLightboxSpeakers"/>
   <Tickets/>
   <Partners/>
   <Faq/>
@@ -40,4 +52,3 @@ function handleLightbox(show) {
   <Footer/>
 </div>
 </template>
-

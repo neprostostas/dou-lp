@@ -145,3 +145,22 @@ h4,
     font-size: 40px;
   }
 }
+
+span.bullet {
+  display: block;
+}
+
+.wrap-point {
+  margin: 10px 0 0 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.wrap-point p {
+  margin: 0;
+}
+
+.speech {
+  margin-bottom: 20px;
+}

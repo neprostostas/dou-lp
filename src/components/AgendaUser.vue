@@ -267,6 +267,14 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
     height: 64px;
   }
 
+  .card-line .card {
+    margin-bottom: 20px;
+  }
+
+  .position, .subtitle {
+    max-width: unset;
+  }
+
 }
 
 </style>

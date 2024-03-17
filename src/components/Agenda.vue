@@ -628,7 +628,7 @@ hr {
   }
 
   .pd-0 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .stage-title {

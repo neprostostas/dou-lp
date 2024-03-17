@@ -3,6 +3,26 @@ import Lightbox from "@/components/Lightbox.vue";
 import {ref, computed, onMounted, onUnmounted} from "vue";
 import AgendaUser from "@/components/AgendaUser.vue";
 
+const agenda = ref(null);
+
+const currentClass = ref('architecture'); // Зберігає поточний клас
+
+// Метод для зміни класу елемента #agenda
+function changeAgendaClass(className) {
+  // Спочатку видаляємо всі можливі класи
+  agenda.value.classList.remove('architecture', 'software', 'product');
+  // Додаємо потрібний клас
+  agenda.value.classList.add(className);
+  currentClass.value = className; // Оновлюємо поточний клас
+
+  agenda.value.dispatchEvent(new CustomEvent('classChange', { detail: { className } }));
+}
+
+// Використовуємо onMounted для ініціалізації посилання на елемент #agenda
+onMounted(() => {
+  agenda.value = document.getElementById('agenda');
+});
+
 const props = defineProps({
   showLightbox: Boolean,
 })
@@ -71,7 +91,7 @@ const processedSpeech = computed(() => {
 </script>
 
 <template>
-  <section id="agenda">
+  <section id="agenda" class="architecture">
     <div class="container">
       <h2 class="main-title">{{ content['agenda']['title'] }}</h2>
 
@@ -96,7 +116,6 @@ const processedSpeech = computed(() => {
             <div class="end-time">10:45</div>
           </div>
           <h3 class="subtitle">Панельна дискусія про AI</h3>
-          <div></div>
 
           <div class="cards-block">
             <div class="card-line">
@@ -117,9 +136,9 @@ const processedSpeech = computed(() => {
 
       <div class="stage three">
         <div class="title line sticky">
-          <p>Architecture</p>
-          <p>Software</p>
-          <p>Product</p>
+          <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
+          <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
+          <p :class="{active: currentClass === 'product'}" @click="changeAgendaClass('product')">Product</p>
         </div>
         <div class="info-container">
           <div class="time pt-12">
@@ -130,13 +149,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Віктор Турський'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Віктор Турський'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Володимир Агафонкін'" :subtitle="'Вирішуємо життєві негаразди за допомогою JavaScript, або Візуалізація даних для особистого розвитку'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Володимир Агафонкін'" :subtitle="'Вирішуємо життєві негаразди за допомогою JavaScript, або Візуалізація даних для особистого розвитку'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Михайло Горобцов'" :subtitle="'Як знайти і допомогти заморозити активи Кадирова, зробити MVP за $1M і дійти до 3K іноземних B2B-клієнтів'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Михайло Горобцов'" :subtitle="'Як знайти і допомогти заморозити активи Кадирова, зробити MVP за $1M і дійти до 3K іноземних B2B-клієнтів'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -151,13 +170,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Дмитро Овчаренко'" :subtitle="'Як за допомогою GenAI сформувати архітектурну візію за кілька годин'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Дмитро Овчаренко'" :subtitle="'Як за допомогою GenAI сформувати архітектурну візію за кілька годин'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Тетяна Мельник'" :subtitle="'Як мігрувати продукт з 200К користувачів з восьмирічного PHP-моноліта на новий стек. Успіхи і фейли'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Тетяна Мельник'" :subtitle="'Як мігрувати продукт з 200К користувачів з восьмирічного PHP-моноліта на новий стек. Успіхи і фейли'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Андрій Мандрика'" :subtitle="'Допомога ЗСУ as a Service, або Як побудувати підписку на донати у B2B'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Андрій Мандрика'" :subtitle="'Допомога ЗСУ as a Service, або Як побудувати підписку на донати у B2B'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -189,7 +208,6 @@ const processedSpeech = computed(() => {
             <div class="end-time">14:45</div>
           </div>
           <h3 class="subtitle">Панельна дискусія про про ринок праці</h3>
-          <div></div>
 
           <div class="cards-block">
             <div class="card-line">
@@ -210,9 +228,9 @@ const processedSpeech = computed(() => {
 
       <div class="stage six">
         <div class="title line sticky">
-          <p>Architecture</p>
-          <p>Software</p>
-          <p>Product</p>
+          <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
+          <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
+          <p :class="{active: currentClass === 'product'}" @click="changeAgendaClass('product')">Product</p>
         </div>
         <div class="info-container">
           <div class="time pt-12">
@@ -223,13 +241,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Секретний спікер'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Секретний спікер'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Іван Петрушенко'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Іван Петрушенко'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Любомир Півторак'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Любомир Півторак'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -244,13 +262,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Анастасія Войтова'" :subtitle="'Зовсім не про пентести. Будуємо архітектуру безпеки в критично важливих системах'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Анастасія Войтова'" :subtitle="'Зовсім не про пентести. Будуємо архітектуру безпеки в критично важливих системах'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Олександра Ковальова'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександра Ковальова'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Орест Дмитрасевич'" :subtitle="'(Не) культурні комунікації: налагоджуємо співпрацю з іноземними колегами'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Орест Дмитрасевич'" :subtitle="'(Не) культурні комунікації: налагоджуємо співпрацю з іноземними колегами'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -282,7 +300,6 @@ const processedSpeech = computed(() => {
             <div class="end-time">18:25</div>
           </div>
           <h3 class="subtitle">Панельна дискусія про про хз що (треба визначити)</h3>
-          <div></div>
 
           <div class="cards-block">
             <div class="card-line">
@@ -303,9 +320,9 @@ const processedSpeech = computed(() => {
 
       <div class="stage nine">
         <div class="title line sticky">
-          <p>Architecture</p>
-          <p>Software</p>
-          <p>Product</p>
+          <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
+          <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
+          <p :class="{active: currentClass === 'product'}" @click="changeAgendaClass('product')">Product</p>
         </div>
         <div class="info-container">
           <div class="time pt-12">
@@ -316,15 +333,15 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Олександр Савченко'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександр Савченко'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Олександр Хотемський'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександр Хотемський'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser :speaker-name="'Наталія Ренська'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Наталія Ренська'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
                 <div class="h10"></div>
-                <AgendaUser :speaker-name="'Роман Астаф’єв'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Роман Астаф’єв'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -547,6 +564,10 @@ hr {
   text-transform: none;
 }
 
+.cards-block {
+  grid-column-start: 2;
+}
+
 .role {
   display: grid;
   grid-column-start: 1;
@@ -578,6 +599,102 @@ hr {
 
 .h10 {
   height: 10px;
+}
+
+@media (max-width: 825px) {
+
+  .main-title {
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .time {
+    justify-content: start;
+  }
+
+  .info-container {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+
+  .cards-block {
+    grid-column-start: 1;
+  }
+
+  .card-line {
+    display: block;
+  }
+
+  .pd-0 {
+    margin-bottom: 0;
+  }
+
+  .stage-title {
+    padding: 10px 0;
+    text-align: center;
+    color: #47aeb0;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "IBM Plex Sans",sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    border-bottom: none;
+  }
+
+  .stage-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-bottom: 4px solid #47aeb0;
+    width: 100%;
+    max-width: 92px;
+  }
+
+  .title.line {
+    padding: 10px 0;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .title.line p {
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "IBM Plex Sans",sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    border-bottom: none;
+    position: relative;
+  }
+
+  .title.line p.active {
+    color: #47aeb0;
+  }
+
+  .title.line p.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-bottom: 4px solid #47aeb0;
+    width: 92%;
+    max-width: 92px;
+  }
+
+  .card-wrap, .card-wrap:hover {
+    border: unset;
+  }
+
 }
 
 </style>

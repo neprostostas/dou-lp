@@ -1,10 +1,50 @@
 <script setup>
-import {defineProps, ref} from 'vue';
+import {computed, defineProps, onMounted, onUnmounted, ref} from 'vue';
 
 const props = defineProps({
   speakerName: String,
   subtitle: String,
-  showSpeaker: Function
+  showSpeaker: Function,
+  mobile: Boolean // передаємо цей аргумент тільки для розділів з title.line 'Architecture Software Product', щоб увімкнути фільтрацію при натисканні на розділи
+});
+
+const screenWidth = ref(window.innerWidth);
+const agendaClass = ref('');
+
+// Функція слухача для події classChange
+function onClassChange(e) {
+  agendaClass.value = e.detail.className;
+}
+
+// Оновлюємо ширину екрану та клас agenda при зміні розміру вікна
+function updateScreenWidth() {
+  screenWidth.value = window.innerWidth;
+  agendaClass.value = document.getElementById('agenda')?.className || '';
+}
+
+// Встановлюємо і видаляємо слухачів зміни розміру вікна
+onMounted(() => {
+  window.addEventListener('resize', updateScreenWidth);
+  updateScreenWidth(); // Початкове оновлення
+  const agendaElement = document.getElementById('agenda');
+  agendaElement.addEventListener('classChange', onClassChange);
+});
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenWidth);
+  const agendaElement = document.getElementById('agenda');
+  agendaElement.removeEventListener('classChange', onClassChange);
+});
+
+// Обчислюємо потрібний заголовок на основі класу agenda
+const stageTitle = computed(() => {
+  if (!props.mobile) { // Перевірка стану пропсу mobile
+    return null; // Якщо mobile не true, повертаємо null, щоб уникнути застосування логіки фільтрації
+  }
+  return screenWidth.value <= 825 ? {
+    'architecture': 'Architecture Stage',
+    'software': 'Software Development Stage',
+    'product': 'Product Stage',
+  }[agendaClass.value] : '';
 });
 
 function stageClass(speakerName, stage) {
@@ -37,33 +77,59 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   return (isSpeakerInMain || isSpeakerInSub) && item.name !== speakerName;
 }
 
-
 </script>
 
 <template>
 
   <div v-for="stage in content['speakers']['stages']" :class="stageClass(speakerName, stage)" class="stage">
 
-    <div v-for="item in stage['main']['list']"
-         :class="{
+    <!-- for mobile -->
+    <template v-if="!mobile || stage['main']['title'] === stageTitle">
+      <div v-for="item in stage['main']['list']"
+           :class="{
            'unhover': shouldUnhover(speakerName)(item),
            'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
          }"
-         class="card" @click="showSpeaker(item, stage)">
-      <template v-if="item['name'] === speakerName">
-        <template v-if="subtitle">
-          <h3 class="subtitle">{{subtitle}}</h3>
-        </template>
-        <div class="card-inner">
-          <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
-          <div class="right-part">
-            <h3 class="name">{{ speakerName }}</h3>
-            <h4 class="position" v-if="speakerName === 'Секретний спікер'" v-html="'***'"></h4>
-            <h4 class="position" v-else v-html="item['position']"></h4>
+           class="card" @click="showSpeaker(item, stage)">
+        <template v-if="item['name'] === speakerName">
+          <template v-if="subtitle">
+            <h3 class="subtitle">{{subtitle}}</h3>
+          </template>
+          <div class="card-inner">
+            <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
+            <div class="right-part">
+              <h3 class="name">{{ speakerName }}</h3>
+              <h4 class="position" v-if="speakerName === 'Секретний спікер'" v-html="'***'"></h4>
+              <h4 class="position" v-else v-html="item['position']"></h4>
+            </div>
           </div>
-        </div>
-      </template>
-    </div>
+        </template>
+      </div>
+    </template>
+
+    <!-- for desktops -->
+    <template v-else-if="screenWidth > 825">
+      <div v-for="item in stage['main']['list']"
+           :class="{
+           'unhover': shouldUnhover(speakerName)(item),
+           'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
+         }"
+           class="card" @click="showSpeaker(item, stage)">
+        <template v-if="item['name'] === speakerName">
+          <template v-if="subtitle">
+            <h3 class="subtitle">{{subtitle}}</h3>
+          </template>
+          <div class="card-inner">
+            <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
+            <div class="right-part">
+              <h3 class="name">{{ speakerName }}</h3>
+              <h4 class="position" v-if="speakerName === 'Секретний спікер'" v-html="'***'"></h4>
+              <h4 class="position" v-else v-html="item['position']"></h4>
+            </div>
+          </div>
+        </template>
+      </div>
+    </template>
 
     <div v-for="item in stage['sub']['list']"
          :class="{
@@ -184,6 +250,23 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
 .unhover {
   border: 1px transparent solid;
   cursor: auto;
+}
+
+@media (max-width: 825px) {
+
+  .unhover {
+    border: none;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .ava {
+    width: 64px;
+    height: 64px;
+  }
+
 }
 
 </style>

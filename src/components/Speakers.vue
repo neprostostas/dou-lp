@@ -63,7 +63,7 @@ const processedDescription = computed(() => {
         <div class="main">
           <h3>{{ stage['main']['title'] }}</h3>
           <div class="list">
-            <div v-for="item in stage['main']['list']" class="speaker_item" :class="{ unhover: stage['main']['title'] === 'Main Stage' || item['name'] === 'Секретний спікер' }" @click="showSpeaker(item, stage)">
+            <div v-for="item in stage['main']['list']" class="speaker_item" :class="{ unhover: stage['main']['title'] === 'Main Stage' || item['name'] === 'Секретний спікер', soon: item['soon'] === true }" @click="showSpeaker(item, stage)">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
                 <!--<Info @click="showSpeaker(item)"/>-->
@@ -143,3 +143,9 @@ const processedDescription = computed(() => {
   </Lightbox>
 
 </template>
+
+<style scoped>
+.soon {
+  display: none!important;
+}
+</style>

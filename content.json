@@ -184,6 +184,28 @@
               ]
             },
             {
+              "image": "speakers/secret_portrait_new.png",
+              "title": "",
+              "name": "Спікера оголосимо згодом",
+              "position": "сoming soon...",
+              "link": "",
+              "soon": true,
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Chmut_new.jpeg",
               "title": "",
               "name": "Тарас Чмут",

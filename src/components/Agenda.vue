@@ -207,14 +207,14 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">14:45</div>
           </div>
-          <h3 class="subtitle">Панельна дискусія про про ринок праці</h3>
+          <h3 class="subtitle">Панельна дискусія про ринок праці</h3>
 
           <div class="cards-block">
             <div class="card-line">
               <h4 class="role pd-0">Спікери</h4>
               <AgendaUser :speaker-name="'Макс Іщенко'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Роман Прокоф’єв'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Секретний спікер'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
             </div>
             <div class="card-alone">
               <h4 class="role">Модератор</h4>
@@ -299,14 +299,14 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">18:25</div>
           </div>
-          <h3 class="subtitle">Панельна дискусія про про хз що (треба визначити)</h3>
+          <h3 class="subtitle">Панельна дискусія про життя</h3>
 
           <div class="cards-block">
             <div class="card-line">
               <h4 class="role pd-0">Спікери</h4>
               <AgendaUser :speaker-name="'Тарас Чмут'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'і ще двоє будуть згодом'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'і ще двоє будуть згодом'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
             </div>
             <div class="card-alone">
               <h4 class="role">Модератор</h4>

@@ -88,7 +88,7 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage two">
-        <div class="stage-title">Main Stage</div>
+        <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
             <div class="start-time">9:45</div>
@@ -101,8 +101,6 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <h4 class="role pd-0">Спікери</h4>
-              <div></div>
-              <div></div>
               <AgendaUser :speaker-name="'Олесь Петрів'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Олексій Молчановський'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Микола Максименко'" :showSpeaker="showSpeaker" />
@@ -118,13 +116,13 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage three">
-        <div class="title line">
+        <div class="title line sticky">
           <p>Architecture</p>
           <p>Software</p>
           <p>Product</p>
         </div>
         <div class="info-container">
-          <div class="time">
+          <div class="time pt-12">
             <div class="start-time">11:00</div>
             <div class="divider-time">...</div>
             <div class="end-time">11:45</div>
@@ -132,23 +130,20 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">TBD</h3>
-                <AgendaUser :speaker-name="'Віктор Турський'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Віктор Турський'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Вирішуємо життєві негаразди за допомогою JavaScript, або Візуалізація даних для особистого розвитку</h3>
-                <AgendaUser :speaker-name="'Володимир Агафонкін'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Володимир Агафонкін'" :subtitle="'Вирішуємо життєві негаразди за допомогою JavaScript, або Візуалізація даних для особистого розвитку'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Як знайти і допомогти заморозити активи Кадирова, зробити MVP за $1M і дійти до 3K іноземних B2B-клієнтів</h3>
-                <AgendaUser :speaker-name="'Михайло Горобцов'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Михайло Горобцов'" :subtitle="'Як знайти і допомогти заморозити активи Кадирова, зробити MVP за $1M і дійти до 3K іноземних B2B-клієнтів'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
 
         </div>
         <div class="info-container">
-          <div class="time">
+          <div class="time pt-12">
             <div class="start-time">12:00</div>
             <div class="divider-time">...</div>
             <div class="end-time">12:45</div>
@@ -156,16 +151,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Як за допомогою GenAI сформувати архітектурну візію за кілька годин</h3>
-                <AgendaUser :speaker-name="'Дмитро Овчаренко'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Дмитро Овчаренко'" :subtitle="'Як за допомогою GenAI сформувати архітектурну візію за кілька годин'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Як мігрувати продукт з 200К користувачів з восьмирічного PHP-моноліта на новий стек. Успіхи і фейли</h3>
-                <AgendaUser :speaker-name="'Тетяна Мельник'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Тетяна Мельник'" :subtitle="'Як мігрувати продукт з 200К користувачів з восьмирічного PHP-моноліта на новий стек. Успіхи і фейли'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Допомога ЗСУ as a Service, або Як побудувати підписку на донати у B2B</h3>
-                <AgendaUser :speaker-name="'Андрій Мандрика'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Андрій Мандрика'" :subtitle="'Допомога ЗСУ as a Service, або Як побудувати підписку на донати у B2B'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -189,7 +181,7 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage five">
-        <div class="stage-title">Main Stage</div>
+        <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
             <div class="start-time">14:00</div>
@@ -202,8 +194,6 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <h4 class="role pd-0">Спікери</h4>
-              <div></div>
-              <div></div>
               <AgendaUser :speaker-name="'Макс Іщенко'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Роман Прокоф’єв'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Секретний спікер'" :showSpeaker="showSpeaker" />
@@ -219,13 +209,13 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage six">
-        <div class="title line">
+        <div class="title line sticky">
           <p>Architecture</p>
           <p>Software</p>
           <p>Product</p>
         </div>
         <div class="info-container">
-          <div class="time">
+          <div class="time pt-12">
             <div class="start-time">15:00</div>
             <div class="divider-time">...</div>
             <div class="end-time">15:45</div>
@@ -233,23 +223,20 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">TBD</h3>
-                <AgendaUser :speaker-name="'Секретний спікер'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Секретний спікер'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Алгоритми на практиці або історії з продакшену</h3>
-                <AgendaUser :speaker-name="'Іван Петрушенко'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Іван Петрушенко'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез</h3>
-                <AgendaUser :speaker-name="'Любомир Півторак'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Любомир Півторак'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
 
         </div>
         <div class="info-container">
-          <div class="time">
+          <div class="time pt-12">
             <div class="start-time">16:00</div>
             <div class="divider-time">...</div>
             <div class="end-time">16:45</div>
@@ -257,16 +244,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Зовсім не про пентести. Будуємо архітектуру безпеки в критично важливих системах</h3>
-                <AgendaUser :speaker-name="'Анастасія Войтова'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Анастасія Войтова'" :subtitle="'Зовсім не про пентести. Будуємо архітектуру безпеки в критично важливих системах'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">TBD</h3>
-                <AgendaUser :speaker-name="'Олександра Ковальова'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Олександра Ковальова'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">(Не) культурні комунікації: налагоджуємо співпрацю з іноземними колегами</h3>
-                <AgendaUser :speaker-name="'Орест Дмитрасевич'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Орест Дмитрасевич'" :subtitle="'(Не) культурні комунікації: налагоджуємо співпрацю з іноземними колегами'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
@@ -290,7 +274,7 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage eight">
-        <div class="stage-title">Main Stage</div>
+        <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
             <div class="start-time">17:40</div>
@@ -303,8 +287,6 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <h4 class="role pd-0">Спікери</h4>
-              <div></div>
-              <div></div>
               <AgendaUser :speaker-name="'Тарас Чмут'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'і ще двоє будуть згодом'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'і ще двоє будуть згодом'" :showSpeaker="showSpeaker" />
@@ -320,13 +302,13 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage nine">
-        <div class="title line">
+        <div class="title line sticky">
           <p>Architecture</p>
           <p>Software</p>
           <p>Product</p>
         </div>
         <div class="info-container">
-          <div class="time">
+          <div class="time pt-12">
             <div class="start-time">18:30</div>
             <div class="divider-time">...</div>
             <div class="end-time">19:15</div>
@@ -334,16 +316,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">TBD</h3>
-                <AgendaUser :speaker-name="'Олександр Савченко'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Олександр Савченко'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Алгоритми на практиці або історії з продакшену</h3>
-                <AgendaUser :speaker-name="'Олександр Хотемський'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Олександр Хотемський'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <h3 class="subtitle pb-15">Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез</h3>
-                <AgendaUser :speaker-name="'Наталія Ренська'" :showSpeaker="showSpeaker" />
+                <AgendaUser :speaker-name="'Наталія Ренська'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
                 <div class="h10"></div>
                 <AgendaUser :speaker-name="'Роман Астаф’єв'" :showSpeaker="showSpeaker" />
               </div>
@@ -437,6 +416,11 @@ const processedSpeech = computed(() => {
 
 <style scoped>
 
+hr {
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+
 .main-title {
   color: #333;
   font-size: 60px;
@@ -453,7 +437,7 @@ const processedSpeech = computed(() => {
 }
 
 .info-container {
-  padding-top: 10px;
+  padding: 15px 0 25px;
   display: grid;
   align-items: start;
   grid-template-columns: 113px 1fr;
@@ -461,7 +445,7 @@ const processedSpeech = computed(() => {
 }
 
 .time {
-  padding-top: 10px;
+  padding-top: 1px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 5px;
@@ -480,34 +464,24 @@ const processedSpeech = computed(() => {
   opacity: .3;
 }
 
-.subtitle {
-  padding-top: 10px;
-  color: #333;
-  font-size: 20px;
-  font-style: normal;
-  margin-top: 0;
-  text-align: left;
-  font-family: "IBM Plex Sans",sans-serif;
-  font-weight: 600;
-  line-height: 24px;
-  margin-bottom: 0;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.card-wrap .subtitle {
-  padding-top: 0;
-}
-
 .grey-line {
-  margin: 25px 0 35px;
+  position: relative;
+  top: -1px;
+  margin-bottom: 35px;
   border: none;
   border-bottom: 1px solid #cccccc;
-  height: 2px;
   width: 100%;
 }
 
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 85px;
+  z-index: 3;
+}
+
 .stage-title {
+  background: #fff;
   color: #333;
   font-size: 30px;
   font-style: normal;
@@ -527,12 +501,21 @@ const processedSpeech = computed(() => {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
+  background: #ffffff;
   padding: 10px 0 10px 133px;
   border-bottom: 1px solid #daefee;
 }
 
 .title.line p {
   margin: 0;
+  color: #333;
+  font-size: 30px;
+  font-style: normal;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .card-line {
@@ -543,7 +526,6 @@ const processedSpeech = computed(() => {
 
 .card-wrap {
   border: 1px transparent solid;
-  padding: 10px;
   height: fit-content;
 }
 
@@ -551,8 +533,26 @@ const processedSpeech = computed(() => {
   border: 1px var(--azure) solid;
 }
 
+.subtitle {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .role {
-  padding: 30px 0 10px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  padding: 15px 0 10px;
   color: #333;
   font-size: 16px;
   font-style: normal;
@@ -563,18 +563,17 @@ const processedSpeech = computed(() => {
   text-transform: none;
 }
 
-.pb-15 {
-  padding-bottom: 15px;
-  width: 100%;
-  max-width: 270px;
-}
-
 .mb-5 {
   margin-bottom: 5px;
 }
 
 .pd-0 {
   padding: 0!important;
+  margin-bottom: -20px;
+}
+
+.pt-12 {
+  padding-top: 12px;
 }
 
 .h10 {

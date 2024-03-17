@@ -3,6 +3,7 @@ import {defineProps, ref} from 'vue';
 
 const props = defineProps({
   speakerName: String,
+  subtitle: String,
   showSpeaker: Function
 });
 
@@ -50,11 +51,16 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
          }"
          class="card" @click="showSpeaker(item, stage)">
       <template v-if="item['name'] === speakerName">
-        <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
-        <div class="right-part">
-          <h3 class="name">{{ speakerName }}</h3>
-          <h4 class="position" v-if="speakerName === 'Секретний спікер'" v-html="'***'"></h4>
-          <h4 class="position" v-else v-html="item['position']"></h4>
+        <template v-if="subtitle">
+          <h3 class="subtitle">{{subtitle}}</h3>
+        </template>
+        <div class="card-inner">
+          <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
+          <div class="right-part">
+            <h3 class="name">{{ speakerName }}</h3>
+            <h4 class="position" v-if="speakerName === 'Секретний спікер'" v-html="'***'"></h4>
+            <h4 class="position" v-else v-html="item['position']"></h4>
+          </div>
         </div>
       </template>
     </div>
@@ -63,7 +69,7 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
          :class="{
            'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
          }"
-         class="card unhover" @click="showSpeaker(item, stage)">
+         class="card-sub unhover" @click="showSpeaker(item, stage)">
       <template v-if="item['name'] === speakerName">
         <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
         <div class="right-part">
@@ -118,7 +124,51 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   width: 100%;
 }
 
+.card:not(.unhover) .card-inner .position {
+  color: #333;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "IBM Plex Sans",sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.subtitle {
+  max-width: 280px;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "IBM Plex Sans",sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .card {
+  display: grid;
+  justify-content: start;
+  width: 100%;
+  padding: 10px;
+}
+
+.card-inner {
+  border: 1px transparent solid;
+  width: 100%;
+  max-width: 295px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.card-sub {
   border: 1px transparent solid;
   width: 100%;
   max-width: 295px;
@@ -129,7 +179,6 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
 
 .card:not(.unhover):hover {
   cursor: pointer;
-  //border: 1px var(--azure) solid;
 }
 
 .unhover {

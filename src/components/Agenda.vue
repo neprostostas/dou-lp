@@ -115,7 +115,7 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">10:45</div>
           </div>
-          <h3 class="subtitle">Панельна дискусія про AI</h3>
+          <h3 class="subtitle">Вітальне слово DOU та панельна дискусія про AI</h3>
 
           <div class="cards-block">
             <div class="card-line">
@@ -424,7 +424,6 @@ const processedSpeech = computed(() => {
           </a>
         </template>
       </div>
-
     </div>
   </Lightbox>
 

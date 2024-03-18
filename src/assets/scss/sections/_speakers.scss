@@ -6,11 +6,31 @@
   }
 
   h2 {
-    @include border(var(--dark_yellow));
     text-align: center;
     font-size: 60px;
     font-weight: 700;
     padding: 25px 35px;
+    position: static;
+    margin: 0;
+    border: none;
+    outline: none;
+  }
+
+  .speakers-title {
+    @include border(var(--dark_yellow));
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding: 25px 35px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   h3 {
@@ -25,7 +45,7 @@
 
   h2,
   h3,
-  h4 {
+  h4, .speakers-title {
     text-align: center;
     font-weight: 700;
   }
@@ -46,7 +66,7 @@
     }
 
     &:nth-child(3) {
-      @include border(var(--yellow));
+      @include border(var(--violet));
       //padding: 65px 40px;
     }
 
@@ -182,7 +202,7 @@
 
   @include res('mobile') {
 
-    h2 {
+    h2, .speakers-title {
       font-size: 32px;
       padding: 20px 20px 30px;
     }

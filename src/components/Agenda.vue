@@ -149,7 +149,7 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Віктор Турський'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Віктор Турський'" :subtitle="'Підходи до розробки архітектури, які зменшують ризики провалу проєкту'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
                 <AgendaUser mobile :speaker-name="'Володимир Агафонкін'" :subtitle="'Вирішуємо життєві негаразди за допомогою JavaScript, або Візуалізація даних для особистого розвитку'" :showSpeaker="showSpeaker" />
@@ -265,14 +265,13 @@ const processedSpeech = computed(() => {
                 <AgendaUser mobile :speaker-name="'Анастасія Войтова'" :subtitle="'Зовсім не про пентести. Будуємо архітектуру безпеки в критично важливих системах'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Олександра Ковальова'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександра Ковальова'" :subtitle="'Скільки інженерів треба, щоб дістати кота з чорного ящика'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
                 <AgendaUser mobile :speaker-name="'Орест Дмитрасевич'" :subtitle="'(Не) культурні комунікації: налагоджуємо співпрацю з іноземними колегами'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>
-
 
         </div>
 
@@ -333,13 +332,13 @@ const processedSpeech = computed(() => {
           <div class="cards-block">
             <div class="card-line">
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Олександр Савченко'" :subtitle="'TBD'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександр Савченко'" :subtitle="'Архітектурні фітнес-функції. Як переконатися, що ваша архітектура оптимальна'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Олександр Хотемський'" :subtitle="'Алгоритми на практиці або історії з продакшену'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Олександр Хотемський'" :subtitle="'TMS більше не потрібні? Поєднуємо Manual і Automation-тестування'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Наталія Ренська'" :subtitle="'Як зменшити кількість хибних рішень і зекономити гроші під час розробки продукту. Швидка валідація гіпотез'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Наталія Ренська'" :subtitle="'Нарциси та психопати в організаціях. Як це впливає на розробку продуктів і втілення інноваційних рішень'" :showSpeaker="showSpeaker" />
                 <div class="h10"></div>
                 <AgendaUser mobile :speaker-name="'Роман Астаф’єв'" :showSpeaker="showSpeaker" />
               </div>
@@ -370,7 +369,7 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">21:00</div>
           </div>
-          <h3 class="subtitle">Прощальне слово, розіграш</h3>
+          <h3 class="subtitle">Закриття конференції, розіграш</h3>
         </div>
       </div>
       <hr class="grey-line mb-5">

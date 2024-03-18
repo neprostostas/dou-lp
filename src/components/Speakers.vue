@@ -21,7 +21,6 @@ onUnmounted(() => {
   window.removeEventListener('keydown', onEscKeyPress);
 });
 
-// const showLightbox = ref(false)
 const lightboxData = ref({})
 
 function showSpeaker({title, description, about_title, about_text, image, socials}, stage) {
@@ -57,30 +56,24 @@ const processedDescription = computed(() => {
 <template>
   <section id="speakers">
     <div class="container">
-      <h2>{{ content['speakers']['title'] }}</h2>
-      <div v-for="stage in content['speakers']['stages']" class="stage">
+      <div class="speakers-title">
+        <h2>{{ content['speakers']['title'] }}</h2>
+        <p class="subtitle">{{ content['speakers']['subtitle'] }}</p>
+      </div>
+      <div v-for="stage in content['speakers']['stages']" :class="{'stage-hidden': stage.main.title === 'Main Stage'}" class="stage">
 
-        <div class="main">
+        <h3>{{ stage['main']['title'] }}</h3>
+
+        <div class="main" v-if="false">
           <h3>{{ stage['main']['title'] }}</h3>
           <div class="list">
             <div v-for="item in stage['main']['list']" class="speaker_item" :class="{ unhover: stage['main']['title'] === 'Main Stage' || item['name'] === 'Секретний спікер', soon: item['soon'] === true }" @click="showSpeaker(item, stage)">
               <div class="image-box">
                 <img :src="imagePath + item['image']" :alt="item['name']">
-                <!--<Info @click="showSpeaker(item)"/>-->
               </div>
               <div class="content-box">
-
-           <!-- TODO: HARDCODE - uncomment when title will appear -->
                 <p v-if="false" class="title" v-html="item['title']" />
-           <!-- <p class="title" v-html="item['title']" />-->
-
-<!--                <span v-if="stage['main']['title'] !== 'Main Stage'" class="name" v-html="item['name']" />-->
-
-<!--                <a class="link" :href="item['link']" target="_blank" v-if="item['name'] !== 'Секретний спікер'" @click.stop>-->
                   <span class="name" v-html="item['name']" />
-<!--                </a>-->
-
-<!--                <span v-else class="name" v-html="item['name']" />-->
                 <span class="position" v-html="item['position']" />
               </div>
             </div>
@@ -88,7 +81,7 @@ const processedDescription = computed(() => {
         </div>
 
         <div v-show="stage['sub']" class="sub">
-          <h4>{{ stage['sub']['title'] }}</h4>
+          <!--<h4>{{ stage['sub']['title'] }}</h4>-->
           <div class="list">
             <div v-for="item in stage['sub']['list']" class="speaker_item unhover">
               <div class="image-box">
@@ -110,17 +103,11 @@ const processedDescription = computed(() => {
 
   <Lightbox :show="showLightbox" @close="emit('handleLightbox', false)">
     <div class="about-speaker">
-<!--      <p class="content-title" v-html="lightboxData.about_title" />-->
       <div class="title" v-html="lightboxData.title" />
-<!--      <p class="about-text" v-html="lightboxData.description"/>-->
       <div class="content">
         <div class="content-box">
           <p class="content-title" v-html="lightboxData.about_title" />
-
-     <!-- <p class="about-text" v-html="lightboxData.description"/>-->
           <p class="about-text" v-for="(line, index) in processedDescription" :key="index" v-html="line"></p>
-
-<!--          <p v-html="lightboxData.about_text" />-->
         </div>
         <div class="image-box">
           <img class="avatar" :src="imagePath + lightboxData.image" :alt="lightboxData.title">
@@ -145,6 +132,9 @@ const processedDescription = computed(() => {
 </template>
 
 <style scoped>
+.stage-hidden {
+  display: none!important;
+}
 .soon {
   display: none!important;
 }

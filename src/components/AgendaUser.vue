@@ -241,6 +241,7 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
+  padding: 10px;
 }
 
 .card:not(.unhover):hover {
@@ -273,6 +274,10 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
 
   .position, .subtitle {
     max-width: unset;
+  }
+
+  .card-sub {
+    padding: 0;
   }
 
 }

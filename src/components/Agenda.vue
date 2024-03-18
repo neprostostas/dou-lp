@@ -45,7 +45,7 @@ onUnmounted(() => {
 // const showLightbox = ref(false)
 const lightboxData = ref({})
 
-function showSpeaker({title, description, about_title, about_text, image, socials, speech}, stage) {
+function showSpeaker({title, description, about_title, about_text, image, socials, speech, double, about_title2, description2, image2, socials2}, stage) {
   lightboxData.value = {
     title,
     description,
@@ -53,7 +53,13 @@ function showSpeaker({title, description, about_title, about_text, image, social
     about_text,
     image,
     socials,
-    speech
+    speech,
+    double,
+
+    about_title2,
+    description2,
+    image2,
+    socials2
   }
 
   const isSecretGuest = about_title === 'Секретний спікер' ? true : false
@@ -72,6 +78,11 @@ function handleClick(link) {
 const processedDescription = computed(() => {
   if (!lightboxData.value.description) return [];
   return lightboxData.value.description.split('\n').filter(line => line.trim() !== '');
+});
+
+const processedDescription2 = computed(() => {
+  if (!lightboxData.value.description2) return [];
+  return lightboxData.value.description2.split('\n').filter(line => line.trim() !== '');
 });
 
 const processedSpeech = computed(() => {
@@ -424,7 +435,31 @@ const processedSpeech = computed(() => {
           </a>
         </template>
       </div>
+
+      <div v-if="lightboxData.double" class="about-speaker double">
+        <div class="content">
+          <div class="content-box">
+            <p class="content-title" v-html="lightboxData.about_title2" />
+            <p class="about-text" v-for="(line, index) in processedDescription2" :key="index" v-html="line"></p>
+          </div>
+          <div class="image-box">
+            <img class="avatar" :src="imagePath + lightboxData.image2" :alt="lightboxData.about_title2">
+          </div>
+        </div>
+        <div>
+          <template  v-for="social in lightboxData.socials2">
+            <a v-if="social['link']"
+               :href="social['link']"
+               @click="handleClick(social['link'])"
+               class="social"
+               target="_blank">
+              <component v-if="social['link']" :is="social['name']"></component>
+            </a>
+          </template>
+        </div>
+      </div>
     </div>
+
   </Lightbox>
 
 </template>

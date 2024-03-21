@@ -28,8 +28,8 @@ function checkDateInRange(startDateText, endDateText) {
 }
 
 onMounted(() => {
-  // Перевіряємо, чи поточна дата підпадає під діапазон з "8 березня" по "11 березня"
-  isBannerVisible.value = checkDateInRange("8 березня", "11 березня"); // дата завершення ВКЛЮЧНО
+  // Перевіряємо, чи поточна дата підпадає під діапазон з "22 березня" по "25 березня"
+  isBannerVisible.value = checkDateInRange("22 березня", "25 березня"); // дата завершення ВКЛЮЧНО
 });
 </script>
 

@@ -870,7 +870,9 @@
   "partners": {
     "main": {
       "title": "Генеральний партнер",
-      "image": "svg/partner.svg"
+      "image": "svg/partner.svg",
+      "alt": "ukrsibbank",
+      "link": "https://jobs.dou.ua/companies/ukrsibbank/"
     },
     "title": "Партнери",
     "images": [

@@ -4,10 +4,12 @@
 <template>
   <section id="partners">
     <div class="container">
-<!--      <div class="main-partner">-->
-<!--        <h2 v-html="content['partners']['main']['title']"></h2>-->
-<!--        <img :src="imagePath + content['partners']['main']['image']">-->
-<!--      </div>-->
+      <div class="main-partner">
+        <h2 v-html="content['partners']['main']['title']"></h2>
+        <a :href="content['partners']['main']['link']" target="_blank">
+          <img :src="imagePath + content['partners']['main']['image']" :alt="content['partners']['main']['alt']">
+        </a>
+      </div>
       <h2 v-html="content['partners']['title']"></h2>
       <div class="partners-list">
         <div class="image" v-for="partner in content['partners']['images']" >

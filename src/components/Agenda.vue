@@ -211,6 +211,40 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage five">
+
+        <div class="pro-line">
+          <div class="stage-title pro sticky">Pro Stage</div>
+          <div class="box-ticket">
+            Pro Tickets
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">12:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">12:45</div>
+          </div>
+          <h3 class="subtitle">Про освіту, розвиток і утримання талантів в Україні</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Денис Гриньов'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Єгор Стадний'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модераторка</h4>
+              <AgendaUser :speaker-name="'Галина Титиш'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage five">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -287,7 +321,41 @@ const processedSpeech = computed(() => {
         </div>
 
       </div>
-      <hr class="grey-line mb-5">
+      <hr class="grey-line">
+
+      <div class="stage five">
+
+        <div class="pro-line">
+          <div class="stage-title pro sticky">Pro Stage</div>
+          <div class="box-ticket">
+            Pro Tickets
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">16:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">16:45</div>
+          </div>
+          <h3 class="subtitle">Про стан, розвиток і ризики продуктових ІТ-компаній в Україні</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Володимир Многолєтній'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олександр Косован'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модератор</h4>
+              <AgendaUser :speaker-name="'Ілля Кабачинський'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
 
       <div class="stage seven">
         <div class="info-container">
@@ -321,6 +389,40 @@ const processedSpeech = computed(() => {
             <div class="card-alone">
               <h4 class="role">Модератор</h4>
               <AgendaUser :speaker-name="'Юра Федоренко'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage five">
+
+        <div class="pro-line">
+          <div class="stage-title pro sticky">Pro Stage</div>
+          <div class="box-ticket">
+            Pro Tickets
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">18:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">18:45</div>
+          </div>
+          <h3 class="subtitle">Про стан, розвиток і ризики сервісних ІТ-компаній в Україні</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Віталій Седлер'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олена Самборська'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Тарас Кицмей'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модератор</h4>
+              <AgendaUser :speaker-name="'Модератора оголосимо згодом'" :showSpeaker="showSpeaker" />
             </div>
           </div>
 
@@ -568,19 +670,37 @@ hr {
   text-transform: none;
 }
 
+.pro {
+  color: #cea045;
+}
+
 .card-line {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.card-wrap {
-  border: 1px transparent solid;
-  height: fit-content;
+.pro-line {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid #daefee;
 }
 
-.card-wrap:hover {
-  border: 1px var(--azure) solid;
+.pro-line .stage-title {
+  border-bottom: none;
+}
+
+.box-ticket {
+  max-width: 145px;
+  width: 100%;
+  text-align: center;
+  color: #CFA046;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 8px 24px;
+  border: 1px solid #CFA046;
 }
 
 .subtitle {
@@ -606,7 +726,7 @@ hr {
   grid-column-start: 1;
   grid-column-end: 4;
 
-  padding: 15px 0 10px;
+  padding: 15px 0 0;
   color: #333;
   font-size: 16px;
   font-style: normal;
@@ -726,6 +846,10 @@ hr {
 
   .card-wrap, .card-wrap:hover {
     border: unset;
+  }
+
+  .role {
+    padding: 15px 0 10px;
   }
 
 }

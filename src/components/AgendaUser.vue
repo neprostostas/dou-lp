@@ -85,11 +85,13 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
 
     <!-- for mobile -->
     <template v-if="!mobile || stage['main']['title'] === stageTitle">
-      <div v-for="item in stage['main']['list']"
+      <a v-for="item in stage['main']['list']"
            :class="{
-           'unhover': shouldUnhover(speakerName)(item),
-           'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
+           'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage),
+           'gold': stage['main']['title'] === 'Main Stage'
          }"
+           :href="stage['main']['title'] !== 'Main Stage' ? 'javascript:void(0);' : (item['link'] === '' ? 'javascript:void(0);' : item['link'])"
+         :target="item['link'] === '' || stage['main']['title'] !== 'Main Stage' ? '_self' : '_blank'"
            class="card" @click="showSpeaker(item, stage)">
         <template v-if="item['name'] === speakerName">
           <template v-if="subtitle">
@@ -104,16 +106,18 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
             </div>
           </div>
         </template>
-      </div>
+      </a>
     </template>
 
     <!-- for desktops -->
     <template v-else-if="screenWidth > 825">
-      <div v-for="item in stage['main']['list']"
+      <a v-for="item in stage['main']['list']"
            :class="{
-           'unhover': shouldUnhover(speakerName)(item),
-           'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
+           'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage),
+           'gold': stage['main']['title'] === 'Main Stage'
          }"
+           :href="stage['main']['title'] !== 'Main Stage' ? 'javascript:void(0);' : (item['link'] === '' ? 'javascript:void(0);' : item['link'])"
+         :target="item['link'] === '' || stage['main']['title'] !== 'Main Stage' ? '_self' : '_blank'"
            class="card" @click="showSpeaker(item, stage)">
         <template v-if="item['name'] === speakerName">
           <template v-if="subtitle">
@@ -128,22 +132,24 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
             </div>
           </div>
         </template>
-      </div>
+      </a>
     </template>
 
-    <div v-for="item in stage['sub']['list']"
+    <a v-for="item in stage['sub']['list']"
          :class="{
            'stage-hidden': shouldApplyStageHiddenClass(speakerName, item, stage)
          }"
-         class="card-sub unhover" @click="showSpeaker(item, stage)">
+         :href="stage['main']['title'] !== 'Main Stage' ? 'javascript:void(0);' : (item['link'] === '' ? 'javascript:void(0);' : item['link'])"
+         :target="item['link'] === '' || stage['main']['title'] !== 'Main Stage' ? '_self' : '_blank'"
+         class="card-sub" @click="showSpeaker(item, stage)">
       <template v-if="item['name'] === speakerName">
-        <img class="ava" :src="imagePath + item['image']" :alt="item['name']">
+        <img class="ava gold" :src="imagePath + item['image']" :alt="item['name']">
         <div class="right-part">
           <h3 class="name">{{ speakerName }}</h3>
           <h4 class="position" v-html="item['position']"></h4>
         </div>
       </template>
-    </div>
+    </a>
 
   </div>
 </template>
@@ -160,6 +166,14 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   border-radius: 150px;
   border: 2px var(--white) solid;
   outline: var(--azure) solid 1px;
+}
+
+.ava.gold {
+  outline: #FFE03A solid 1px!important;
+}
+
+.gold.card .ava {
+  outline: #FFE03A solid 1px!important;
 }
 
 .name {
@@ -190,7 +204,7 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   width: 100%;
 }
 
-.card:not(.unhover) .card-inner .position {
+.card:not(.gold) .card-inner .position {
   color: #333;
   font-size: 16px;
   font-style: italic;
@@ -235,6 +249,7 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
 }
 
 .card-sub {
+  cursor: pointer;
   border: 1px transparent solid;
   width: 100%;
   max-width: 295px;
@@ -248,15 +263,27 @@ function shouldApplyStageHiddenClass(speakerName, item, stage) {
   cursor: pointer;
 }
 
-.unhover {
+.card {
   border: 1px transparent solid;
-  cursor: auto;
+  height: fit-content;
+}
+
+.card:hover {
+  border: 1px var(--azure) solid;
+}
+
+.card-sub:hover, .card.gold:hover {
+  border: 1px #FFE03A solid;
 }
 
 @media (max-width: 825px) {
 
-  .unhover {
-    border: none;
+  .card:hover {
+    border: 1px transparent solid;
+  }
+
+  .card-sub:hover, .card.gold:hover {
+    border: 1px transparent solid;
   }
 
   .card {

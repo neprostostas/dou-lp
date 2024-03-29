@@ -222,8 +222,155 @@
                 {"name":  "youtube", "link": "" },
                 {"name":  "dou", "link": "" }
               ]
-            }
+            },
 
+            {
+              "image": "speakers/Grinov_new.png",
+              "title": "",
+              "name": "Денис Гриньов",
+              "position": "Керівник EPAM University та віцепрезидент з освітніх питань ІТ Асоціації",
+              "link": "https://www.linkedin.com/in/denys-grynov-282434a8/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/denys-grynov-282434a8/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Stadnyi_new.png",
+              "title": "",
+              "name": "Єгор Стадний",
+              "position": "Перший проректор, декан-засновник факультету бакалаврських студій Київської школи економіки",
+              "link": "https://www.linkedin.com/in/yegor-stadnyi/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/yegor-stadnyi/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Mnogoletniy_new.png",
+              "title": "",
+              "name": "Володимир Многолєтній",
+              "position": "CEO і співзасновник Genesis",
+              "link": "https://www.linkedin.com/in/vladimir-mnogoletniy-184b231/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/vladimir-mnogoletniy-184b231/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Akosovan_new.png",
+              "title": "",
+              "name": "Олександр Косован",
+              "position": "CEO і засновник MacPaw",
+              "link": "https://www.linkedin.com/in/akosovan/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/akosovan/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Sedler_new.png",
+              "title": "",
+              "name": "Віталій Седлер",
+              "position": "CEO та співзасновник Intellias",
+              "link": "https://www.linkedin.com/in/vitaly-sedler-0b507a2/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/vitaly-sedler-0b507a2/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Samborska_new.png",
+              "title": "",
+              "name": "Олена Самборська",
+              "position": "Управляюча та HR-директорка Luxoft в Украіні",
+              "link": "https://www.linkedin.com/in/olena-samborska-6b636612/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/olena-samborska-6b636612/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Kytsmey_new.png",
+              "title": "",
+              "name": "Тарас Кицмей",
+              "position": "Cпівзасновник та член Ради директорів SoftServe",
+              "link": "https://www.linkedin.com/in/taras-kytsmey-1443064/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/taras-kytsmey-1443064/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            }
           ]
         },
 
@@ -248,8 +395,25 @@
               "name": "Андрій Бродецький",
               "position": "Private Equity Analyst Horizon Capital",
               "link": "https://www.linkedin.com/in/andrii-brodetskyi/"
+            },
+            {
+              "image": "speakers/Tytysh_new.png",
+              "name": "Галина Титиш",
+              "position": "Голова правління ГО «Смарт освіта»",
+              "link": "https://www.facebook.com/htytysh"
+            },
+            {
+              "image": "speakers/Pobedyn_new.png",
+              "name": "Ілля Кабачинський",
+              "position": "Журналіст",
+              "link": "https://www.linkedin.com/in/pobedyn/"
+            },
+            {
+              "image": "speakers/secret_portrait_new.png",
+              "name": "Модератора оголосимо згодом",
+              "position": "сoming soon...",
+              "link": ""
             }
-
           ]
         }
       },
@@ -892,7 +1056,9 @@
       { "name": "epam.png", "url": "https://www.epam.com/", "alt": "epam" },
       { "name": "softserve.png", "url": "https://jobs.dou.ua/companies/softserve/", "alt": "softserve" },
       { "name": "ciklum.png", "url": "https://jobs.dou.ua/companies/ciklum/", "alt": "ciklum" },
-      { "name": "ispace.png", "url": "https://ispace.ua/ua/", "alt": "ispace" }
+      { "name": "ispace.png", "url": "https://ispace.ua/ua/?utm_source=dou&utm_medium=cpc&utm_campaign=dou_referral&utm_id=dou_referral&utm_content=dou_referral&utm_term=dou_referral", "alt": "ispace" },
+      { "name": "sabotage.png", "url": "https://sabotage.wine/", "alt": "sabotage" },
+      { "name": "sigma.png", "url": "https://jobs.dou.ua/companies/sigma-software/", "alt": "sigma-software" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

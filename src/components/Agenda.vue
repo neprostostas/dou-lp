@@ -199,18 +199,6 @@ const processedSpeech = computed(() => {
       <hr class="grey-line mb-5">
 
       <div class="stage four">
-        <div class="info-container">
-          <div class="time">
-            <div class="start-time">13:00</div>
-            <div class="divider-time">...</div>
-            <div class="end-time">14:00</div>
-          </div>
-          <h3 class="subtitle">Обід і нетворкінг, час на локації</h3>
-        </div>
-      </div>
-      <hr class="grey-line">
-
-      <div class="stage five">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -245,6 +233,18 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage five">
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">13:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">14:00</div>
+          </div>
+          <h3 class="subtitle">Обід і нетворкінг, час на локації</h3>
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage six">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -271,7 +271,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage six">
+      <div class="stage seven">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -323,7 +323,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage five">
+      <div class="stage eight">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -357,7 +357,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage seven">
+      <div class="stage nine">
         <div class="info-container">
           <div class="time">
             <div class="start-time">16:45</div>
@@ -369,7 +369,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage eight">
+      <div class="stage ten">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -396,7 +396,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage five">
+      <div class="stage eleven">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -430,7 +430,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage nine">
+      <div class="stage twelve">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -463,7 +463,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage ten">
+      <div class="stage thirteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">19:15</div>
@@ -475,7 +475,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage eleven">
+      <div class="stage fourteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">20:30</div>
@@ -487,7 +487,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage twelve">
+      <div class="stage fifteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">21:00</div>
@@ -499,7 +499,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage thirteen">
+      <div class="stage sixteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">22:00</div>

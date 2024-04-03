@@ -1060,7 +1060,9 @@
       { "name": "sabotage.png", "url": "https://sabotage.wine/", "alt": "sabotage" },
       { "name": "sigma.png", "url": "https://jobs.dou.ua/companies/sigma-software/", "alt": "sigma-software" },
       { "name": "macpaw.png", "url": "https://jobs.dou.ua/companies/macpaw/", "alt": "macpaw" },
-      { "name": "squad.png", "url": "https://jobs.dou.ua/companies/squad/", "alt": "squad" }
+      { "name": "squad.png", "url": "https://jobs.dou.ua/companies/squad/", "alt": "squad" },
+      { "name": "spd-technology.png", "url": "https://jobs.dou.ua/companies/spd-technology/", "alt": "spd-technology" },
+      { "name": "ai-house.png", "url": "https://jobs.dou.ua/companies/ai-house/", "alt": "ai-house" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

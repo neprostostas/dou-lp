@@ -267,6 +267,27 @@
               ]
             },
             {
+              "image": "speakers/Apostol_new.jpeg",
+              "title": "",
+              "name": "Роман Апостол",
+              "position": "СEO та співзасновник Mate academy",
+              "link": "https://www.linkedin.com/in/romanapostol/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/romanapostol/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Mnogoletniy_new.png",
               "title": "",
               "name": "Володимир Многолєтній",

@@ -27,11 +27,11 @@ import Check from "@/components/icons/Check.vue";
                   <span v-if="plan['type']"  class="type" v-html="plan['type']"></span>
                   <div v-if="plan['price']" class="price">
                     {{ plan['price' ]}}
-                    <span v-if="plan['subtitle']" class="subtitle" v-html="plan['subtitle']"></span>
+<!--                    <span v-if="plan['subtitle']" class="subtitle" v-html="plan['subtitle']"></span>-->
                   </div>
                 </div>
 
-                <div v-if="plan['text']">
+                <div v-if="plan['text'] && plan['type'] === 'Regular'">
                   <a :href="content['common']['button_url']" target="_blank" class="btn">{{ content['tickets']['button_text']}}</a>
                   <span class="text" v-html="plan['text']" />
                 </div>

@@ -110,6 +110,14 @@
 
     &.plan-box {
       @include border(var(--bright_yellow));
+
+      .type {
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50px);
+      }
+
     }
   }
 
@@ -167,7 +175,7 @@
         padding: 40px 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
       }
     }
 
@@ -243,6 +251,18 @@
 
 }
 
+@media (max-width: 1075px) {
+
+  #tickets .plans-wrapper:first-child .plan1 .price {
+    font-size: 40px;
+  }
+
+  #tickets .plan1.plan-box .type {
+    transform: translate(-50%, -40px);
+  }
+
+}
+
 @media (max-width: 860px) {
 
   #tickets {
@@ -290,6 +310,14 @@
       }
     }
   }
+
+  #tickets .plan1.plan-box .type {
+    position: unset;
+    left: unset;
+    bottom: unset;
+    transform: unset;
+  }
+
 }
 
 @media (max-width: 767px) {

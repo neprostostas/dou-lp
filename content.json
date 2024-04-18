@@ -1005,7 +1005,7 @@
           },
           {
             "type": "PRO",
-            "price": "7500 ₴",
+            "price": "Sold Out",
             "subtitle": "усього 200 місць",
             "text": "економія <span class='primary-color'>3000 ₴</span>"
           }
@@ -1018,7 +1018,7 @@
             "price": "6000 ₴"
           },
           {
-            "price": "9000 ₴"
+            "price": "Sold Out"
           }
         ]
       },
@@ -1029,7 +1029,7 @@
             "price": "7500 ₴"
           },
           {
-            "price": "10500 ₴"
+            "price": "Sold Out"
           }
         ]
       }

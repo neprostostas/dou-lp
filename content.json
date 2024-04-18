@@ -372,6 +372,27 @@
               ]
             },
             {
+              "image": "speakers/Okseniuk_new.jpeg",
+              "title": "",
+              "name": "Андрій Оксенюк",
+              "position": "CFO Ciklum",
+              "link": "https://www.linkedin.com/in/andriy-oksenyuk-9479991/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/andriy-oksenyuk-9479991/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Kytsmey_new.png",
               "title": "",
               "name": "Тарас Кицмей",
@@ -410,6 +431,12 @@
               "name": "Юра Федоренко",
               "position": "Програмний директор УТ-2",
               "link": "https://www.linkedin.com/in/djamah/"
+            },
+            {
+              "image": "speakers/Dovgopolyi_new.jpeg",
+              "name": "Денис Довгополий",
+              "position": "СЕО Unicorn Nest",
+              "link": "https://www.linkedin.com/in/dennydo/"
             },
             {
               "image": "speakers/Brodetsky_new.jpeg",
@@ -1062,33 +1089,35 @@
     "title": "Партнери",
     "images": [
       { "name": "djinni.png", "url": "https://djinni.co/", "alt": "djinni"},
+      { "name": "ajax-systems.png", "url": "https://jobs.dou.ua/companies/ajax-systems/", "alt": "ajax-systems" },
+      { "name": "softserve.png", "url": "https://jobs.dou.ua/companies/softserve/", "alt": "softserve" },
+      { "name": "epam.png", "url": "https://www.epam.com/", "alt": "epam" },
       { "name": "genesis.png", "url": "https://jobs.dou.ua/companies/genesis-technology-partners/","alt": "genesis" },
       { "name": "brainstack.svg", "url": "https://jobs.dou.ua/companies/brainstack/", "alt": "brainstack" },
-      { "name": "universe.png", "url": "https://jobs.dou.ua/companies/universe/", "alt": "universe" },
-      { "name": "readdle.png", "url": "https://jobs.dou.ua/companies/readdle-inc/", "alt": "readdle" },
-      { "name": "skylum_wide.png", "url": "https://jobs.dou.ua/companies/skylum-software/", "alt": "skylum" },
-      { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" },
       { "name": "mojam.png", "url": "https://jobs.dou.ua/companies/mojam/", "alt": "mojam" },
+      { "name": "universe.png", "url": "https://jobs.dou.ua/companies/universe/", "alt": "universe" },
+      { "name": "skylum_wide.png", "url": "https://jobs.dou.ua/companies/skylum-software/", "alt": "skylum" },
+      { "name": "readdle.png", "url": "https://jobs.dou.ua/companies/readdle-inc/", "alt": "readdle" },
       { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" },
-      { "name": "ajax-systems.png", "url": "https://jobs.dou.ua/companies/ajax-systems/", "alt": "ajax-systems" },
-      { "name": "luxoft.png", "url": "https://jobs.dou.ua/companies/luxoft/", "alt": "luxoft" },
-      { "name": "lexus.png", "url": "https://www.lexus.ua/", "alt": "lexus" },
-      { "name": "wiseit.png", "url": "https://jobs.dou.ua/companies/wise-it/", "alt": "wiseit" },
-      { "name": "epam.png", "url": "https://www.epam.com/", "alt": "epam" },
-      { "name": "softserve.png", "url": "https://jobs.dou.ua/companies/softserve/", "alt": "softserve" },
       { "name": "ciklum.png", "url": "https://jobs.dou.ua/companies/ciklum/", "alt": "ciklum" },
-      { "name": "ispace.png", "url": "https://ispace.ua/ua/?utm_source=dou&utm_medium=cpc&utm_campaign=dou_referral&utm_id=dou_referral&utm_content=dou_referral&utm_term=dou_referral", "alt": "ispace" },
-      { "name": "sabotage.png", "url": "https://sabotage.wine/", "alt": "sabotage" },
       { "name": "sigma.png", "url": "https://jobs.dou.ua/companies/sigma-software/", "alt": "sigma-software" },
+      { "name": "luxoft.png", "url": "https://jobs.dou.ua/companies/luxoft/", "alt": "luxoft" },
+      { "name": "wiseit.png", "url": "https://jobs.dou.ua/companies/wise-it/", "alt": "wiseit" },
       { "name": "macpaw.png", "url": "https://jobs.dou.ua/companies/macpaw/", "alt": "macpaw" },
       { "name": "squad.png", "url": "https://jobs.dou.ua/companies/squad/", "alt": "squad" },
-      { "name": "spd-technology.png", "url": "https://jobs.dou.ua/companies/spd-technology/", "alt": "spd-technology" },
-      { "name": "ai-house.png", "url": "https://jobs.dou.ua/companies/ai-house/", "alt": "ai-house" },
       { "name": "kyivstar-tech-new.png", "url": "https://kyivstar.tech/", "alt": "kyivstar-tech" },
-      { "name": "truskavetska.png", "url": "https://truskavetska.com.ua/", "alt": "truskavetska" },
+      { "name": "ai-house.png", "url": "https://jobs.dou.ua/companies/ai-house/", "alt": "ai-house" },
+      { "name": "spd-technology.png", "url": "https://jobs.dou.ua/companies/spd-technology/", "alt": "spd-technology" },
+      { "name": "n-ix.png", "url": "https://bit.ly/dou-day-n-ix-careers", "alt": "n-ix" },
+      { "name": "skelar.png", "url": "https://jobs.dou.ua/companies/skelar/", "alt": "skelar" },
+      { "name": "mate-academy.png", "url": "https://jobs.dou.ua/companies/mate-academy/", "alt": "mate-academy" },
+      { "name": "lexus.png", "url": "https://www.lexus.ua/", "alt": "lexus" },
+      { "name": "ispace.png", "url": "https://ispace.ua/ua/?utm_source=dou&utm_medium=cpc&utm_campaign=dou_referral&utm_id=dou_referral&utm_content=dou_referral&utm_term=dou_referral", "alt": "ispace" },
       { "name": "uzspace.png", "url": "https://uzspace.ua/uk/", "alt": "uzspace" },
+      { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" },
       { "name": "pravda-beer.png", "url": "https://www.pravda.beer/pravda/", "alt": "pravda-beer" },
-      { "name": "skelar.png", "url": "https://jobs.dou.ua/companies/skelar/", "alt": "skelar" }
+      { "name": "sabotage.png", "url": "https://sabotage.wine/", "alt": "sabotage" },
+      { "name": "truskavetska.png", "url": "https://truskavetska.com.ua/", "alt": "truskavetska" }
     ],
     "text": "Хочете бути серед партнерів — напишіть на"
   },

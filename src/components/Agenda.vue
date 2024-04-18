@@ -259,7 +259,7 @@ const processedSpeech = computed(() => {
               <h4 class="role pd-0">Спікери</h4>
               <AgendaUser :speaker-name="'Макс Іщенко'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Роман Прокоф’єв'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Тарас Кицмей'" :showSpeaker="showSpeaker" />
             </div>
             <div class="card-alone">
               <h4 class="role">Модератор</h4>
@@ -418,11 +418,11 @@ const processedSpeech = computed(() => {
               <h4 class="role pd-0">Спікери</h4>
               <AgendaUser :speaker-name="'Віталій Седлер'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Олена Самборська'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Тарас Кицмей'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Андрій Оксенюк'" :showSpeaker="showSpeaker" />
             </div>
             <div class="card-alone">
               <h4 class="role">Модератор</h4>
-              <AgendaUser :speaker-name="'Модератора оголосимо згодом'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Денис Довгополий'" :showSpeaker="showSpeaker" />
             </div>
           </div>
 

@@ -995,30 +995,19 @@
     "button_text": "Придбати квиток",
     "dates": [
       {
-        "title": "до 19.04",
+        "title": "до 09.05",
         "plans": [
           {
             "type": "Regular",
-            "price": "4500 ₴",
+            "price": "6000 ₴",
             "subtitle": "",
-            "text": "економія <span class='primary-color'>3000 ₴</span>"
+            "text": "економія <span class='primary-color'>1500 ₴</span>"
           },
           {
             "type": "PRO",
             "price": "Sold Out",
             "subtitle": "усього 200 місць",
             "text": "економія <span class='primary-color'>3000 ₴</span>"
-          }
-        ]
-      },
-      {
-        "title": "з 19.04",
-        "plans": [
-          {
-            "price": "6000 ₴"
-          },
-          {
-            "price": "Sold Out"
           }
         ]
       },

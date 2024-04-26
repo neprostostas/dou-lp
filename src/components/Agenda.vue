@@ -146,6 +146,33 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage three">
+        <div class="stage-title mini-stage sticky">
+          <h3>Mini Stage</h3>
+          <p>до 100 місць</p>
+        </div>
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">11:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">12:00</div>
+          </div>
+          <h3 class="subtitle">AI Brunch</h3>
+
+          <div class="cards-block">
+            <div class="card-line grid-one">
+              <div class="mini-stage-content">
+                <p class="p-mini-stage">Невимушена зустріч з однодумцями, де будуть обговорювати останні новини у сфері ШІ та обмінюватися досвідом. Бранч проводить AI HOUSE, найбільше ШІ-ком’юніті в Україні, і Roosh Investment Group.</p>
+                <p class="p-mini-stage-cursive">Участь за попередньою реєстрацією</p>
+                <a class="green-button" href="https://2uwtsfg7pi6.typeform.com/to/ABVvGD70" target="_blank">Зареєструватись</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage four">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -198,7 +225,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage four">
+      <div class="stage five">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -232,7 +259,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage five">
+      <div class="stage six">
         <div class="info-container">
           <div class="time">
             <div class="start-time">13:00</div>
@@ -244,7 +271,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage six">
+      <div class="stage seven">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -271,7 +298,37 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage seven">
+      <div class="stage eight">
+        <div class="stage-title mini-stage sticky">
+          <h3>Mini Stage</h3>
+          <p>до 100 місць</p>
+        </div>
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">15:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">16:00</div>
+          </div>
+          <h3 class="subtitle">Панельна дискусія про ІТ на війні</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Катерина Черногоренко'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олег Берестовий'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Іван Гоменюк'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модератор</h4>
+              <AgendaUser :speaker-name="'Євген Ковалевський'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage nine">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -323,7 +380,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage eight">
+      <div class="stage ten">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -357,7 +414,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage nine">
+      <div class="stage eleven">
         <div class="info-container">
           <div class="time">
             <div class="start-time">16:45</div>
@@ -369,7 +426,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage ten">
+      <div class="stage twelve">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -396,7 +453,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage eleven">
+      <div class="stage thirteen">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -430,7 +487,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage twelve">
+      <div class="stage fourteen">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -463,7 +520,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage thirteen">
+      <div class="stage fifteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">19:15</div>
@@ -475,7 +532,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage fourteen">
+      <div class="stage sixteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">20:30</div>
@@ -487,7 +544,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage fifteen">
+      <div class="stage seventeen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">21:00</div>
@@ -499,7 +556,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage sixteen">
+      <div class="stage eighteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">22:00</div>
@@ -753,6 +810,75 @@ hr {
 .h10 {
   height: 10px;
 }
+
+.grid-one {
+  grid-template-columns: auto;
+}
+
+.p-mini-stage {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 650px;
+  width: 100%;
+  margin: 0;
+}
+
+.p-mini-stage-cursive {
+  color: #333;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.green-button {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 13px 20px 15px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: #2DB653;
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.mini-stage h3 {
+  color: #2DB653;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.mini-stage p {
+  padding: 10px 0;
+  margin: 0;
+  color: #2DB653;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.stage-title.mini-stage::after {
+  border-bottom: 2px solid #2DB653;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 825px) {
 

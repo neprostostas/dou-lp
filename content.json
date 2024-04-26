@@ -203,6 +203,69 @@
               ]
             },
             {
+              "image": "speakers/Сhernogorenko.png",
+              "title": "",
+              "name": "Катерина Черногоренко",
+              "position": "заступниця міністра оборони з питань цифрового розвитку, цифрових трансформацій і цифровізації",
+              "link": "https://www.mil.gov.ua/ministry/kerivnicztvo/kerivnicztvo-ministerstva-oboroni-ukraini/chernegorenko-katerina-leonidivna.html",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.mil.gov.ua/ministry/kerivnicztvo/kerivnicztvo-ministerstva-oboroni-ukraini/chernegorenko-katerina-leonidivna.html" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Berestovuy.png",
+              "title": "",
+              "name": "Олег Берестовий",
+              "position": "начальник Управління інформаційних технологій Міністерства оборони України",
+              "link": "https://www.linkedin.com/in/berestovy/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/berestovy/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/secret_portrait_new.png",
+              "title": "",
+              "name": "Іван Гоменюк",
+              "position": "майстер роти ударних БпАК, 95-та бригада ДШВ, айтівець",
+              "link": "",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Chmut_new.jpeg",
               "title": "",
               "name": "Тарас Чмут",
@@ -419,12 +482,17 @@
         "sub": {
           "title": "Модератори",
           "list": [
-
             {
               "image": "speakers/Zatsarynna_new.jpeg",
               "name": "Влада Зацаринна",
               "position": "COO DOU",
               "link": "https://www.linkedin.com/in/vladaz/"
+            },
+            {
+              "image": "speakers/Kovalevskiy.png",
+              "name": "Євген Ковалевський",
+              "position": "VP of Engineering/CTO в LetyShops, KOLO",
+              "link": "https://www.linkedin.com/in/yevhen-kovalevskiy-33174155/"
             },
             {
               "image": "speakers/Fedorenko_new.jpeg",

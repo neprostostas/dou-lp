@@ -21,20 +21,29 @@ import Check from "@/components/icons/Check.vue";
           <div v-for="date in content['tickets']['dates']" class="plans-wrapper">
             <p class="title" v-html="date['title']"></p>
             <div class="plans-info">
-              <div v-for="(plan, index) in date['plans']" :class="'plan'+index" class="plan-box">
+              <div v-for="(plan, index) in date['plans']" :class="'plan'+(index-1)" class="plan-box">
+
 
                 <div class="top-block">
                   <span v-if="plan['type']"  class="type" v-html="plan['type']"></span>
-                  <div v-if="plan['price']" class="price">
+                  <div v-if="plan['price'] && plan['type'] !== 'Упс, усі квитки розпродано'" class="price">
                     {{ plan['price' ]}}
 <!--                    <span v-if="plan['subtitle']" class="subtitle" v-html="plan['subtitle']"></span>-->
                   </div>
+                  <div class="block-topic" v-if="plan['type'] === 'Упс, усі квитки розпродано'">
+                    <div v-if="plan['price']" class="price">
+                      {{ plan['price' ]}}
+                      <!--                    <span v-if="plan['subtitle']" class="subtitle" v-html="plan['subtitle']"></span>-->
+                    </div>
+                    <a href="https://dou.ua/forums/topic/48547/" target="_blank" class="btn btn-primary topic">До топіку</a>
+                  </div>
                 </div>
 
-                <div v-if="plan['text'] && plan['type'] === 'Regular'">
-                  <a :href="content['common']['button_url']" target="_blank" class="btn">{{ content['tickets']['button_text']}}</a>
-                  <span class="text" v-html="plan['text']" />
-                </div>
+
+<!--                <div v-if="plan['text'] && plan['type'] === 'Regular'">-->
+<!--                  <a :href="content['common']['button_url']" target="_blank" class="btn">{{ content['tickets']['button_text']}}</a>-->
+<!--                  <span class="text" v-html="plan['text']" />-->
+<!--                </div>-->
               </div>
             </div>
           </div>

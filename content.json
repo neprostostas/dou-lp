@@ -1063,29 +1063,17 @@
     "button_text": "Придбати квиток",
     "dates": [
       {
-        "title": "до 09.05",
         "plans": [
           {
+            "type": "Упс, усі квитки розпродано",
+            "price": "Але ще є топік для обміну, продажу та пошуку квитків на DOU Day 2024"
+          },
+          {
             "type": "Regular",
-            "price": "6000 ₴",
-            "subtitle": "",
-            "text": "економія <span class='primary-color'>1500 ₴</span>"
+            "price": "Sold Out"
           },
           {
             "type": "PRO",
-            "price": "Sold Out",
-            "subtitle": "усього 200 місць",
-            "text": "економія <span class='primary-color'>3000 ₴</span>"
-          }
-        ]
-      },
-      {
-        "title": "з 10.05 <span>(за тиждень до івенту)</span>",
-        "plans": [
-          {
-            "price": "7500 ₴"
-          },
-          {
             "price": "Sold Out"
           }
         ]

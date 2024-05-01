@@ -7,6 +7,15 @@
     max-width: 1100px;
   }
 
+  .block-topic {
+    padding-top: 20px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: start;
+  }
+
   .info-tip {
     padding: 20px 0 0 0;
     line-height: 1.5;
@@ -65,7 +74,9 @@
     }
   }
   .plans-info {
-    @include flexbox(row, space-between, stretch);
+    //@include flexbox(row, space-between, stretch);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     width: 100%;
   }
@@ -92,6 +103,37 @@
       @include border(var(--violet));
       color: var(--violet);
       padding: 15px 30px;
+    }
+  }
+
+  .plan-1 {
+    color: var(--violet);
+
+    &.plan-box {
+      @include border(var(--violet));
+
+      .type {
+        text-align: left;
+        padding: 5px 0 0 10px;
+        color: var(--violet, #9842A4);
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 72px */
+      }
+
+      .price {
+        padding: 0 0 10px 0!important;
+        max-width: 400px;
+        width: 100%;
+        text-align: left;
+        color: var(--violet, #9842A4);
+        font-size: 30px!important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 36px */
+      }
+
     }
   }
 
@@ -161,9 +203,19 @@
 
   .plans-wrapper:first-child {
 
+    .plan-1 {
+      &.plan-box {
+        padding: 30px 30px 35px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+
     .plan0 {
       &.plan-box {
-        padding: 40px 0;
+        opacity: .5;
+        padding: 100px 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -172,6 +224,7 @@
 
     .plan1 {
       &.plan-box {
+        opacity: .5;
         padding: 40px 0;
         display: flex;
         flex-direction: column;
@@ -337,4 +390,32 @@
     font-size: 13px;
   }
 
+}
+
+@media (max-width: 575px) {
+  #tickets {
+    .plans-wrapper:first-child {
+      .plan-1 {
+
+        &.plan-box {
+
+          .type {
+            font-size: 35px;
+          }
+
+          .price {
+            padding: 0 0 10px 0!important;
+            font-size: 20px!important;
+          }
+
+        }
+
+        .block-topic {
+          gap: 20px;
+          grid-template-columns: auto;
+          justify-items: start;
+        }
+      }
+    }
+  }
 }

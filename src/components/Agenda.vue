@@ -381,6 +381,46 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage ten">
+        <div class="stage-title mini-stage sticky">
+          <h3>Mini Stage</h3>
+          <p>до 100 місць</p>
+        </div>
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">16:30</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">17:00</div>
+          </div>
+          <h3 class="subtitle">Не ваш дідівський IBM. Розширені можливості з кібербезпеки і партнерства заради інновацій</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <AgendaUser :speaker-name="'Андрій Кузьменко'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">17:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">17:30</div>
+          </div>
+          <h3 class="subtitle">Автоматизація управління IT-інфраструктурою та додатками</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <AgendaUser :speaker-name="'Валентин Шаповал'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage eleven">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -414,7 +454,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage eleven">
+      <div class="stage twelve">
         <div class="info-container">
           <div class="time">
             <div class="start-time">16:45</div>
@@ -426,7 +466,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage twelve">
+      <div class="stage thirteen">
         <div class="stage-title sticky">Main Stage</div>
         <div class="info-container">
           <div class="time">
@@ -449,7 +489,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage thirteen">
+      <div class="stage fourteen">
 
         <div class="pro-line">
           <div class="stage-title pro sticky">Pro Stage</div>
@@ -483,7 +523,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage fourteen">
+      <div class="stage fifteen">
         <div class="title line sticky">
           <p :class="{active: currentClass === 'architecture'}" @click="changeAgendaClass('architecture')">Architecture</p>
           <p :class="{active: currentClass === 'software'}" @click="changeAgendaClass('software')">Software</p>
@@ -516,7 +556,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage fifteen">
+      <div class="stage sixteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">19:15</div>
@@ -528,7 +568,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage sixteen">
+      <div class="stage seventeen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">20:30</div>
@@ -540,7 +580,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage seventeen">
+      <div class="stage eighteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">21:00</div>
@@ -552,7 +592,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line mb-5">
 
-      <div class="stage eighteen">
+      <div class="stage nineteen">
         <div class="info-container">
           <div class="time">
             <div class="start-time">22:00</div>

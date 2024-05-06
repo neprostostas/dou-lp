@@ -224,6 +224,48 @@
               ]
             },
             {
+              "image": "speakers/Kuzmenko.jpeg",
+              "title": "",
+              "name": "Андрій Кузьменко",
+              "position": "IBM Security",
+              "link": "https://www.linkedin.com/in/andrii-kuzmenko-9a320b13/",
+              "speech": "",
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/andrii-kuzmenko-9a320b13/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
+              "image": "speakers/Shapoval.jpeg",
+              "title": "",
+              "name": "Валентин Шаповал",
+              "position": "Архітектор програмних рішень IBM",
+              "link": "https://www.linkedin.com/in/valentyn-shapoval-8968a06/",
+              "speech": "",
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://www.linkedin.com/in/valentyn-shapoval-8968a06/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Berestovuy.png",
               "title": "",
               "name": "Олег Берестовий",

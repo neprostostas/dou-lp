@@ -413,6 +413,8 @@ const processedSpeech = computed(() => {
             <div class="card-line">
               <AgendaUser :speaker-name="'Валентин Шаповал'" :showSpeaker="showSpeaker" />
             </div>
+            <a style="margin-top: 16px" class="green-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf1yXdUk9NbiQQ6vtDOroyIBaDS8mTULGg10BOa9t3zQh977w/viewform" target="_blank">Зареєструватись</a>
+
           </div>
 
         </div>

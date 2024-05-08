@@ -381,6 +381,40 @@ const processedSpeech = computed(() => {
       <hr class="grey-line">
 
       <div class="stage ten">
+
+        <div class="pro-line">
+          <div class="stage-title pro sticky">Pro Stage</div>
+          <div class="box-ticket">
+            Pro Tickets
+          </div>
+        </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">16:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">16:45</div>
+          </div>
+          <h3 class="subtitle">Про стан, розвиток і ризики продуктових ІТ-компаній в Україні</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Володимир Многолєтній'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олександр Косован'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модератор</h4>
+              <AgendaUser :speaker-name="'Ілля Кабачинський'" :showSpeaker="showSpeaker" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="grey-line">
+
+      <div class="stage eleven">
         <div class="stage-title mini-stage sticky">
           <h3>Mini Stage</h3>
           <p>до 100 місць</p>
@@ -419,40 +453,6 @@ const processedSpeech = computed(() => {
 
         </div>
 
-      </div>
-      <hr class="grey-line">
-
-      <div class="stage eleven">
-
-        <div class="pro-line">
-          <div class="stage-title pro sticky">Pro Stage</div>
-          <div class="box-ticket">
-            Pro Tickets
-          </div>
-        </div>
-
-        <div class="info-container">
-          <div class="time">
-            <div class="start-time">16:00</div>
-            <div class="divider-time">...</div>
-            <div class="end-time">16:45</div>
-          </div>
-          <h3 class="subtitle">Про стан, розвиток і ризики продуктових ІТ-компаній в Україні</h3>
-
-          <div class="cards-block">
-            <div class="card-line">
-              <h4 class="role pd-0">Спікери</h4>
-              <AgendaUser :speaker-name="'Володимир Многолєтній'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Олександр Косован'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
-            </div>
-            <div class="card-alone">
-              <h4 class="role">Модератор</h4>
-              <AgendaUser :speaker-name="'Ілля Кабачинський'" :showSpeaker="showSpeaker" />
-            </div>
-          </div>
-
-        </div>
       </div>
       <hr class="grey-line">
 

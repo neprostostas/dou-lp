@@ -1189,6 +1189,7 @@
       { "name": "readdle.png", "url": "https://jobs.dou.ua/companies/readdle-inc/", "alt": "readdle" },
       { "name": "intellias.png", "url": "https://career.intellias.com/ukraine", "alt": "intellias" },
       { "name": "ciklum.png", "url": "https://jobs.dou.ua/companies/ciklum/", "alt": "ciklum" },
+      { "name": "peopleforce.png", "url": "https://peopleforce.io/uk?utm_medium=event&utm_content=dou-day", "alt": "peopleforce" },
       { "name": "sigma.png", "url": "https://jobs.dou.ua/companies/sigma-software/", "alt": "sigma-software" },
       { "name": "luxoft.png", "url": "https://jobs.dou.ua/companies/luxoft/", "alt": "luxoft" },
       { "name": "wiseit.png", "url": "https://jobs.dou.ua/companies/wise-it/", "alt": "wiseit" },
@@ -1207,7 +1208,6 @@
       { "name": "yd.png", "url": "https://yaremadental.com/", "alt": "yd" },
       { "name": "pravda-beer.png", "url": "https://www.pravda.beer/pravda/", "alt": "pravda-beer" },
       { "name": "sabotage.png", "url": "https://sabotage.wine/", "alt": "sabotage" },
-      { "name": "truskavetska.png", "url": "https://truskavetska.com.ua/", "alt": "truskavetska" },
       { "name": "uklon.png", "url": "https://careers.uklon.eu", "alt": "uklon" },
       { "name": "denovo.png", "url": "https://denovo.ua/", "alt": "denovo" }
     ],

@@ -307,7 +307,7 @@ const processedSpeech = computed(() => {
           <div class="time">
             <div class="start-time">15:00</div>
             <div class="divider-time">...</div>
-            <div class="end-time">16:00</div>
+            <div class="end-time">15:30</div>
           </div>
           <h3 class="subtitle">Не ваш дідівський IBM. Розширені можливості з кібербезпеки і партнерства заради інновацій</h3>
 
@@ -321,7 +321,7 @@ const processedSpeech = computed(() => {
 
         <div class="info-container">
           <div class="time">
-            <div class="start-time">15:00</div>
+            <div class="start-time">15:30</div>
             <div class="divider-time">...</div>
             <div class="end-time">16:00</div>
           </div>

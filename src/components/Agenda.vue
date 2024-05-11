@@ -309,22 +309,34 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">16:00</div>
           </div>
-          <h3 class="subtitle">Панельна дискусія про ІТ на війні</h3>
+          <h3 class="subtitle">Не ваш дідівський IBM. Розширені можливості з кібербезпеки і партнерства заради інновацій</h3>
 
           <div class="cards-block">
             <div class="card-line">
-              <h4 class="role pd-0">Спікери</h4>
-              <AgendaUser :speaker-name="'Катерина Черногоренко'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Олег Берестовий'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Іван Гоменюк'" :showSpeaker="showSpeaker" />
-            </div>
-            <div class="card-alone">
-              <h4 class="role">Модератор</h4>
-              <AgendaUser :speaker-name="'Євген Ковалевський'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Андрій Кузьменко'" :showSpeaker="showSpeaker" />
             </div>
           </div>
 
         </div>
+
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">15:00</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">16:00</div>
+          </div>
+          <h3 class="subtitle">Автоматизація управління IT-інфраструктурою та додатками</h3>
+
+          <div class="cards-block">
+            <div class="card-line">
+              <AgendaUser :speaker-name="'Валентин Шаповал'" :showSpeaker="showSpeaker" />
+            </div>
+            <a style="margin-top: 16px" class="green-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf1yXdUk9NbiQQ6vtDOroyIBaDS8mTULGg10BOa9t3zQh977w/viewform" target="_blank">Зареєструватись</a>
+
+          </div>
+
+        </div>
+
       </div>
       <hr class="grey-line">
 
@@ -414,7 +426,7 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
-      <div class="stage eleven">
+      <div class="stage eight">
         <div class="stage-title mini-stage sticky">
           <h3>Mini Stage</h3>
           <p>до 100 місць</p>
@@ -425,34 +437,22 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">17:00</div>
           </div>
-          <h3 class="subtitle">Не ваш дідівський IBM. Розширені можливості з кібербезпеки і партнерства заради інновацій</h3>
+          <h3 class="subtitle">Панельна дискусія про ІТ на війні</h3>
 
           <div class="cards-block">
             <div class="card-line">
-              <AgendaUser :speaker-name="'Андрій Кузьменко'" :showSpeaker="showSpeaker" />
+              <h4 class="role pd-0">Спікери</h4>
+              <AgendaUser :speaker-name="'Катерина Черногоренко'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олег Берестовий'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Іван Гоменюк'" :showSpeaker="showSpeaker" />
+            </div>
+            <div class="card-alone">
+              <h4 class="role">Модератор</h4>
+              <AgendaUser :speaker-name="'Євген Ковалевський'" :showSpeaker="showSpeaker" />
             </div>
           </div>
 
         </div>
-
-        <div class="info-container">
-          <div class="time">
-            <div class="start-time">17:00</div>
-            <div class="divider-time">...</div>
-            <div class="end-time">17:30</div>
-          </div>
-          <h3 class="subtitle">Автоматизація управління IT-інфраструктурою та додатками</h3>
-
-          <div class="cards-block">
-            <div class="card-line">
-              <AgendaUser :speaker-name="'Валентин Шаповал'" :showSpeaker="showSpeaker" />
-            </div>
-            <a style="margin-top: 16px" class="green-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf1yXdUk9NbiQQ6vtDOroyIBaDS8mTULGg10BOa9t3zQh977w/viewform" target="_blank">Зареєструватись</a>
-
-          </div>
-
-        </div>
-
       </div>
       <hr class="grey-line">
 

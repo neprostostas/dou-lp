@@ -435,6 +435,27 @@
               ]
             },
             {
+              "image": "speakers/Konotopskiy_new.png",
+              "title": "",
+              "name": "Олександр Конотопський",
+              "position": "Голова наглядової ради Ajax Systems",
+              "link": "",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Sedler_new.png",
               "title": "",
               "name": "Віталій Седлер",

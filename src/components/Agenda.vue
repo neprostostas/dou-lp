@@ -414,7 +414,7 @@ const processedSpeech = computed(() => {
               <h4 class="role pd-0">Спікери</h4>
               <AgendaUser :speaker-name="'Володимир Многолєтній'" :showSpeaker="showSpeaker" />
               <AgendaUser :speaker-name="'Олександр Косован'" :showSpeaker="showSpeaker" />
-              <AgendaUser :speaker-name="'Спікера оголосимо згодом'" :showSpeaker="showSpeaker" />
+              <AgendaUser :speaker-name="'Олександр Конотопський'" />
             </div>
             <div class="card-alone">
               <h4 class="role">Модератор</h4>

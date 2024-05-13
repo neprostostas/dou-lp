@@ -435,7 +435,7 @@ const processedSpeech = computed(() => {
           <div class="time">
             <div class="start-time">16:30</div>
             <div class="divider-time">...</div>
-            <div class="end-time">17:00</div>
+            <div class="end-time">17:30</div>
           </div>
           <h3 class="subtitle">Панельна дискусія про ІТ на війні</h3>
 

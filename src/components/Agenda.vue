@@ -407,7 +407,7 @@ const processedSpeech = computed(() => {
             <div class="divider-time">...</div>
             <div class="end-time">16:45</div>
           </div>
-          <h3 class="subtitle">Про стан, розвиток і ризики продуктових ІТ-компаній в Україні</h3>
+          <h3 class="subtitle">Про стан, розвиток і ризики продуктових IT-компаній в Україні</h3>
 
           <div class="cards-block">
             <div class="card-line">
@@ -426,6 +426,18 @@ const processedSpeech = computed(() => {
       </div>
       <hr class="grey-line">
 
+      <div class="stage twelve">
+        <div class="info-container">
+          <div class="time">
+            <div class="start-time">16:45</div>
+            <div class="divider-time">...</div>
+            <div class="end-time">17:30</div>
+          </div>
+          <h3 class="subtitle">Кава-брейк і час на локації</h3>
+        </div>
+      </div>
+      <hr class="grey-line">
+
       <div class="stage eight">
         <div class="stage-title mini-stage sticky">
           <h3>Mini Stage</h3>
@@ -433,11 +445,11 @@ const processedSpeech = computed(() => {
         </div>
         <div class="info-container">
           <div class="time">
-            <div class="start-time">16:30</div>
+            <div class="start-time">17:00</div>
             <div class="divider-time">...</div>
-            <div class="end-time">17:30</div>
+            <div class="end-time">17:45</div>
           </div>
-          <h3 class="subtitle">Панельна дискусія про ІТ на війні</h3>
+          <h3 class="subtitle">Панельна дискусія про IT на війні</h3>
 
           <div class="cards-block">
             <div class="card-line">
@@ -452,18 +464,6 @@ const processedSpeech = computed(() => {
             </div>
           </div>
 
-        </div>
-      </div>
-      <hr class="grey-line">
-
-      <div class="stage twelve">
-        <div class="info-container">
-          <div class="time">
-            <div class="start-time">16:45</div>
-            <div class="divider-time">...</div>
-            <div class="end-time">17:30</div>
-          </div>
-          <h3 class="subtitle">Кава-брейк і час на локації</h3>
         </div>
       </div>
       <hr class="grey-line">

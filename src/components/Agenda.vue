@@ -214,7 +214,7 @@ const processedSpeech = computed(() => {
                 <AgendaUser mobile :speaker-name="'Тетяна Мельник'" :subtitle="'Як мігрувати продукт з 200К користувачів з восьмирічного PHP-моноліта на новий стек. Успіхи і фейли'" :showSpeaker="showSpeaker" />
               </div>
               <div class="card-wrap">
-                <AgendaUser mobile :speaker-name="'Андрій Мандрика'" :subtitle="'Як побудувати успішний продукт, який допомагає ЗСУ. Висновки з кейсу B2B-підписки на донати в фонді KOLO'" :showSpeaker="showSpeaker" />
+                <AgendaUser mobile :speaker-name="'Андрій Мандріка'" :subtitle="'Як побудувати успішний продукт, який допомагає ЗСУ. Висновки з кейсу B2B-підписки на донати в фонді KOLO'" :showSpeaker="showSpeaker" />
               </div>
             </div>
           </div>

@@ -435,6 +435,27 @@
               ]
             },
             {
+              "image": "speakers/Aznuk.jpg",
+              "title": "",
+              "name": "Ярослав Ажнюк",
+              "position": "засновник Petcube, <a style='color: #0d4ec1; text-decoration: underline;' href='https://thefourthlaw.ai/'>TheFourthLaw.ai</a>",
+              "link": "https://thefourthlaw.ai/",
+
+              "description": "",
+              "about_title": "",
+              "about_text": "",
+              "socials": [
+                {"name":  "github", "link": "" },
+                {"name":  "facebook", "link": "" },
+                {"name":  "twitter", "link": "" },
+                {"name":  "instagram", "link": "" },
+                {"name":  "telegram", "link": "" },
+                {"name":  "linkedin", "link": "https://thefourthlaw.ai/" },
+                {"name":  "youtube", "link": "" },
+                {"name":  "dou", "link": "" }
+              ]
+            },
+            {
               "image": "speakers/Konotopskiy_new.png",
               "title": "",
               "name": "Олександр Конотопський",
